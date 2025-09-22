@@ -22,6 +22,7 @@ Get News -> Filter Irrelevant News -> Get Contents -> Clean Content -> Save in o
     - language
     - date range
     - page: (default/max 100)
+    - domain
 - Authorize
     - "apiKey" in querystring parameter
     - "X-Api-Key" HTTP header
