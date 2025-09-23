@@ -15,27 +15,34 @@ from typing import List, Dict, Any
 from dotenv import load_dotenv
 import os
 from smolagents import CodeAgent, InferenceClientModel
-from phoenix.otel import register
+from langfuse import get_client
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
+
+load_dotenv()  # โหลด .env เข้ามาเป็น environment variables
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
-
-load_dotenv()  # โหลด .env เข้ามาเป็น environment variables
-
 HF_MODEL_ID = os.environ.get("HF_LEADER_MODEL_ID", None)
 WORKER_URL = os.environ.get("WORKER_URL", "http://localhost:8001/process")
 
-# ลงทะเบียน otel provider
-register()
-# instrument smolagents ให้เก็บ run trace
+langfuse = get_client()
+# Verify connection
+if langfuse.auth_check():
+    print("Langfuse client is authenticated and ready!")
+else:
+    print("Authentication failed. Please check your credentials and host.")
 SmolagentsInstrumentor().instrument()
 
 def make_agent():
-    hf_token  = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-    model = InferenceClientModel(model_id=HF_MODEL_ID, token=hf_token) if HF_MODEL_ID else InferenceClientModel(token=hf_token)
-    return CodeAgent(tools=[], model=model, add_base_tools=False)
+    hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+    model = InferenceClientModel(model_id=HF_MODEL_ID, token=hf_token)
+        
+    return CodeAgent(
+        tools=[],
+        model=model,
+        add_base_tools=False,
+    )
 
 AGENT = make_agent()
 
@@ -86,9 +93,9 @@ def process_headlines(headlines: List[str], worker_url: str = WORKER_URL):
         logger.info("Initial guide:\n%s", guide)
         worker_resp = send_to_worker(h, guide, worker_url)
         logger.info("Worker returned: retrieved_count=%s", worker_resp.get("retrieved_count"))
-        final = aggregate_and_summarize(h, guide, worker_resp)
-        results.append({"headline": h, "guide": guide, "worker": worker_resp, "final_summary": final})
-    return results
+        # final = aggregate_and_summarize(h, guide, worker_resp)
+        # results.append({"headline": h, "guide": guide, "worker": worker_resp, "final_summary": final})
+    return guide
 
 if __name__ == "__main__":
     # quick demo with sample headlines
@@ -97,8 +104,9 @@ if __name__ == "__main__":
         "Major chipmaker announces plant shutdown after safety incident; production to be delayed 6 weeks.",
     ]
     out = process_headlines(sample_headlines)
-    for r in out:
-        print("----")
-        print("Headline:", r["headline"])
-        print("Final summary:\n", r["final_summary"])
-        print()
+    # for r in out:
+    #     print("----")
+    #     print("Headline:", r["headline"])
+    #     print("Final summary:\n", r["final_summary"])
+    #     print()
+    print(out)
