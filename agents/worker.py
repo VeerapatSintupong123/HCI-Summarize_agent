@@ -79,7 +79,6 @@ def handle_task(guide: str) -> str:
     # 4. Run the agent once with the complete context to get the final summary.
     print("-> Generating summary...")
     summary = agent.run(summary_prompt).strip()
-
     return summary
 
 # --- API Endpoint ---
