@@ -17,7 +17,6 @@ import os
 from smolagents import CodeAgent, InferenceClientModel
 from langfuse import get_client
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
-from worker import handle_task
 
 load_dotenv()  # โหลด .env เข้ามาเป็น environment variables
 
@@ -25,7 +24,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
 HF_MODEL_ID = os.environ.get("HF_LEADER_MODEL_ID", None)
-WORKER_URL = os.environ.get("WORKER_URL", "http://localhost:8001/process")
+WORKER_URL = os.environ.get("WORKER_URL")
 
 langfuse = get_client()
 # Verify connection
@@ -51,7 +50,7 @@ def generate_initial_guide(headline: str) -> str:
     prompt = f"""
 Headline News: {headline}
 
-You are the Leader (coordinator). Read the headline and think about what the worker needs to retrieve and summarize to best assess *financial impact*. 
+You are the Leader (coordinator). Read the Headline News and think about what the worker needs to retrieve and summarize to best assess *financial impact*. 
 
 Produce a concise initial guide for the worker that can also serve as a search query for financial news about NVIDIA, AMD, or INTEL. Focus on retrieving content that includes:
 - Key financial metrics: revenue, profit, EPS, margins, growth rates
@@ -59,7 +58,7 @@ Produce a concise initial guide for the worker that can also serve as a search q
 - Major company announcements affecting finances: earnings reports, guidance, mergers, product launches
 - Priority entities: NVIDIA, AMD, INTEL
 - Tone: concise, numbers-first, factual
-
+Return output in 1 string only.
 Return the guide as short plain text (NO JSON), optimized for retrieving financial-relevant documents.
 """
     out = AGENT.run(prompt)
@@ -67,7 +66,7 @@ Return the guide as short plain text (NO JSON), optimized for retrieving financi
     return out.strip()
 
 def send_to_worker(headline: str, guide: str, worker_url: str = WORKER_URL, k: int = 5):
-    payload = {"headline": headline, "initial_guide": guide, "k": k}
+    payload = {"guide": guide} 
     r = requests.post(worker_url, json=payload, timeout=60)
     r.raise_for_status()
     return r.json()
@@ -100,13 +99,12 @@ def process_headlines(headlines: List[str], worker_url: str = WORKER_URL):
         logger.info("Worker returned: retrieved_count=%s", worker_resp.get("retrieved_count"))
         # final = aggregate_and_summarize(h, guide, worker_resp)
         # results.append({"headline": h, "guide": guide, "worker": worker_resp, "final_summary": final})
-    return guide
+    return worker_resp
 
 if __name__ == "__main__":
     # quick demo with sample headlines
     sample_headlines = [
-        "Acme Corp reports Q2 revenue up 12% on stronger cloud sales; raises FY guidance.",
-        "Major chipmaker announces plant shutdown after safety incident; production to be delayed 6 weeks.",
+        "Nvidia's CEO Just Delivered Incredible News for Taiwan Semiconductor Manufacturing Stock Investors",
     ]
     out = process_headlines(sample_headlines)
     # for r in out:
