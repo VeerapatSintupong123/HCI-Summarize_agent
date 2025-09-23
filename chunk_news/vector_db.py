@@ -32,6 +32,8 @@ def clean_text(text: str) -> str:
     text = re.sub(r"http\S+", "", text)
     # Reduce multiple whitespace characters to a single space
     text = re.sub(r"\s+", " ", text).strip()
+    # Remove newlines
+    text = text.replace("\n", " ").replace("\r", " ")
     return text
 
 
