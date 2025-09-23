@@ -1,6 +1,10 @@
 from smolagents import CodeAgent, InferenceClientModel
+from dotenv import load_dotenv
+import os
 
-model = InferenceClientModel()
+load_dotenv()
+
+model = InferenceClientModel(token=os.environ.get('HUGGINGFACEHUB_API_TOKEN'))
 
 agent = CodeAgent(tools=[], model=model)
 
