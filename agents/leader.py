@@ -17,6 +17,7 @@ import os
 from smolagents import CodeAgent, InferenceClientModel
 from langfuse import get_client
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
+from worker import handle_task
 
 load_dotenv()  # โหลด .env เข้ามาเป็น environment variables
 
@@ -48,14 +49,18 @@ AGENT = make_agent()
 
 def generate_initial_guide(headline: str) -> str:
     prompt = f"""
-You are the Leader (coordinator). Read the headline and "think" about what the worker needs to retrieve and summarize to best assess *financial impact*.
-Produce a short initial guide (3-6 short bullets) aimed at the Worker. Include:
-- the exact focus (financial items, KPIs, timeframe)
-- the desired granularity (high-level vs numbers)
-- any entities to prioritize (companies, government bodies)
-- desired tone (concise, numbers-first)
-Return the guide as a short plain text (no JSON).
-Headline: {headline}
+Headline News: {headline}
+
+You are the Leader (coordinator). Read the headline and think about what the worker needs to retrieve and summarize to best assess *financial impact*. 
+
+Produce a concise initial guide for the worker that can also serve as a search query for financial news about NVIDIA, AMD, or INTEL. Focus on retrieving content that includes:
+- Key financial metrics: revenue, profit, EPS, margins, growth rates
+- Timeframes: quarterly, yearly, or recent updates
+- Major company announcements affecting finances: earnings reports, guidance, mergers, product launches
+- Priority entities: NVIDIA, AMD, INTEL
+- Tone: concise, numbers-first, factual
+
+Return the guide as short plain text (NO JSON), optimized for retrieving financial-relevant documents.
 """
     out = AGENT.run(prompt)
     # sanitize
@@ -67,23 +72,23 @@ def send_to_worker(headline: str, guide: str, worker_url: str = WORKER_URL, k: i
     r.raise_for_status()
     return r.json()
 
-def aggregate_and_summarize(headline: str, guide: str, worker_response: Dict[str, Any]) -> str:
-    # build an aggregation prompt for the leader to produce a financial-impact trend
-    prompt = f"""
-You are the Leader: produce a final short analysis (max 300 words) focusing on financial impact trends based on:
-- Headline: {headline}
-- Initial guide: {guide}
-- Worker structured summary (JSON): {json.dumps(worker_response.get("structured", {}), ensure_ascii=False, indent=2)}
-- Worker bullet summary: {worker_response.get("summary", "")}
+# def aggregate_and_summarize(headline: str, guide: str, worker_response: Dict[str, Any]) -> str:
+#     # build an aggregation prompt for the leader to produce a financial-impact trend
+#     prompt = f"""
+# You are the Leader: produce a final short analysis (max 300 words) focusing on financial impact trends based on:
+# - Headline: {headline}
+# - Initial guide: {guide}
+# - Worker structured summary (JSON): {json.dumps(worker_response.get("structured", {}), ensure_ascii=False, indent=2)}
+# - Worker bullet summary: {worker_response.get("summary", "")}
 
-Produce:
-1) One-sentence topline (financial impact)
-2) 3 short trend bullets (what's increasing, decreasing, or uncertain)
-3) 1 short recommended next action for analysts/investors
+# Produce:
+# 1) One-sentence topline (financial impact)
+# 2) 3 short trend bullets (what's increasing, decreasing, or uncertain)
+# 3) 1 short recommended next action for analysts/investors
 
-Return plain text, clearly separated.
-"""
-    return AGENT.run(prompt)
+# Return plain text, clearly separated.
+# """
+#     return AGENT.run(prompt)
 
 def process_headlines(headlines: List[str], worker_url: str = WORKER_URL):
     results = []
