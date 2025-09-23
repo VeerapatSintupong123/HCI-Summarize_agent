@@ -12,17 +12,29 @@ import time
 import logging
 import requests
 from typing import List, Dict, Any
-
+from dotenv import load_dotenv
+import os
 from smolagents import CodeAgent, InferenceClientModel
+from phoenix.otel import register
+from openinference.instrumentation.smolagents import SmolagentsInstrumentor
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
-HF_MODEL_ID = os.environ.get("HF_MODEL_ID", None)
+
+load_dotenv()  # โหลด .env เข้ามาเป็น environment variables
+
+HF_MODEL_ID = os.environ.get("HF_LEADER_MODEL_ID", None)
 WORKER_URL = os.environ.get("WORKER_URL", "http://localhost:8001/process")
 
+# ลงทะเบียน otel provider
+register()
+# instrument smolagents ให้เก็บ run trace
+SmolagentsInstrumentor().instrument()
+
 def make_agent():
-    model = InferenceClientModel(model_id=HF_MODEL_ID) if HF_MODEL_ID else InferenceClientModel()
+    hf_token  = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+    model = InferenceClientModel(model_id=HF_MODEL_ID, token=hf_token) if HF_MODEL_ID else InferenceClientModel(token=hf_token)
     return CodeAgent(tools=[], model=model, add_base_tools=False)
 
 AGENT = make_agent()
