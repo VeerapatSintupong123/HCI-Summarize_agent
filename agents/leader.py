@@ -71,23 +71,25 @@ def send_to_worker(headline: str, guide: str, worker_url: str = WORKER_URL, k: i
     r.raise_for_status()
     return r.json()
 
-# def aggregate_and_summarize(headline: str, guide: str, worker_response: Dict[str, Any]) -> str:
-#     # build an aggregation prompt for the leader to produce a financial-impact trend
-#     prompt = f"""
-# You are the Leader: produce a final short analysis (max 300 words) focusing on financial impact trends based on:
-# - Headline: {headline}
-# - Initial guide: {guide}
-# - Worker structured summary (JSON): {json.dumps(worker_response.get("structured", {}), ensure_ascii=False, indent=2)}
-# - Worker bullet summary: {worker_response.get("summary", "")}
+def analyze_impact_trend(summary: str) -> str:
+    """
+    ใช้ agent วิเคราะห์ว่า summary มีผลกระทบทางการเงินแนวโน้มอย่างไร
+    เช่น: Positive, Negative, Neutral หรือ Trend: Upward, Downward, Mixed
+    """
+    prompt = f"""
+You are a financial trend analyst. Read the following summary:
 
-# Produce:
-# 1) One-sentence topline (financial impact)
-# 2) 3 short trend bullets (what's increasing, decreasing, or uncertain)
-# 3) 1 short recommended next action for analysts/investors
+{summary}
 
-# Return plain text, clearly separated.
-# """
-#     return AGENT.run(prompt)
+Based only on the financial context, categorize the **impact trend** for NVIDIA, AMD, or INTEL as one of:
+- Positive (improving financials, growth, strong guidance)
+- Negative (decline in revenue, weak profit, poor outlook)
+- Neutral/Mixed (uncertain, balanced, no clear trend)
+
+Return just one short label (Positive / Negative / Neutral).
+"""
+    out = AGENT.run(prompt)
+    return out.strip()
 
 def process_headlines(headlines: List[str], worker_url: str = WORKER_URL):
     results = []
@@ -96,10 +98,18 @@ def process_headlines(headlines: List[str], worker_url: str = WORKER_URL):
         guide = generate_initial_guide(h)
         logger.info("Initial guide:\n%s", guide)
         worker_resp = send_to_worker(h, guide, worker_url)
-        logger.info("Worker returned: retrieved_count=%s", worker_resp.get("retrieved_count"))
-        # final = aggregate_and_summarize(h, guide, worker_resp)
-        # results.append({"headline": h, "guide": guide, "worker": worker_resp, "final_summary": final})
-    return worker_resp
+        worker_summary = worker_resp.get("summary", "")
+        impact_trend = analyze_impact_trend(worker_summary)
+
+        result = {
+            "headline": h,
+            "guide": guide,
+            "worker_summary": worker_summary,
+            "impact_trend": impact_trend
+        }
+        results.append(result)
+    return results
+
 
 if __name__ == "__main__":
     # quick demo with sample headlines
