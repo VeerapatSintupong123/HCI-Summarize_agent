@@ -1,4 +1,7 @@
 .venv
 .env
 __pycache__/
-data
+data/filtered/
+data/final/
+data/processed/
+data/raw/
