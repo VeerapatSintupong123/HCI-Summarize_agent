@@ -1,21 +1,19 @@
+#leader.py
 import os
 import json
 import logging
-import requests
-from typing import List, Dict, Any
 from dotenv import load_dotenv
-from smolagents import CodeAgent, InferenceClientModel
-from langfuse import get_client
+from smolagents import OpenAIServerModel, tool, ToolCallingAgent
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
 from pathlib import Path
+from langfuse import get_client
 
+# --- Load env ---
 load_dotenv()
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
-HF_MODEL_ID = os.environ.get("HF_LEADER_MODEL_ID", None)
-WORKER_URL = os.environ.get("WORKER_URL")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 langfuse = get_client()
 if langfuse.auth_check():
@@ -24,106 +22,137 @@ else:
     print("Authentication failed. Please check your credentials and host.")
 SmolagentsInstrumentor().instrument()
 
-def make_agent():
-    hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-    model = InferenceClientModel(model_id=HF_MODEL_ID, token=hf_token)
-    return CodeAgent(tools=[], model=model, add_base_tools=False)
+model = OpenAIServerModel(
+    model_id="gemini-2.5-flash",
+    api_base="https://generativelanguage.googleapis.com/v1beta/",
+    api_key=GEMINI_API_KEY,
+)
 
-AGENT = make_agent()
+# --- Import Worker Agent ---
+from agents.worker import agent as worker_agent
 
-def generate_initial_guide(content: str) -> str:
-    prompt = f"""
-Content: {content}
+# --- Leader Agent (Orchestrator) ---
+leader = ToolCallingAgent(
+    model=model,
+    tools=[],                  # leader ไม่มี tool เอง
+    managed_agents=[worker_agent],   # จัดการ worker
+    name="Leader",
+    description="Coordinates tasks and delegates to worker agent",
+    stream_outputs=False,
+)
 
-You are the Leader (coordinator). Read the Content and think about what the worker needs to retrieve and summarize to best assess *financial impact*.
 
-Produce a concise initial guide for the worker that can also serve as a search query for financial news about NVIDIA, AMD, or INTEL. Focus on retrieving content that includes:
-- Key financial metrics: revenue, profit, EPS, margins, growth rates
-- Timeframes: quarterly, yearly, or recent updates
-- Major company announcements affecting finances: earnings reports, guidance, mergers, product launches
-- Priority entities: NVIDIA, AMD, INTEL
-- Tone: concise, numbers-first, factual
+# --- Leader Logic (ปรับปรุงใหม่) ---
+def process_news_item(item):
+    """
+    Processes a single news item to get a summary and impact trend analysis.
+    """
+    headline = item.get("headline", "")
+    content = item.get("content", "")
+    logger.info("Processing headline: %s", headline)
 
-Return output in 1 string only and in 1 line and not use bullet.
-Return the guide as short plain text (NO JSON).
-- Output format example: "NVIDIA AMD INTEL revenue profit EPS margins growth rates quarterly yearly earnings reports guidance mergers product
-  launches financial news"
+    # Prompt ที่สั่งให้ทำ 2 งานและตอบเป็น JSON
+    # นี่คือส่วนที่สำคัญที่สุด
+    query = f"""
+    You are a financial analyst agent. Analyze the following news article.
+    
+    News Headline: "{headline}"
+    News Content: "{content}"
 
-"""
-    out = AGENT.run(prompt)
-    return out.strip()
+    Perform the following two tasks and provide the output as a single JSON object.
+    Do not include any text outside of the JSON object.
 
-def send_to_worker(guide: str, worker_url: str = WORKER_URL):
-    payload = {"guide": guide}
-    r = requests.post(worker_url, json=payload, timeout=60)
-    r.raise_for_status()
-    return r.json()
+    1.  **summary**: Summarize the key points of the news article concisely.
+    2.  **impact_analysis**: Analyze the potential impact and trend related to this news.
+        -   Consider the short-term and long-term effects on the company (e.g., NVIDIA, AMD, INTEL).
+        -   Mention the potential impact on stock price, market sentiment, and competitive landscape.
+        -   Feel free to use your tools to search for the current date, recent stock performance, or related historical events to enrich your analysis.
 
-def analyze_impact_trend(summary: str) -> str:
-    prompt = f"""
-You are a financial trend analyst. Read the following summary:
+    Your response MUST be a valid JSON object with the keys "summary" and "impact_analysis".
+    Example format:
+    {{
+      "summary": "NVIDIA announced a new AI chip...",
+      "impact_analysis": "This announcement is expected to positively impact NVIDIA's stock price in the short term..."
+    }}
+    """
+    
+    worker_response_str = leader.run(query)
+    
+    # พยายามแปลงผลลัพธ์จาก Worker ให้เป็น Dictionary
+    try:
+        # LLM อาจจะตอบกลับมาพร้อมกับ Markdown code block, เราต้อง clean ก่อน
+        if worker_response_str.strip().startswith("```json"):
+            worker_response_str = worker_response_str.strip()[7:-3]
+        
+        worker_data = json.loads(worker_response_str)
+        summary = worker_data.get("summary", "Failed to get summary.")
+        impact_trend = worker_data.get("impact_analysis", "Failed to get impact analysis.")
+    except (json.JSONDecodeError, AttributeError):
+        logger.error(f"Could not parse JSON response from worker: {worker_response_str}")
+        summary = "Error: Worker returned an invalid format."
+        impact_trend = worker_response_str # เก็บคำตอบดิบไว้ในกรณีที่เกิดข้อผิดพลาด
 
-{summary}
-
-Based only on the financial context, provide a short **financial impact trend analysis**
-for NVIDIA, AMD, or INTEL.
-
-Return output in 1 string only and in 1 line and not use bullet.
-Return the guide as short plain text (NO JSON).
-- Be concise, professional, and numbers/impact oriented.
-- Output format example: "Positive – Nvidia revenue growth and strong AI chip demand"
-"""
-    out = AGENT.run(prompt)
-    return out.strip()
-
-def process_items(items: List[Dict[str, Any]], worker_url: str = WORKER_URL, limit: int = None):
-    results = []
-    if limit:
-        items = items[:limit]  # จำกัดจำนวนข่าว
-    for item in items:
-        headline = item.get("headline", "")
-        content = item.get("content", "")
-        logger.info("Processing headline: %s", headline)
-
-        guide = generate_initial_guide(content)
-        worker_resp = send_to_worker(guide, worker_url)
-        worker_summary = worker_resp.get("summary", "")
-        impact_trend = analyze_impact_trend(worker_summary)
-
-        result = {
-            "headline": headline,
-            "content": content,
-            "guide": guide,
-            "worker_summary": worker_summary,
-            "impact_trend": impact_trend,
-        }
-        results.append(result)
-    return results
+    # ประกอบผลลัพธ์สุดท้าย
+    result = {
+        "headline": headline,
+        "content": content,
+        "worker_summary": summary,
+        "impact_trend": impact_trend,
+    }
+    return result
 
 if __name__ == "__main__":
-    # โหลดไฟล์ข่าวจาก JSON
+    # --- Configuration ---
+    # ระบุชื่อบริษัทที่ต้องการวิเคราะห์ใน List นี้
+    TARGET_COMPANIES = ["Nvidia"] 
+    
+    # กำหนดจำนวนข่าวสูงสุดที่ต้องการประมวลผล (ใส่ None ถ้าต้องการทั้งหมด)
+    NEWS_LIMIT = 1
+    # ---------------------
+
+    # โหลดข่าว
     current_dir = Path(__file__).parent
     json_path = current_dir.parent / "scrape_news" / "22092025.json"
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: News file not found at {json_path}")
+        exit() # ออกจากโปรแกรมถ้าไม่เจอไฟล์
 
-    # รวมข่าวจากทุก entity เป็น list เดียว
     all_items = []
+    # รวบรวมข่าวจากบริษัทที่ระบุใน TARGET_COMPANIES
+    print(f"Filtering news for companies: {', '.join(TARGET_COMPANIES)}")
     for company, items in data.items():
-        all_items.extend(items)
+        if company in TARGET_COMPANIES:
+            all_items.extend(items)
 
-    # 🔹 เลือกจำนวนข่าวที่จะประมวลผล (None = ทั้งหมด)
-    LIMIT = 1  
+    # จำกัดจำนวนข่าวตามที่กำหนดใน NEWS_LIMIT
+    if NEWS_LIMIT is not None and NEWS_LIMIT > 0:
+        print(f"Limiting to the first {NEWS_LIMIT} articles.")
+        all_items = all_items[:NEWS_LIMIT]
+    
+    if not all_items:
+        print("No news items found for the specified companies. Exiting.")
+        exit()
 
-    out = process_items(all_items, limit=LIMIT)
+    print(f"\nStarting processing for {len(all_items)} news article(s)...\n")
+    
+    final_results = []
+    # ประมวลผลทีละข่าว
+    for item in all_items:
+        processed_result = process_news_item(item)
+        final_results.append(processed_result)
 
-    # 🔹 บันทึกผลลัพธ์เป็นไฟล์ JSON โดย append ต่อไปเรื่อยๆ
-    results_path = current_dir.parent / "results" / "result.json"
-
+    # ตั้งชื่อไฟล์ผลลัพธ์แบบไดนามิก
+    company_str = "_".join(TARGET_COMPANIES).lower()
+    results_filename = f"results_{company_str}_{len(final_results)}items.json"
+    results_path = current_dir.parent / "results" / results_filename
+    
+    # สร้างโฟลเดอร์ results ถ้ายังไม่มี
+    results_path.parent.mkdir(exist_ok=True)
 
     with open(results_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+        json.dump(final_results, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Results saved to {results_path}")
-
-
+    print(f"\n✅ Detailed analysis results saved to {results_path}")
