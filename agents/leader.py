@@ -15,6 +15,10 @@ logger = logging.getLogger("leader")
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
+config_json = os.getenv("COMPANY_CONFIG")
+COMPANY_CONFIG = json.loads(config_json)
+print(COMPANY_CONFIG)
+
 langfuse = get_client()
 if langfuse.auth_check():
     print("Langfuse client is authenticated and ready!")
@@ -105,12 +109,12 @@ def process_news_item(item):
 if __name__ == "__main__":
     # --- Configuration ---
     # ระบุบริษัทและจำนวนข่าวที่ต้องการในรูปแบบ Dictionary
-    # Key คือชื่อบริษัท, Value คือจำนวนข่าว (ใช้ None หากต้องการทั้งหมด)
-    COMPANY_CONFIG = {
-        "Nvidia": 1,
-        "Intel": 1,
-        "AMD": 1,
-    }
+    # Key คือชื่อบริษัท, Value คือจำนวนข่าว (ใช้ 0 หากต้องการทั้งหมด)
+    # COMPANY_CONFIG = {
+    #     "Nvidia": 1,
+    #     "Intel": 1,
+    #     "AMD": 1,
+    # }
     # ---------------------
 
     # 1. โหลดข้อมูลข่าวจากไฟล์
@@ -144,7 +148,7 @@ if __name__ == "__main__":
     final_results = [process_news_item(item) for item in items_to_process]
 
     # 4. บันทึกผลลัพธ์
-    results_filename = f"result.json"
+    results_filename = f"ex3_result.json"
     results_path = current_dir.parent / "results" / results_filename
     
     results_path.parent.mkdir(exist_ok=True)
