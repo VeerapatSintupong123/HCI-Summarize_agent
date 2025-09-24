@@ -63,17 +63,18 @@ def process_news_item(item):
     Do not include any text outside of the JSON object.
 
     1.  **summary**: Summarize the key points of the news article concisely.
-    2.  **impact_analysis**: Analyze the potential impact and trend related to this news.
+    2.  **impact_analysis**: Briefly analyze the potential impact and trend related to this news.
         -   Consider the short-term and long-term effects on the company (e.g., NVIDIA, AMD, INTEL).
         -   Mention the potential impact on stock price, market sentiment, and competitive landscape.
         -   Feel free to use your tools to search for the current date, recent stock performance, or related historical events to enrich your analysis.
 
-    Your response MUST be a valid JSON object with the keys "summary" and "impact_analysis".
-    Example format:
-    {{
-      "summary": "NVIDIA announced a new AI chip...",
-      "impact_analysis": "This announcement is expected to positively impact NVIDIA's stock price in the short term..."
-    }}
+    Perform the following two tasks and provide the output as a single JSON object.
+    Your final response MUST be a single, compact line of valid JSON.
+    All special characters, especially newlines within the text values, must be properly escaped (e.g., use \\n instead of a literal newline).
+    Do not include markdown code blocks like ```json or any text outside of the JSON object itself.
+
+    Example of a valid, single-line response:
+    {{"summary": "NVIDIA announced a new AI chip...", "impact_analysis": "This announcement is expected to positively impact NVIDIA's stock price in the short term by demonstrating continued innovation.\\nIn the long term, it could solidify their market leadership."}}
     """
     
     worker_response_str = leader.run(query)
@@ -103,55 +104,50 @@ def process_news_item(item):
 
 if __name__ == "__main__":
     # --- Configuration ---
-    # ระบุชื่อบริษัทที่ต้องการวิเคราะห์ใน List นี้
-    TARGET_COMPANIES = ["Nvidia"] 
-    
-    # กำหนดจำนวนข่าวสูงสุดที่ต้องการประมวลผล (ใส่ None ถ้าต้องการทั้งหมด)
-    NEWS_LIMIT = 1
+    # ระบุบริษัทและจำนวนข่าวที่ต้องการในรูปแบบ Dictionary
+    # Key คือชื่อบริษัท, Value คือจำนวนข่าว (ใช้ None หากต้องการทั้งหมด)
+    COMPANY_CONFIG = {
+        "Nvidia": 1,
+        "Intel": 1,
+        "AMD": 1,
+    }
     # ---------------------
 
-    # โหลดข่าว
+    # 1. โหลดข้อมูลข่าวจากไฟล์
     current_dir = Path(__file__).parent
     json_path = current_dir.parent / "scrape_news" / "22092025.json"
     try:
         with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+            all_news_data = json.load(f)
     except FileNotFoundError:
         print(f"Error: News file not found at {json_path}")
-        exit() # ออกจากโปรแกรมถ้าไม่เจอไฟล์
-
-    all_items = []
-    # รวบรวมข่าวจากบริษัทที่ระบุใน TARGET_COMPANIES
-    print(f"Filtering news for companies: {', '.join(TARGET_COMPANIES)}")
-    for company, items in data.items():
-        if company in TARGET_COMPANIES:
-            all_items.extend(items)
-
-    # จำกัดจำนวนข่าวตามที่กำหนดใน NEWS_LIMIT
-    if NEWS_LIMIT is not None and NEWS_LIMIT > 0:
-        print(f"Limiting to the first {NEWS_LIMIT} articles.")
-        all_items = all_items[:NEWS_LIMIT]
-    
-    if not all_items:
-        print("No news items found for the specified companies. Exiting.")
         exit()
 
-    print(f"\nStarting processing for {len(all_items)} news article(s)...\n")
-    
-    final_results = []
-    # ประมวลผลทีละข่าว
-    for item in all_items:
-        processed_result = process_news_item(item)
-        final_results.append(processed_result)
+    # 2. รวบรวมข่าวตาม Configuration
+    items_to_process = []
+    for company, limit in COMPANY_CONFIG.items():
+        company_news = all_news_data.get(company, []) # ดึงข่าวของบริษัท, ถ้าไม่เจอก็ได้ List ว่าง
+        
+        # จำกัดจำนวนข่าวตาม limit (ถ้า limit ไม่ใช่ None)
+        if limit is not None and limit > 0:
+            company_news = company_news[:limit]
+            
+        items_to_process.extend(company_news)
+        print(f"Collected {len(company_news)} articles for {company}.")
 
-    # ตั้งชื่อไฟล์ผลลัพธ์แบบไดนามิก
-    company_str = "_".join(TARGET_COMPANIES).lower()
-    results_filename = f"results_{company_str}_{len(final_results)}items.json"
+    if not items_to_process:
+        print("No news items found for the specified configuration. Exiting.")
+        exit()
+
+    # 3. ประมวลผลข่าวที่รวบรวมมา
+    print(f"\nStarting processing for a total of {len(items_to_process)} news article(s)...\n")
+    final_results = [process_news_item(item) for item in items_to_process]
+
+    # 4. บันทึกผลลัพธ์
+    results_filename = f"result.json"
     results_path = current_dir.parent / "results" / results_filename
     
-    # สร้างโฟลเดอร์ results ถ้ายังไม่มี
     results_path.parent.mkdir(exist_ok=True)
-
     with open(results_path, "w", encoding="utf-8") as f:
         json.dump(final_results, f, indent=2, ensure_ascii=False)
 
