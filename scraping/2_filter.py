@@ -329,7 +329,7 @@ class NewsFilter:
 def main():
     """Main function to run the news filtering process."""
     input_file = 'data/raw/news_api/raw_news_api.json'
-    output_file = 'data/raw/news_api/filtered_news_api.json'
+    output_file = f'data/raw/news_api/filtered_{input_file.split("/")[-1].replace("raw_", "")}'
     
     # Initialize news filter with moderate mode
     news_filter = NewsFilter(mode=FilterMode.MODERATE)
