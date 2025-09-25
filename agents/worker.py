@@ -8,10 +8,10 @@ from tavily import TavilyClient
 # --- Load env ---
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-
+HF_WORKER_MODEL_ID = os.getenv("HF_WORKER_MODEL_ID", "gemini-2.5-flash")
 # --- Model ---
 model = OpenAIServerModel(
-    model_id="gemini-2.5-flash",
+    model_id=HF_WORKER_MODEL_ID,
     api_base="https://generativelanguage.googleapis.com/v1beta/",
     api_key=GEMINI_API_KEY,
 )

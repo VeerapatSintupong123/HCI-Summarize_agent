@@ -14,6 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
 
 config_json = os.getenv("COMPANY_CONFIG")
 COMPANY_CONFIG = json.loads(config_json)
@@ -27,7 +28,7 @@ else:
 SmolagentsInstrumentor().instrument()
 
 model = OpenAIServerModel(
-    model_id="gemini-2.5-flash",
+    model_id=HF_LEADER_MODEL_ID,
     api_base="https://generativelanguage.googleapis.com/v1beta/",
     api_key=GEMINI_API_KEY,
 )

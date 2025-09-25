@@ -27,7 +27,17 @@ api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise EnvironmentError("❌ GEMINI_API_KEY not found in .env file or environment variables.")
 
+# --- UPDATED SECTION: Load model names from .env ---
+# Load model names from environment variables with default fallbacks
+ground_truth_model = os.environ.get("GROUND_TRUTH_MODEL", "gemini-1.5-flash")
+evaluation_model = os.environ.get("EVALUATION_MODEL", "gemini-1.5-pro-latest")
+
+logger.info(f"Using Ground Truth Model: {ground_truth_model}")
+logger.info(f"Using Evaluation Model: {evaluation_model}")
+# --- END OF UPDATED SECTION ---
+
 try:
+    # The client is configured once, and model names are passed in each call
     client = genai.Client(api_key=api_key)
 except Exception as e:
     raise RuntimeError(f"❌ Error configuring GenAI Client: {e}")
@@ -94,14 +104,16 @@ def generate_ground_truth(headline: str, content: str) -> Tuple[str, str]:
     impact_prompt = f"Analyze the short-term and long-term impacts of the following news.\n\nHeadline: {headline}\nContent: {content}"
 
     try:
+        # --- UPDATED SECTION: Use model variable ---
         summary_resp = client.models.generate_content(
-            model="gemini-1.5-flash",
+            model=ground_truth_model,
             contents=summary_prompt
         )
         impact_resp = client.models.generate_content(
-            model="gemini-1.5-flash",
+            model=ground_truth_model,
             contents=impact_prompt
         )
+        # --- END OF UPDATED SECTION ---
 
         summary = _extract_text_from_response(summary_resp)
         impact = _extract_text_from_response(impact_resp)
@@ -172,7 +184,10 @@ Output ONLY JSON with this schema:
 """
 
     try:
-        response = client.models.generate_content(model="gemini-1.5-pro-latest", contents=evaluation_prompt)
+        # --- UPDATED SECTION: Use model variable ---
+        response = client.models.generate_content(model=evaluation_model, contents=evaluation_prompt)
+        # --- END OF UPDATED SECTION ---
+        
         text_output = _extract_text_from_response(response)
 
         # Try to extract JSON
