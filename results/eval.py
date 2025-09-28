@@ -1,10 +1,6 @@
 import os
 from dotenv import load_dotenv
-from smolagents import ToolCallingAgent, InferenceClientModel, tool, OpenAIServerModel
-from agents.leader import HF_LEADER_MODEL_ID
-from chunk_news.vector_db import get_retriever
-from datetime import datetime
-from tavily import TavilyClient
+from smolagents import ToolCallingAgent, OpenAIServerModel
 from pathlib import Path
 import json
 

@@ -5,37 +5,37 @@
       "summary_evaluation": {
         "relevance": {
           "score": 1.0,
-          "reasoning": "The summary perfectly captures the main point of the article, which is a limited-time discount of $290."
+          "reasoning": "The summary accurately reflects the core message of the original content, which is about a discount."
         },
         "coherence": {
           "score": 1.0,
-          "reasoning": "The summary is a single, clear, and logically structured sentence that is easy to read."
+          "reasoning": "The summary is a clear, complete sentence that flows well."
         },
         "conciseness": {
-          "score": 0.9,
-          "reasoning": "The summary is very concise given the brevity of the original content. It avoids redundancy."
+          "score": 1.0,
+          "reasoning": "Given the brevity of the original content, the summary is concise and to the point."
         },
         "faithfulness": {
           "score": 1.0,
-          "reasoning": "The summary accurately reflects the information from the source text without any distortion or hallucination."
+          "reasoning": "All details in the summary are directly supported by the original content."
         }
       },
       "impact_trend_evaluation": {
         "correctness": {
           "score": 1.0,
-          "reasoning": "The analysis correctly identifies the discount amount and its limited-time nature from the source text."
+          "reasoning": "The analysis correctly identifies the core financial element (discount) and extrapolates logical business implications."
         },
         "depth": {
           "score": 0.9,
-          "reasoning": "The analysis goes beyond the surface by exploring potential motivations (boost sales, acquire customers, market share) and consequences (reduced profit margins, long-term positioning)."
+          "reasoning": "The analysis provides a good level of depth by discussing strategic aims, potential negative impacts (reduced margins), and long-term considerations."
         },
         "logical_consistency": {
           "score": 1.0,
-          "reasoning": "The reasoning is sound and internally consistent, explaining the trade-offs and potential outcomes of a discount strategy."
+          "reasoning": "The reasoning is sound, connecting the discount directly to potential business outcomes without contradiction."
         },
         "actionable_insights": {
           "score": 0.9,
-          "reasoning": "The analysis provides clear conclusions about the aims of the discount and identifies key factors (sales volume, customer loyalty, market positioning) that would inform decision-making regarding such a promotion."
+          "reasoning": "The analysis highlights clear objectives of such a promotion and factors to consider for its success, offering valuable insights."
         }
       }
     }
