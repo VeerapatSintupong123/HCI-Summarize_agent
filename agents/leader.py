@@ -56,8 +56,7 @@ def process_news_item(item):
     content = item.get("content", "")
     logger.info("Processing headline: %s", headline)
 
-    # --- Start: Recommended Prompt ---
-    # Prompt for Experiment 1 (Token-Efficient Version)
+    # --- Start: Recommended Prompt (Updated) ---
     query = f"""
     You are the Leader Agent, an expert orchestrator. Your primary goal is to manage a team of specialist agents to process a news article and produce a combined JSON output.
 
@@ -71,15 +70,18 @@ def process_news_item(item):
 
     **Your Task Instructions (The Plan):**
     1.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
-    2.  **Delegation for High-Impact Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **brief, concise summary of the most critical financial impacts. Focus only on the key takeaways.**
+    2.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.** The analysis should:
+        - Identify all key financial implications (both positive and negative).
+        - Consider potential short-term and long-term effects on the company's market position and stock value.
+        - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
     3.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
 
     **Strict Output Requirements:**
     Your final response MUST be a single, compact line of valid JSON. Do not include any text, explanations, or markdown code blocks. All special characters must be properly escaped.
 
     **Example of a valid, single-line response:**
-    {{"summary": "NVIDIA announced a new AI chip...", "impact_analysis": "This is expected to positively impact NVIDIA's stock by showing innovation, potentially solidifying their long-term market leadership."}}
-    """    
+    {{"summary": "NVIDIA announced a new AI chip...", "financial_impact_trend": "The introduction of the new AI chip is expected to positively impact NVIDIA's stock by reinforcing its technological leadership. Short-term, this could lead to a stock price increase due to investor confidence. Long-term, it solidifies their competitive advantage against rivals, potentially leading to sustained revenue growth in the data center segment."}}
+    """
     worker_response_str = leader.run(query)
     
     # พยายามแปลงผลลัพธ์จาก Worker ให้เป็น Dictionary
@@ -90,18 +92,18 @@ def process_news_item(item):
         
         worker_data = json.loads(worker_response_str)
         summary = worker_data.get("summary", "Failed to get summary.")
-        impact_trend = worker_data.get("impact_analysis", "Failed to get impact analysis.")
+        financial_impact_trend = worker_data.get("financial_impact_trend", "Failed to get impact analysis.")
     except (json.JSONDecodeError, AttributeError):
         logger.error(f"Could not parse JSON response from worker: {worker_response_str}")
         summary = "Error: Worker returned an invalid format."
-        impact_trend = worker_response_str # เก็บคำตอบดิบไว้ในกรณีที่เกิดข้อผิดพลาด
+        financial_impact_trend = worker_response_str # เก็บคำตอบดิบไว้ในกรณีที่เกิดข้อผิดพลาด
 
     # ประกอบผลลัพธ์สุดท้าย
     result = {
         "headline": headline,
         "content": content,
-        "worker_summary": summary,
-        "impact_trend": impact_trend,
+        "summary": summary,
+        "financial_impact_trend": financial_impact_trend,
     }
     return result
 

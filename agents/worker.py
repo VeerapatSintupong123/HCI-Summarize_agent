@@ -25,7 +25,7 @@ tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY"))
 def local_retriever_tool(query: str) -> str:
     """
     Searches the LOCAL news vector database (from 2025) to find historical context.
-    Use this for information known before September 2025.
+    Use this for information known before October 2025.
     Returns the combined text of the most relevant document chunks.
 
     Args:
