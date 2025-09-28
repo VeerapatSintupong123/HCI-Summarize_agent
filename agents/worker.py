@@ -41,24 +41,24 @@ def local_retriever_tool(query: str) -> str:
     return context
 
 
-@tool
-def web_search_tool(query: str) -> str:
-    """
-    Searches the web for real-time, up-to-date information.
-    Use this for recent events, current stock prices, or information not found in the local database.
-    Returns a concise answer from the web.
+# @tool
+# def web_search_tool(query: str) -> str:
+#     """
+#     Searches the web for real-time, up-to-date information.
+#     Use this for recent events, current stock prices, or information not found in the local database.
+#     Returns a concise answer from the web.
 
-    Args:
-        query (str): The search query string for the web search.
+#     Args:
+#         query (str): The search query string for the web search.
 
-    Returns:
-        str: A concise answer from the web search results.
-    """
-    print(f"-> Tool 'web_search_tool' called with query: '{query}'")
-    response = tavily_client.search(query=query, search_depth="basic")
-    if response and response.get('results'):
-        return response['results'][0]['content']
-    return "No results found from web search."
+#     Returns:
+#         str: A concise answer from the web search results.
+#     """
+#     print(f"-> Tool 'web_search_tool' called with query: '{query}'")
+#     response = tavily_client.search(query=query, search_depth="basic")
+#     if response and response.get('results'):
+#         return response['results'][0]['content']
+#     return "No results found from web search."
 
 
 @tool
@@ -73,12 +73,21 @@ def get_current_date_tool() -> str:
     print("-> Tool 'get_current_date_tool' called.")
     return datetime.now().strftime("%Y-%m-%d")
 
-# --- Worker Agent ---
-agent = ToolCallingAgent(
+# --- Summary Worker Agent ---
+summary_worker_agent = ToolCallingAgent(
     model=model,
-    tools=[local_retriever_tool, web_search_tool, get_current_date_tool],
-    name="Worker_Agent",
-    description="Finds financial news using retriever, web search, and date tool",
+    tools=[local_retriever_tool, get_current_date_tool],
+    name="Summary_Worker_Agent",
+    description="Finds financial news using retriever and date tool",
+    stream_outputs=False,
+)
+
+# --- Analysis Worker Agent ---
+analysis_worker_agent = ToolCallingAgent(
+    model=model,
+    tools=[local_retriever_tool, get_current_date_tool],
+    name="Analysis_Worker_Agent",
+    description="Analyze financial impact trends from financial news using retriever and date tool",
     stream_outputs=False,
 )
 
