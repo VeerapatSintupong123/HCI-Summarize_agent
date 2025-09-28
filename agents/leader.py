@@ -34,13 +34,13 @@ model = OpenAIServerModel(
 )
 
 # --- Import Worker Agent ---
-from agents.worker import agent as worker_agent
+from agents.worker import summary_worker_agent,analysis_worker_agent
 
 # --- Leader Agent (Orchestrator) ---
 leader = ToolCallingAgent(
     model=model,
     tools=[],                  # leader ไม่มี tool เอง
-    managed_agents=[worker_agent],   # จัดการ worker
+    managed_agents=[summary_worker_agent, analysis_worker_agent],   # จัดการ worker
     name="Leader",
     description="Coordinates tasks and delegates to worker agent",
     stream_outputs=False,
@@ -56,32 +56,30 @@ def process_news_item(item):
     content = item.get("content", "")
     logger.info("Processing headline: %s", headline)
 
-    # Prompt ที่สั่งให้ทำ 2 งานและตอบเป็น JSON
-    # นี่คือส่วนที่สำคัญที่สุด
+    # --- Start: Recommended Prompt ---
+    # Prompt for Experiment 1 (Token-Efficient Version)
     query = f"""
-    You are a financial analyst agent. Analyze the following news article.
-    
-    News Headline: "{headline}"
-    News Content: "{content}"
+    You are the Leader Agent, an expert orchestrator. Your primary goal is to manage a team of specialist agents to process a news article and produce a combined JSON output.
 
-    Perform the following two tasks and provide the output as a single JSON object.
-    Do not include any text outside of the JSON object.
+    **Available Agents:**
+    - `Summary_Worker_Agent`: Specializes in summarizing text.
+    - `Analysis_Worker_Agent`: Specializes in analyzing financial impact and trends.
 
-    1.  **summary**: Summarize the key points of the news article concisely.
-    2.  **impact_analysis**: Briefly analyze the potential impact and trend related to this news.
-        -   Consider the short-term and long-term effects on the company (e.g., NVIDIA, AMD, INTEL).
-        -   Mention the potential impact on stock price, market sentiment, and competitive landscape.
-        -   Feel free to use your tools to search for the current date, recent stock performance, or related historical events to enrich your analysis.
+    **Input Data:**
+    - News Headline: "{headline}"
+    - News Content: "{content}"
 
-    Perform the following two tasks and provide the output as a single JSON object.
-    Your final response MUST be a single, compact line of valid JSON.
-    All special characters, especially newlines within the text values, must be properly escaped (e.g., use \\n instead of a literal newline).
-    Do not include markdown code blocks like ```json or any text outside of the JSON object itself.
+    **Your Task Instructions (The Plan):**
+    1.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
+    2.  **Delegation for High-Impact Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **brief, concise summary of the most critical financial impacts. Focus only on the key takeaways.**
+    3.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
 
-    Example of a valid, single-line response:
-    {{"summary": "NVIDIA announced a new AI chip...", "impact_analysis": "This announcement is expected to positively impact NVIDIA's stock price in the short term by demonstrating continued innovation.\\nIn the long term, it could solidify their market leadership."}}
-    """
-    
+    **Strict Output Requirements:**
+    Your final response MUST be a single, compact line of valid JSON. Do not include any text, explanations, or markdown code blocks. All special characters must be properly escaped.
+
+    **Example of a valid, single-line response:**
+    {{"summary": "NVIDIA announced a new AI chip...", "impact_analysis": "This is expected to positively impact NVIDIA's stock by showing innovation, potentially solidifying their long-term market leadership."}}
+    """    
     worker_response_str = leader.run(query)
     
     # พยายามแปลงผลลัพธ์จาก Worker ให้เป็น Dictionary
@@ -149,7 +147,7 @@ if __name__ == "__main__":
     final_results = [process_news_item(item) for item in items_to_process]
 
     # 4. บันทึกผลลัพธ์
-    results_filename = f"ex3_result.json"
+    results_filename = f"ex4_result.json"
     results_path = current_dir.parent / "results" / results_filename
     
     results_path.parent.mkdir(exist_ok=True)
