@@ -22,7 +22,7 @@ import re
 class NewsAPIScraper:
     def __init__(self, api_key: str = '7eb571b97f8440118c46dc8c74279e0e'):
         self.api_key = api_key
-        self.companies = ["NVIDIA", "AMD", "Intel"]
+        self.companies = ["NVIDIA", "AMD", "Intel"]  # Keep API names for scraping
     
     def scrape_all_companies(self, days: int = 7) -> Dict[str, List[Dict]]:
         print("🚀 Starting news scraping...")
@@ -40,12 +40,10 @@ class NewsAPIScraper:
                     if response.status_code == 200:
                         articles = [{
                             "source": a.get('source', {}).get('name', ''),
-                            "author": a.get('author', ''),
                             "headline": a.get('title', ''),
                             "description": a.get('description', ''),
                             "url": a.get('url', ''),
                             "timestamp": a.get('publishedAt', ''),
-                            "scraped_date": date
                         } for a in response.json().get('articles', [])]
                         
                         company_articles[company].extend(articles)
@@ -103,11 +101,11 @@ class ContentFetcher:
                         news_article = Article(article['url'])
                         news_article.download()
                         news_article.parse()
-                        article['content'] = news_article.text or article.get('description', '')
+                        article['content'] = news_article.text or None
                     except:
-                        article['content'] = article.get('description', '')
+                        article['content'] = None
                 
-                article.pop('description', None)  # Remove description
+                article.delattr('description', None)  # Remove description
                 
                 if i % 10 == 0:
                     time.sleep(1)
@@ -120,7 +118,19 @@ class ContentFetcher:
         return enriched_data
 
 class NewsPipeline:
-    def __init__(self, data_dir: str = "../data"):
+    def __init__(self, data_dir: str = None):
+        # Auto-detect data directory based on current location
+        if data_dir is None:
+            # Find the HCI-Summarize_agent directory
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            # Go up until we find the project root (contains data directory)
+            while current_dir and not os.path.exists(os.path.join(current_dir, "data")):
+                parent = os.path.dirname(current_dir)
+                if parent == current_dir:  # Reached filesystem root
+                    break
+                current_dir = parent
+            data_dir = os.path.join(current_dir, "data")
+        
         self.data_dir = data_dir
         self.raw_dir = os.path.join(data_dir, "raw")
         self.filtered_dir = os.path.join(data_dir, "filtered")
@@ -137,10 +147,53 @@ class NewsPipeline:
         self.filter = NewsFilter()
         self.content_fetcher = ContentFetcher()
     
-    def save_checkpoint(self, stage: str, data: Dict, timestamp: str = None) -> str:
+    def transform_to_dataset_format(self, company_data: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
+        """Transform data to match the 19092025.json format"""
+        formatted_data = {}
+        
+        company_name_map = {
+            "NVIDIA": "Nvidia",
+            "AMD": "AMD", 
+            "Intel": "Intel"
+        }
+        
+        for company, articles in company_data.items():
+            formatted_company_name = company_name_map.get(company, company)
+            formatted_articles = []
+            
+            for article in articles:
+                # Parse timestamp to extract just the date
+                timestamp = article.get('timestamp', '')
+                if timestamp:
+                    try:
+                        # Parse the timestamp and extract just the date
+                        if 'T' in timestamp:  # ISO format like "2025-09-18T22:23:04Z"
+                            date_part = timestamp.split('T')[0]
+                        else:
+                            date_part = timestamp[:10]  # Take first 10 characters (YYYY-MM-DD)
+                    except:
+                        date_part = timestamp
+                else:
+                    date_part = ''
+                
+                # Only keep the required fields in the correct format
+                formatted_article = {
+                    "headline": article.get('headline', ''),
+                    "content": article.get('content', ''),
+                    "source": article.get('source', ''),
+                    "url": article.get('url', ''),
+                    "timestamp": date_part
+                }
+                formatted_articles.append(formatted_article)
+            
+            formatted_data[formatted_company_name] = formatted_articles
+        
+        return formatted_data
+    
+    def save_checkpoint(self, stage: str, data: Dict, timestamp: str = None, transform_format: bool = False) -> str:
         """Save data checkpoint"""
         if not timestamp:
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            timestamp = datetime.now().strftime('%Y-%m-%d')
         
         # Choose directory based on stage
         if stage == "raw":
@@ -155,8 +208,11 @@ class NewsPipeline:
         filename = f"{stage}_{timestamp}.json"
         filepath = os.path.join(target_dir, filename)
         
+        # Transform data to dataset format if requested
+        data_to_save = self.transform_to_dataset_format(data) if transform_format else data
+        
         with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+            json.dump(data_to_save, f, indent=2, ensure_ascii=False)
         
         print(f"💾 Checkpoint saved: {filepath}")
         return filepath
@@ -184,7 +240,7 @@ class NewsPipeline:
         print("\n=== Stage 3: Content Fetching (with checkpoints) ===")
         filtered_file = self.save_checkpoint("filtered", filtered_data, timestamp)
         enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_content_per_company)
-        final_file = self.save_checkpoint("final", enriched_data, timestamp)
+        final_file = self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         print(f"\n⚡ Hybrid pipeline complete! Final data: {final_file}")
         return final_file
@@ -200,12 +256,12 @@ class NewsPipeline:
             filtered_data = self.filter.filter_company_data(data)
             self.save_checkpoint("filtered", filtered_data, timestamp)
             enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_content_per_company)
-            return self.save_checkpoint("final", enriched_data, timestamp)
+            return self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         elif stage == "filtered":
             # Continue with content fetching
             enriched_data = self.content_fetcher.enrich_articles(data, max_content_per_company)
-            return self.save_checkpoint("final", enriched_data, timestamp)
+            return self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         else:
             print("❌ Invalid stage. Use 'raw' or 'filtered'")
@@ -220,12 +276,16 @@ class NewsPipeline:
             # Use provided data
             new_data = data_source
         
+        # Transform data to the correct format
+        new_data = self.transform_to_dataset_format(new_data)
+        
         # Load existing dataset or create new one
         if os.path.exists(self.dataset_file):
             with open(self.dataset_file, 'r', encoding='utf-8') as f:
                 dataset = json.load(f)
         else:
-            dataset = {}
+            # Initialize with empty arrays for each company
+            dataset = {"Nvidia": [], "AMD": [], "Intel": []}
         
         # Update dataset
         total_added = 0
@@ -233,11 +293,11 @@ class NewsPipeline:
             if company not in dataset:
                 dataset[company] = []
             
-            existing_urls = {article['url'] for article in dataset[company]}
+            existing_urls = {article['url'] for article in dataset[company] if article.get('url')}
             added_count = 0
             
             for article in articles:
-                if article['url'] not in existing_urls:
+                if article.get('url') and article['url'] not in existing_urls:
                     dataset[company].append(article)
                     existing_urls.add(article['url'])
                     added_count += 1
@@ -257,13 +317,13 @@ def main():
     
     print("🌟 News Processing Pipeline")
     print("=" * 50)
-    print("1. Hybrid pipeline (recommended)")
+    print("1. News Scraping and Processing")
     print("2. Resume from checkpoint")
     
     choice = input("\nSelect mode (1-2): ").strip()
     
     if choice == "1":
-        result = pipeline.run_hybrid_pipeline(days=3, max_content_per_company=20)
+        result = pipeline.run_hybrid_pipeline(days=7, max_content_per_company=20)
         pipeline.update_dataset(result)
     
     elif choice == "2":
