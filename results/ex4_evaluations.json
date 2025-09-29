@@ -1,0 +1,43 @@
+[
+  {
+    "headline": "If you're looking for a gaming laptop on a budget, this is it",
+    "evaluation": {
+      "summary_evaluation": {
+        "relevance": {
+          "score": 1.0,
+          "reasoning": "The summary accurately reflects the core message of the original content, which is about a discount."
+        },
+        "coherence": {
+          "score": 1.0,
+          "reasoning": "The summary is a clear, complete sentence that flows well."
+        },
+        "conciseness": {
+          "score": 1.0,
+          "reasoning": "Given the brevity of the original content, the summary is concise and to the point."
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "reasoning": "All details in the summary are directly supported by the original content."
+        }
+      },
+      "impact_trend_evaluation": {
+        "correctness": {
+          "score": 1.0,
+          "reasoning": "The analysis correctly identifies the core financial element (discount) and extrapolates logical business implications."
+        },
+        "depth": {
+          "score": 0.9,
+          "reasoning": "The analysis provides a good level of depth by discussing strategic aims, potential negative impacts (reduced margins), and long-term considerations."
+        },
+        "logical_consistency": {
+          "score": 1.0,
+          "reasoning": "The reasoning is sound, connecting the discount directly to potential business outcomes without contradiction."
+        },
+        "actionable_insights": {
+          "score": 0.9,
+          "reasoning": "The analysis highlights clear objectives of such a promotion and factors to consider for its success, offering valuable insights."
+        }
+      }
+    }
+  }
+]

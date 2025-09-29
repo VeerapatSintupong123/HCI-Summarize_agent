@@ -1,21 +1,24 @@
+#leader.py
 import os
 import json
 import logging
-import requests
-from typing import List, Dict, Any
 from dotenv import load_dotenv
-from smolagents import CodeAgent, InferenceClientModel
-from langfuse import get_client
+from smolagents import OpenAIServerModel, tool, ToolCallingAgent
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
 from pathlib import Path
+from langfuse import get_client
 
+# --- Load env ---
 load_dotenv()
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("leader")
 
-HF_MODEL_ID = os.environ.get("HF_LEADER_MODEL_ID", None)
-WORKER_URL = os.environ.get("WORKER_URL")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
+
+config_json = os.getenv("COMPANY_CONFIG")
+COMPANY_CONFIG = json.loads(config_json)
+print(COMPANY_CONFIG)
 
 langfuse = get_client()
 if langfuse.auth_check():
@@ -24,106 +27,133 @@ else:
     print("Authentication failed. Please check your credentials and host.")
 SmolagentsInstrumentor().instrument()
 
-def make_agent():
-    hf_token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-    model = InferenceClientModel(model_id=HF_MODEL_ID, token=hf_token)
-    return CodeAgent(tools=[], model=model, add_base_tools=False)
+model = OpenAIServerModel(
+    model_id=HF_LEADER_MODEL_ID,
+    api_base="https://generativelanguage.googleapis.com/v1beta/",
+    api_key=GEMINI_API_KEY,
+)
 
-AGENT = make_agent()
+# --- Import Worker Agent ---
+from agents.worker import summary_worker_agent,analysis_worker_agent
 
-def generate_initial_guide(content: str) -> str:
-    prompt = f"""
-Content: {content}
+# --- Leader Agent (Orchestrator) ---
+leader = ToolCallingAgent(
+    model=model,
+    tools=[],                  # leader ไม่มี tool เอง
+    managed_agents=[summary_worker_agent, analysis_worker_agent],   # จัดการ worker
+    name="Leader",
+    description="Coordinates tasks and delegates to worker agent",
+    stream_outputs=False,
+)
 
-You are the Leader (coordinator). Read the Content and think about what the worker needs to retrieve and summarize to best assess *financial impact*.
 
-Produce a concise initial guide for the worker that can also serve as a search query for financial news about NVIDIA, AMD, or INTEL. Focus on retrieving content that includes:
-- Key financial metrics: revenue, profit, EPS, margins, growth rates
-- Timeframes: quarterly, yearly, or recent updates
-- Major company announcements affecting finances: earnings reports, guidance, mergers, product launches
-- Priority entities: NVIDIA, AMD, INTEL
-- Tone: concise, numbers-first, factual
+# --- Leader Logic (ปรับปรุงใหม่) ---
+def process_news_item(item):
+    """
+    Processes a single news item to get a summary and impact trend analysis.
+    """
+    headline = item.get("headline", "")
+    content = item.get("content", "")
+    logger.info("Processing headline: %s", headline)
 
-Return output in 1 string only and in 1 line and not use bullet.
-Return the guide as short plain text (NO JSON).
-- Output format example: "NVIDIA AMD INTEL revenue profit EPS margins growth rates quarterly yearly earnings reports guidance mergers product
-  launches financial news"
+    # --- Start: Recommended Prompt (Updated) ---
+    query = f"""
+    You are the Leader Agent, an expert orchestrator. Your primary goal is to manage a team of specialist agents to process a news article and produce a combined JSON output.
 
-"""
-    out = AGENT.run(prompt)
-    return out.strip()
+    **Available Agents:**
+    - `Summary_Worker_Agent`: Specializes in summarizing text.
+    - `Analysis_Worker_Agent`: Specializes in analyzing financial impact and trends.
 
-def send_to_worker(guide: str, worker_url: str = WORKER_URL):
-    payload = {"guide": guide}
-    r = requests.post(worker_url, json=payload, timeout=60)
-    r.raise_for_status()
-    return r.json()
+    **Input Data:**
+    - News Headline: "{headline}"
+    - News Content: "{content}"
 
-def analyze_impact_trend(summary: str) -> str:
-    prompt = f"""
-You are a financial trend analyst. Read the following summary:
+    **Your Task Instructions (The Plan):**
+    1.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
+    2.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.** The analysis should:
+        - Identify all key financial implications (both positive and negative).
+        - Consider potential short-term and long-term effects on the company's market position and stock value.
+        - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
+    3.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
 
-{summary}
+    **Strict Output Requirements:**
+    Your final response MUST be a single, compact line of valid JSON. Do not include any text, explanations, or markdown code blocks. All special characters must be properly escaped.
 
-Based only on the financial context, provide a short **financial impact trend analysis**
-for NVIDIA, AMD, or INTEL.
+    **Example of a valid, single-line response:**
+    {{"summary": "NVIDIA announced a new AI chip...", "financial_impact_trend": "The introduction of the new AI chip is expected to positively impact NVIDIA's stock by reinforcing its technological leadership. Short-term, this could lead to a stock price increase due to investor confidence. Long-term, it solidifies their competitive advantage against rivals, potentially leading to sustained revenue growth in the data center segment."}}
+    """
+    worker_response_str = leader.run(query)
+    
+    # พยายามแปลงผลลัพธ์จาก Worker ให้เป็น Dictionary
+    try:
+        # LLM อาจจะตอบกลับมาพร้อมกับ Markdown code block, เราต้อง clean ก่อน
+        if worker_response_str.strip().startswith("```json"):
+            worker_response_str = worker_response_str.strip()[7:-3]
+        
+        worker_data = json.loads(worker_response_str)
+        summary = worker_data.get("summary", "Failed to get summary.")
+        financial_impact_trend = worker_data.get("financial_impact_trend", "Failed to get impact analysis.")
+    except (json.JSONDecodeError, AttributeError):
+        logger.error(f"Could not parse JSON response from worker: {worker_response_str}")
+        summary = "Error: Worker returned an invalid format."
+        financial_impact_trend = worker_response_str # เก็บคำตอบดิบไว้ในกรณีที่เกิดข้อผิดพลาด
 
-Return output in 1 string only and in 1 line and not use bullet.
-Return the guide as short plain text (NO JSON).
-- Be concise, professional, and numbers/impact oriented.
-- Output format example: "Positive – Nvidia revenue growth and strong AI chip demand"
-"""
-    out = AGENT.run(prompt)
-    return out.strip()
-
-def process_items(items: List[Dict[str, Any]], worker_url: str = WORKER_URL, limit: int = None):
-    results = []
-    if limit:
-        items = items[:limit]  # จำกัดจำนวนข่าว
-    for item in items:
-        headline = item.get("headline", "")
-        content = item.get("content", "")
-        logger.info("Processing headline: %s", headline)
-
-        guide = generate_initial_guide(content)
-        worker_resp = send_to_worker(guide, worker_url)
-        worker_summary = worker_resp.get("summary", "")
-        impact_trend = analyze_impact_trend(worker_summary)
-
-        result = {
-            "headline": headline,
-            "content": content,
-            "guide": guide,
-            "worker_summary": worker_summary,
-            "impact_trend": impact_trend,
-        }
-        results.append(result)
-    return results
+    # ประกอบผลลัพธ์สุดท้าย
+    result = {
+        "headline": headline,
+        "content": content,
+        "summary": summary,
+        "financial_impact_trend": financial_impact_trend,
+    }
+    return result
 
 if __name__ == "__main__":
-    # โหลดไฟล์ข่าวจาก JSON
+    # --- Configuration ---
+    # ระบุบริษัทและจำนวนข่าวที่ต้องการในรูปแบบ Dictionary
+    # Key คือชื่อบริษัท, Value คือจำนวนข่าว (ใช้ 0 หากต้องการทั้งหมด)
+    # COMPANY_CONFIG = {
+    #     "Nvidia": 1,
+    #     "Intel": 1,
+    #     "AMD": 1,
+    # }
+    # ---------------------
+
+    # 1. โหลดข้อมูลข่าวจากไฟล์
     current_dir = Path(__file__).parent
     json_path = current_dir.parent / "scrape_news" / "22092025.json"
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            all_news_data = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: News file not found at {json_path}")
+        exit()
 
-    # รวมข่าวจากทุก entity เป็น list เดียว
-    all_items = []
-    for company, items in data.items():
-        all_items.extend(items)
+    # 2. รวบรวมข่าวตาม Configuration
+    items_to_process = []
+    for company, limit in COMPANY_CONFIG.items():
+        company_news = all_news_data.get(company, []) # ดึงข่าวของบริษัท, ถ้าไม่เจอก็ได้ List ว่าง
+        
+        # จำกัดจำนวนข่าวตาม limit (ถ้า limit ไม่ใช่ None)
+        if limit is not None and limit > 0:
+            company_news = company_news[:limit]
+            
+        items_to_process.extend(company_news)
+        print(f"Collected {len(company_news)} articles for {company}.")
 
-    # 🔹 เลือกจำนวนข่าวที่จะประมวลผล (None = ทั้งหมด)
-    LIMIT = 1  
+    if not items_to_process:
+        print("No news items found for the specified configuration. Exiting.")
+        exit()
 
-    out = process_items(all_items, limit=LIMIT)
+    # 3. ประมวลผลข่าวที่รวบรวมมา
+    print(f"\nStarting processing for a total of {len(items_to_process)} news article(s)...\n")
+    final_results = [process_news_item(item) for item in items_to_process]
 
-    # 🔹 บันทึกผลลัพธ์เป็นไฟล์ JSON โดย append ต่อไปเรื่อยๆ
-    results_path = current_dir.parent / "results" / "result.json"
-
-
+    # 4. บันทึกผลลัพธ์
+    results_filename = f"ex4_result.json"
+    results_path = current_dir.parent / "results" / results_filename
+    
+    results_path.parent.mkdir(exist_ok=True)
     with open(results_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+        json.dump(final_results, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Results saved to {results_path}")
-
-
+    print(f"\n✅ Detailed analysis results saved to {results_path}")
