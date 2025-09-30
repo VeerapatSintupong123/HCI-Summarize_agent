@@ -129,4 +129,4 @@ graph_retriever = ToolCallingAgent(
     stream_outputs=False,
 )
 
-graph_retriever.run("Give me a 7-day summary of news for Nvidia. List 5 entities related to Nvidia. List 5 relations related to Nvidia. What are the relations between Nvidia and ARM?")
+# graph_retriever.run("Give me a 7-day summary of news for Nvidia. List 5 entities related to Nvidia. List 5 relations related to Nvidia. What are the relations between Nvidia and ARM?")

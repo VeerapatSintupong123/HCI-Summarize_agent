@@ -35,13 +35,14 @@ model = OpenAIServerModel(
 
 # --- Import Worker Agent ---
 from agents.worker import summary_worker_agent,analysis_worker_agent
+from agents.graph_retriever import graph_retriever
 
 # --- Leader Agent (Orchestrator) ---
 leader = ToolCallingAgent(
     model=model,
     tools=[],                  # leader ไม่มี tool เอง
-    managed_agents=[summary_worker_agent, analysis_worker_agent],   # จัดการ worker
-    name="Leader1",
+    managed_agents=[summary_worker_agent, analysis_worker_agent, graph_retriever],   # จัดการ worker
+    name="Leader2",
     description="Coordinates tasks and delegates to worker agent",
     stream_outputs=False,
 )
@@ -63,20 +64,27 @@ def process_news_item(item):
     **Available Agents:**
     - `Summary_Worker_Agent`: Specializes in summarizing text.
     - `Analysis_Worker_Agent`: Specializes in analyzing financial impact and trends.
+    - `graph_retriever`: Specializes in extracting entities and relationships from a knowledge graph.
 
     **Input Data:**
     - News Headline: "{headline}"
     - News Content: "{content}"
 
     **Your Task Instructions (The Plan):**
-    1.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
+    1.  **Extract Graph Context (Detailed Sub-plan):** Delegate to the `graph_retriever` with the following logical steps:
+        a. **Identify Primary Company:** First, determine the primary chipmaker (NVIDIA, AMD, or Intel) from the news headline.
+        b. **Get Specific Summary:** Use `get_7day_summary` for that primary chipmaker to get focused recent context.
+        c. **Find All Related Entities:** Use `get_entities_from_chipmaker` to list all known associated entities (companies, products, people).
+        d. **Deep Dive on Relationships:** This is crucial. Identify other key entities mentioned *in the news content*. For each of these secondary entities, use `get_relations_between_entities` to find the precise relationship between the primary company and the secondary entity. This will uncover the direct implications of the news.
+        e. **Consolidate Findings:** Combine all retrieved information (summary, entity list, and specific relationships) into a structured context report.    
+    2.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
     **Crucially, you MUST instruct it to first use the `local_retriever_tool` to search for other relevant news articles published on the same day.** The goal is to identify related events or announcements. The final summary must then integrate the content of the main article with the context from any related same-day news it finds, providing a holistic overview.
-    2.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.
+    3.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.
     **Crucially, you MUST instruct it to also use the `local_retriever_tool` to find related financial news, market trends, or competitor announcements from the same day.** After retrieving this vital same-day context, it must perform a comprehensive analysis. The analysis should explain how the main news item, when viewed alongside other events of the day, impacts financial trends and market sentiment.
         - Identify all key financial implications (both positive and negative).
         - Consider potential short-term and long-term effects on the company's market position and stock value.
         - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
-    3.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
+    4.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
 
     **Strict Output Requirements:**
     Your final response MUST be a single, compact line of valid JSON. Do not include any text, explanations, or markdown code blocks. All special characters must be properly escaped.
@@ -152,7 +160,7 @@ if __name__ == "__main__":
     final_results = [process_news_item(item) for item in items_to_process]
 
     # 4. บันทึกผลลัพธ์
-    results_filename = f"lab1.json"
+    results_filename = f"lab2.json"
     results_path = current_dir.parent / "results" / results_filename
     
     results_path.parent.mkdir(exist_ok=True)
