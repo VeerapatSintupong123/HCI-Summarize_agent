@@ -73,32 +73,34 @@ search_agent = ToolCallingAgent(
 
 # --- Run standalone test ---
 if __name__ == "__main__":
-    query = "Tesla Q2 2024 earnings report"
+    query = "H200"
     max_results_to_test = [5, 10, 20]  # Different max_results values to compare
 
-    answers = []
+    search_agent.run(f"Search for: {query} with default max_results")
 
-    for max_res in max_results_to_test:
-        print(f"\n{'='*20} Testing with max_results={max_res} {'='*20}")
+    # answers = []
+
+    # for max_res in max_results_to_test:
+    #     print(f"\n{'='*20} Testing with max_results={max_res} {'='*20}")
         
-        # Create a new agent instance for each run to avoid state issues
-        agent = ToolCallingAgent(
-            model=model,
-            tools=[internet_search],
-            name=f"Search_Agent_max{max_res}",
-            description=(
-                "Search_Agent retrieves financial and company-related information from the internet. "
-                "It is used to understand keywords, retrieve stock prices, related stock movements, "
-                "or official company statements to support financial news summarization. "
-                "It always returns results in JSON format (title, link, snippet)."
-            ),
-            stream_outputs=False,
-        )
+    #     # Create a new agent instance for each run to avoid state issues
+    #     agent = ToolCallingAgent(
+    #         model=model,
+    #         tools=[internet_search],
+    #         name=f"Search_Agent_max{max_res}",
+    #         description=(
+    #             "Search_Agent retrieves financial and company-related information from the internet. "
+    #             "It is used to understand keywords, retrieve stock prices, related stock movements, "
+    #             "or official company statements to support financial news summarization. "
+    #             "It always returns results in JSON format (title, link, snippet)."
+    #         ),
+    #         stream_outputs=False,
+    #     )
         
-        result = agent.run(f"Search for: {query} with max_results={max_res}")
-        answers.append((max_res, result))
+    #     result = agent.run(f"Search for: {query} with max_results={max_res}")
+    #     answers.append((max_res, result))
     
-    for max_res, res in answers:
-        print(f"\n{'='*15} Final Answer (max_results={max_res}) {'='*15}")
-        print(res)
-        print("="*60 + "\n")
+    # for max_res, res in answers:
+    #     print(f"\n{'='*15} Final Answer (max_results={max_res}) {'='*15}")
+    #     print(res)
+    #     print("="*60 + "\n")
