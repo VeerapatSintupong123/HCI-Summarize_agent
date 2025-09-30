@@ -1,6 +1,11 @@
 import json
 import re
 from pathlib import Path
+import os
+from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # LangChain and HuggingFace Imports
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -10,7 +15,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 # --- Constants ---
 # The name of the folder where the vector database is stored.
-VECTOR_DB_FOLDER = "22092025_vector_db"
+VECTOR_DB_FOLDER = os.getenv("VECTOR_DB_FOLDER")
 # The HuggingFace model used for creating text embeddings.
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
@@ -144,7 +149,7 @@ if __name__ == "__main__":
     # Define the path to the source JSON relative to this script's location
     # Assumes 'scrape_news' and 'chunk_news' are sibling directories
     current_dir = Path(__file__).parent
-    json_path = current_dir.parent / "scrape_news" / "22092025.json"
+    json_path = current_dir.parent / "scrape_news" / os.getenv("TODAY_NEWS_FILENAME")
     save_path = current_dir / VECTOR_DB_FOLDER
 
     if not json_path.exists():

@@ -122,7 +122,8 @@ if __name__ == "__main__":
 
     # 1. โหลดข้อมูลข่าวจากไฟล์
     current_dir = Path(__file__).parent
-    json_path = current_dir.parent / "scrape_news" / "22092025.json"
+    input_filename = os.getenv("TODAY_NEWS_FILENAME")
+    json_path = current_dir.parent / "scrape_news" / input_filename
     try:
         with open(json_path, "r", encoding="utf-8") as f:
             all_news_data = json.load(f)
@@ -151,7 +152,7 @@ if __name__ == "__main__":
     final_results = [process_news_item(item) for item in items_to_process]
 
     # 4. บันทึกผลลัพธ์
-    results_filename = f"ex4_result.json"
+    results_filename = f"lab1.json"
     results_path = current_dir.parent / "results" / results_filename
     
     results_path.parent.mkdir(exist_ok=True)

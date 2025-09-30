@@ -1,0 +1,43 @@
+[
+  {
+    "headline": "If you're looking for a gaming laptop on a budget, this is it",
+    "evaluation": {
+      "summary_evaluation": {
+        "relevance": {
+          "score": 0.5,
+          "reasoning": "The summary correctly identifies the core saving detail but includes an inference from the headline (gaming laptop) and adds irrelevant, non-existent contextual information about other articles."
+        },
+        "coherence": {
+          "score": 0.8,
+          "reasoning": "The summary is generally easy to read and logically structured, despite the inclusion of an irrelevant sentence."
+        },
+        "conciseness": {
+          "score": 0.3,
+          "reasoning": "The summary is disproportionately long for the very short source content and contains unnecessary information about not finding other news articles."
+        },
+        "faithfulness": {
+          "score": 0.0,
+          "reasoning": "The statement about \"No additional relevant news articles from the same day (2025-09-30) were found\" is a clear hallucination and not present in the source content."
+        }
+      },
+      "impact_trend_evaluation": {
+        "correctness": {
+          "score": 0.0,
+          "reasoning": "The analysis fabricates external information regarding \"related news from 2025-09-21 about Intel,\" which is entirely absent from the provided source content."
+        },
+        "depth": {
+          "score": 0.3,
+          "reasoning": "While the analysis attempts to explore various impacts (sales, profit, market share), this depth is largely unsupported by the extremely limited source content and relies on fabricated external details, making it speculative rather than insightful."
+        },
+        "logical_consistency": {
+          "score": 0.4,
+          "reasoning": "The internal logical progression of how a discount affects sales and margins is generally sound. However, the introduction of fabricated external information (Intel news) undermines the overall consistency with the provided source content."
+        },
+        "actionable_insights": {
+          "score": 0.2,
+          "reasoning": "The insights provided are highly speculative and not truly actionable, as they are based on extremely limited source content and include fabricated information, lacking a concrete foundation for decision-making."
+        }
+      }
+    }
+  }
+]

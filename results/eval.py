@@ -9,12 +9,12 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_WORKER_MODEL_ID = os.getenv("HF_WORKER_MODEL_ID", "gemini-2.5-flash")
 HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
-
+eval_filename = os.getenv("EVAL_FILENAME")
 # ---------------------------
 # Load Data
 # ---------------------------
 current_dir = Path(__file__).parent
-result_path = current_dir.parent / "results" / "ex4_result.json"
+result_path = current_dir.parent / "results" / eval_filename
 
 if not result_path.exists():
     raise FileNotFoundError(f"❌ File not found: {result_path}")
@@ -147,7 +147,8 @@ for news_item in news_data:
         })
 
 # 6. Save all the collected evaluations into a new JSON file
-output_path = current_dir.parent / "results" / "ex4_evaluations.json"
+output_filename = eval_filename.replace(".json", "_evaluated.json")
+output_path = current_dir.parent / "results" / output_filename
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(all_evaluations, f, indent=2, ensure_ascii=False)
 
