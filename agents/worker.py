@@ -78,7 +78,7 @@ summary_worker_agent = ToolCallingAgent(
     model=model,
     tools=[local_retriever_tool, get_current_date_tool],
     name="Summary_Worker_Agent",
-    description="Finds financial news using retriever and date tool",
+    description="Finds financial news using retriever and date tool and summarizes the content",
     stream_outputs=False,
 )
 

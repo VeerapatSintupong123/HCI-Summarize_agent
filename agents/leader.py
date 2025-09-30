@@ -70,7 +70,9 @@ def process_news_item(item):
 
     **Your Task Instructions (The Plan):**
     1.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
-    2.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.** The analysis should:
+    **Crucially, you MUST instruct it to first use the `local_retriever_tool` to search for other relevant news articles published on the same day.** The goal is to identify related events or announcements. The final summary must then integrate the content of the main article with the context from any related same-day news it finds, providing a holistic overview.
+    2.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.
+    **Crucially, you MUST instruct it to also use the `local_retriever_tool` to find related financial news, market trends, or competitor announcements from the same day.** After retrieving this vital same-day context, it must perform a comprehensive analysis. The analysis should explain how the main news item, when viewed alongside other events of the day, impacts financial trends and market sentiment.
         - Identify all key financial implications (both positive and negative).
         - Consider potential short-term and long-term effects on the company's market position and stock value.
         - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
