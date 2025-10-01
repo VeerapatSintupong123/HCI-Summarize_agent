@@ -36,12 +36,13 @@ model = OpenAIServerModel(
 # --- Import Worker Agent ---
 from agents.worker import summary_worker_agent,analysis_worker_agent
 from agents.graph_retriever import graph_retriever
+from agents.searcher import searcher
 
 # --- Leader Agent (Orchestrator) ---
 leader = ToolCallingAgent(
     model=model,
     tools=[],                  # leader ไม่มี tool เอง
-    managed_agents=[summary_worker_agent, analysis_worker_agent, graph_retriever],   # จัดการ worker
+    managed_agents=[summary_worker_agent, analysis_worker_agent, graph_retriever, searcher],   # จัดการ worker
     name="Leader3",
     description="Coordinates tasks and delegates to worker agent",
     stream_outputs=False,
