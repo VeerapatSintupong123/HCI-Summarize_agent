@@ -77,11 +77,13 @@ def process_news_item(item):
         c. **Find All Related Entities:** Use `get_entities_from_chipmaker` to list all known associated entities (companies, products, people).
         d. **Deep Dive on Relationships:** This is crucial. Identify other key entities mentioned *in the news content*. For each of these secondary entities, use `get_relations_between_entities` to find the precise relationship between the primary company and the secondary entity. This will uncover the direct implications of the news.
         e. **Consolidate Findings:** Combine all retrieved information (summary, entity list, and specific relationships) into a structured context report.    
+        - **MANDATORY DELAY:** Before Start this step, you **MUST** instruct it to call the `delay_tool` with `seconds=90`. This is a critical step for rate limit management.
     
+        
     2.  **Delegation for Summary:** Delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
         **To perform this task, it MUST use the 'context report' from the `graph_retriever` to enrich its summary.**
         Then, instruct it to use the `local_retriever_tool` to search for other relevant news articles published on the same day. The final summary must integrate the main article's content with the context from the graph, the market briefing, and any related same-day news it finds, providing a truly holistic overview.
-        - **MANDATORY DELAY:** After it has generated the summary, you **MUST** instruct it to call the `delay_tool` with `seconds=90` before finishing its turn. This is a critical step for rate limit management.
+        - **MANDATORY DELAY:** Before Start this step, you **MUST** instruct it to call the `delay_tool` with `seconds=90`. This is a critical step for rate limit management.
 
     3.  **Delegation for Comprehensive Analysis:** Delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a comprehensive yet accessible analysis of the financial impact and resulting trends.
         **To perform its analysis, it MUST integrate insights from the 'context report' (from `graph_retriever`) with the main news article.**
@@ -89,6 +91,7 @@ def process_news_item(item):
         - Identify all key financial implications (both positive and negative).
         - Consider potential short-term and long-term effects on the company's market position and stock value.
         - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
+        - **MANDATORY DELAY:** Before Start this step, you **MUST** instruct it to call the `delay_tool` with `seconds=90`. This is a critical step for rate limit management.
 
     4.  **Final Output Generation:** After receiving the results from both Summary_Worker_Agent and Analysis_Worker_Agent, combine them into a single, final JSON object.
 

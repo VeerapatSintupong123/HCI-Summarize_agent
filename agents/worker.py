@@ -103,7 +103,7 @@ summary_worker_agent = ToolCallingAgent(
 # --- Analysis Worker Agent ---
 analysis_worker_agent = ToolCallingAgent(
     model=model,
-    tools=[local_retriever_tool, get_current_date_tool],
+    tools=[local_retriever_tool, get_current_date_tool, delay_tool],
     name="Analysis_Worker_Agent",
     description="Analyze financial impact trends from financial news using retriever and date tool",
     stream_outputs=False,

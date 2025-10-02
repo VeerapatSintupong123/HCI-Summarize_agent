@@ -515,6 +515,23 @@ def enhanced_internet_search(
     except Exception as e:
         return json.dumps([{"error": f"Enhanced search failed: {str(e)}"}], indent=2)
 
+@tool
+def delay_tool(seconds: int) -> str:
+    """
+    Pauses the execution for a specified number of seconds.
+    Use this tool to manage rate limits when instructed by the orchestrator.
+
+    Args:
+        seconds (int): The number of seconds to wait.
+
+    Returns:
+        str: A confirmation message that the delay has completed.
+    """
+    print(f"-> Tool 'delay_tool' called. Waiting for {seconds} seconds...")
+    time.sleep(seconds)
+    print("-> Delay finished.")
+    return f"Successfully delayed for {seconds} seconds."
+
 model = OpenAIServerModel(
     model_id="gemini-2.5-flash",
     api_base="https://generativelanguage.googleapis.com/v1beta/",
@@ -523,7 +540,7 @@ model = OpenAIServerModel(
 
 enhanced_search_agent = ToolCallingAgent(
     model=model,
-    tools=[enhanced_internet_search],
+    tools=[delay_tool,enhanced_internet_search],
     name="Enhanced_Search_Agent",
     description=(
         "You are a specialized search tool that ONLY performs internet searches and returns "
