@@ -4,6 +4,7 @@ from smolagents import ToolCallingAgent, InferenceClientModel, tool, OpenAIServe
 from chunk_news.vector_db import get_retriever
 from datetime import datetime
 from tavily import TavilyClient
+import time
 
 # --- Load env ---
 load_dotenv()
@@ -73,10 +74,27 @@ def get_current_date_tool() -> str:
     print("-> Tool 'get_current_date_tool' called.")
     return datetime.now().strftime("%Y-%m-%d")
 
+@tool
+def delay_tool(seconds: int) -> str:
+    """
+    Pauses the execution for a specified number of seconds.
+    Use this tool to manage rate limits when instructed by the orchestrator.
+
+    Args:
+        seconds (int): The number of seconds to wait.
+
+    Returns:
+        str: A confirmation message that the delay has completed.
+    """
+    print(f"-> Tool 'delay_tool' called. Waiting for {seconds} seconds...")
+    time.sleep(seconds)
+    print("-> Delay finished.")
+    return f"Successfully delayed for {seconds} seconds."
+
 # --- Summary Worker Agent ---
 summary_worker_agent = ToolCallingAgent(
     model=model,
-    tools=[local_retriever_tool, get_current_date_tool],
+    tools=[local_retriever_tool, get_current_date_tool, delay_tool],
     name="Summary_Worker_Agent",
     description="Finds financial news using retriever and date tool and summarizes the content",
     stream_outputs=False,

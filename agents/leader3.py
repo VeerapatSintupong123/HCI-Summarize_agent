@@ -36,13 +36,13 @@ model = OpenAIServerModel(
 # --- Import Worker Agent ---
 from agents.worker import summary_worker_agent,analysis_worker_agent
 from agents.graph_retriever import graph_retriever
-from agents.searcher import searcher
+from agents.enhanced_searcher import enhanced_search_agent
 
 # --- Leader Agent (Orchestrator) ---
 leader = ToolCallingAgent(
     model=model,
     tools=[],                  # leader ไม่มี tool เอง
-    managed_agents=[summary_worker_agent, analysis_worker_agent, graph_retriever, searcher],   # จัดการ worker
+    managed_agents=[summary_worker_agent, analysis_worker_agent, graph_retriever, enhanced_search_agent],   # จัดการ worker
     name="Leader3",
     description="Coordinates tasks and delegates to worker agent",
     stream_outputs=False,
@@ -66,7 +66,7 @@ def process_news_item(item):
     - `Summary_Worker_Agent`: Specializes in summarizing text.
     - `Analysis_Worker_Agent`: Specializes in analyzing financial impact and trends.
     - `graph_retriever`: Specializes in extracting entities and relationships from a knowledge graph.
-    - `Search_Agent`: Specializes in searching the web for foundational, encyclopedic information.
+    - `enhanced_search_agent`: A powerful search specialist that finds recent, high-impact business and financial news. It automatically expands queries, filters by source credibility, and analyzes the significance of search results, returning structured JSON.
 
 
     **Input Data:**
@@ -81,26 +81,28 @@ def process_news_item(item):
         d. **Deep Dive on Relationships:** This is crucial. Identify other key entities mentioned *in the news content*. For each of these secondary entities, use `get_relations_between_entities` to find the precise relationship between the primary company and the secondary entity. This will uncover the direct implications of the news.
         e. **Consolidate Findings:** Combine all retrieved information (summary, entity list, and specific relationships) into a structured context report.    
     
-    2.  **Gather Foundational Knowledge (Detailed Sub-plan):** Delegate to the `Search_Agent` with a clear mission to build a deep understanding of the concepts within the news.
-        a. **Identify Key Concepts:** First, identify crucial technical terms, product names, or concepts mentioned in the news content that require background information (e.g., "HBM3e memory", "CUDA Cores", "chiplet architecture").
-        b. **Formulate Encyclopedic Queries:** For each key concept, you MUST formulate search queries designed to find clear, factual, Wikipedia-style explanations. For example:
-            - "what is HBM3e memory technology wikipedia"
-            - "NVIDIA CUDA Cores explained"
-            - "history of Intel Core series"
-            - "AMD Zen architecture overview"
-        c. **Prioritize Factual Sources:** Instruct the agent to prioritize reliable, factual sources like Wikipedia, established tech publications (e.g., AnandTech, Tom's Hardware), or official company documentation over news articles or opinion pieces for this task.
-        d. **Consolidate Findings:** Combine the retrieved explanations and definitions into a "foundational knowledge brief". This brief will serve as an internal encyclopedia for the other agents.
-    
-    3.  **Delegation for Summary:** First, delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
-    **Crucially, you MUST instruct it to first use the `local_retriever_tool` to search for other relevant news articles published on the same day.** The goal is to identify related events or announcements. The final summary must then integrate the content of the main article with the context from any related same-day news it finds, providing a holistic overview.
-    
-    4.  **Delegation for Comprehensive Analysis:** Second, delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a **comprehensive yet accessible analysis of the financial impact and resulting trends.
-    **Crucially, you MUST instruct it to also use the `local_retriever_tool` to find related financial news, market trends, or competitor announcements from the same day.** After retrieving this vital same-day context, it must perform a comprehensive analysis. The analysis should explain how the main news item, when viewed alongside other events of the day, impacts financial trends and market sentiment.
+    2.  **Gather High-Impact Market Context (Detailed Sub-plan):** Delegate to the `enhanced_search_agent` to gather broader market and competitive context. Your goal is to find other significant, recent news that helps understand the landscape surrounding the main article.
+        a. **Identify Key Search Terms:** First, extract the core companies, products, and concepts from the news content (e.g., "NVIDIA H200", "data center revenue", "AMD MI300X", "Intel foundry").
+        b. **Formulate Strategic Queries:** For each key term, formulate a concise query for the `enhanced_internet_search` tool. The tool will automatically expand these queries for business context. Focus on finding related business news, not encyclopedic definitions. For example:
+            - "NVIDIA H200 data center market"
+            - "AMD financial guidance 2025"
+            - "Intel competition TSMC"
+        c. **Specify Search Focus:** Instruct the agent to use a `focus` of "financial" or "business". This leverages the tool's ability to filter out consumer-focused content and prioritize high-credibility business news sources.
+        d. **Consolidate Findings:** The tool will return a structured JSON list of pre-analyzed news articles. Consolidate this JSON output into a "market context briefing". This briefing, containing a list of relevant, high-impact articles with their significance rating, will provide critical external context for the summary and analysis agents.
+
+    3.  **Delegation for Summary:** Delegate the task of summarizing the provided news content to the `Summary_Worker_Agent`.
+        **To perform this task, it MUST use the 'context report' from the `graph_retriever` and the 'market context briefing' from the `enhanced_search_agent` to enrich its summary.**
+        Then, instruct it to use the `local_retriever_tool` to search for other relevant news articles published on the same day. The final summary must integrate the main article's content with the context from the graph, the market briefing, and any related same-day news it finds, providing a truly holistic overview.
+        - **MANDATORY DELAY:** After it has generated the summary, you **MUST** instruct it to call the `delay_tool` with `seconds=90` before finishing its turn. This is a critical step for rate limit management.
+
+    4.  **Delegation for Comprehensive Analysis:** Delegate the analysis task to the `Analysis_Worker_Agent`. Instruct it to provide a comprehensive yet accessible analysis of the financial impact and resulting trends.
+        **To perform its analysis, it MUST integrate insights from the 'context report' (from `graph_retriever`) and the 'market context briefing' (from `enhanced_search_agent`) with the main news article.**
+        Then, instruct it to also use the `local_retriever_tool` to find related financial news, market trends, or competitor announcements from the same day. The final analysis should explain how the main news item, when viewed alongside the graph context, market briefing, and other events of the day, impacts financial trends and market sentiment.
         - Identify all key financial implications (both positive and negative).
         - Consider potential short-term and long-term effects on the company's market position and stock value.
         - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
-    
-    5.  **Final Output Generation:** After receiving the results from both agents, combine them into a single, final JSON object.
+
+    5.  **Final Output Generation:** After receiving the results from both Summary_Worker_Agent and Analysis_Worker_Agent, combine them into a single, final JSON object.
 
     **Strict Output Requirements:**
     Your final response MUST be a single, compact line of valid JSON. Do not include any text, explanations, or markdown code blocks. All special characters must be properly escaped.
