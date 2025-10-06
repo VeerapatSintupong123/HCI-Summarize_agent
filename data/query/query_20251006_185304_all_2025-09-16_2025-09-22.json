@@ -1,0 +1,1709 @@
+{
+  "Nvidia": [
+    {
+      "source": "The Verge",
+      "headline": "Nvidia is partnering up with OpenAI to offer compute and cash",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/782624/nvidia-is-partnering-up-with-openai-to-offer-compute-and-cash",
+      "timestamp": "2025-09-22",
+      "content": "OpenAI is teaming up with Nvidia via a “strategic partnership” that will get the ChatGPT-maker more compute and more cash to develop new models on the road to superintelligence. The partnership, announced Monday, will allow OpenAI to “build and deploy at leas…"
+    },
+    {
+      "source": "Slashdot.org",
+      "headline": "Nvidia To Invest $100 Billion in OpenAI",
+      "url": "https://slashdot.org/story/25/09/22/1637225/nvidia-to-invest-100-billion-in-openai",
+      "timestamp": "2025-09-22",
+      "content": "Nvidia will invest up to $100 billion in OpenAI as the AI lab builds data centers requiring 10 gigawatts of power capacity. The 10-gigawatt deployment equals 4 to 5 million GPUs -- the same number Nvidia will ship globally this year. Building one gigawatt of …"
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Nvidia is investing up to $100 billion in OpenAI as part of an AI data center deal",
+      "url": "https://www.businessinsider.com/nvidia-investing-up-to-100-billion-openai-ai-deal-2025-9",
+      "timestamp": "2025-09-22",
+      "content": "The two tech titans announced a deal on Monday that will see OpenAI build out \"at least 10 gigawatts\" of AI data centers running Nvidia systems."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Nvidia plans to invest $100 billion into OpenAI. That's uh, a lot of money.",
+      "url": "https://www.businessinsider.com/nvidia-100-billion-openai-data-centers-scale-2025-9",
+      "timestamp": "2025-09-22",
+      "content": "$100 billion is worth something like 333 AI researchers with Meta salaries."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "How to trade the AI boom beyond chips",
+      "url": "https://finance.yahoo.com/video/trade-ai-boom-beyond-chips-213601170.html",
+      "timestamp": "2025-09-22",
+      "content": "When people talk about artificial intelligence stocks, they usually think of chip companies like Nvidia (NVDA) or companies working on large language models,..."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Super Micro (SMCI) Stock Trades Up, Here Is Why",
+      "url": "https://finance.yahoo.com/news/super-micro-smci-stock-trades-204708134.html",
+      "timestamp": "2025-09-22",
+      "content": "Shares of server solutions provider Super Micro (NASDAQ:SMCI) jumped 3% in the afternoon session after the company unveiled a new lineup of AI-optimized..."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Analysts react to Nvidia's $100 billion investment in OpenAI",
+      "url": "https://finance.yahoo.com/news/analysts-react-nvidias-100-billion-174101698.html",
+      "timestamp": "2025-09-22",
+      "content": "Nvidia has used its financial clout to keep its hardware central to the buildout of artificial intelligence systems.  By locking in OpenAI as a strategic..."
+    },
+    {
+      "source": "Stratechery.com",
+      "headline": "Nvidia and Intel, Tan’s Earnings Call Negotiation, Deal Specifics",
+      "url": "https://stratechery.com/2025/nvidia-and-intel-tans-earnings-call-negotiation-deal-specifics/",
+      "timestamp": "2025-09-22",
+      "content": "Intel and Nvidia have made a historic deal; it's good for Intel (and Nvidia), but doesn't solve their — and the U.S.'s — fundamental problems."
+    },
+    {
+      "source": "Al Jazeera English",
+      "headline": "Nvidia to invest billions in OpenAI as AI race heats up",
+      "url": "https://www.aljazeera.com/economy/2025/9/22/nvidia-to-invest-billions-in-openai-as-ai-race-heats-up",
+      "timestamp": "2025-09-22",
+      "content": "The company will also provide chips for OpenAI’s data centres."
+    },
+    {
+      "source": "Hackaday",
+      "headline": "Jenny’s Daily Drivers: KDE Linux",
+      "url": "https://hackaday.com/2025/09/22/jennys-daily-drivers-kde-linux/",
+      "timestamp": "2025-09-22",
+      "content": "Over this series test-driving operating systems, we’ve tried to bring you the unusual, the esoteric, or the less mainstream among the world of the desktop OS. It would become very boring very…"
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia and Intel’s partnership could introduce the huge performance upgrade for handheld gaming PCs I’ve been hoping for",
+      "url": "https://www.techradar.com/computing/cpu/nvidia-and-intels-partnership-could-introduce-the-huge-performance-upgrade-for-handheld-gaming-pcs-ive-been-hoping-for",
+      "timestamp": "2025-09-22",
+      "content": "AMD is arguably running away with the crown in the handheld gaming PC space, with its most powerful SoC challenging an Nvidia RTX GPU, but it might be in trouble after Nvidia and Intel's partnership."
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Nvidia and Intel’s collaborative PC chips might not happen for years",
+      "url": "https://www.pcworld.com/article/2915876/nvidia-and-intels-collaborative-pc-chips-might-not-happen-for-years.html",
+      "timestamp": "2025-09-22",
+      "content": "Neither Intel nor Nvidia have said exactly when the first fruits of its co-designed integrated CPUs will ship. But the thinking right now seems to be that it might a take a few years.\r\n\n\n\n\nNvidia announced a $5 billion investment into Intel last week, where I…"
+    },
+    {
+      "source": "Barchart.com",
+      "headline": "This Under-the-Radar Data Center Stock Is Soaring Thanks to the AI Boom",
+      "url": "https://www.barchart.com/story/news/34960304/this-under-the-radar-data-center-stock-is-soaring-thanks-to-the-ai-boom",
+      "timestamp": "2025-09-22",
+      "content": "With demand accelerating, Arista’s AI future looks dynamic."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "OpenAI and NVIDIA announce strategic partnership to deploy 10 gigawatts of NVIDIA systems",
+      "url": "https://biztoc.com/x/956917ac11c52198",
+      "timestamp": "2025-09-22",
+      "content": "News\n- Strategic partnership enables OpenAI to build and deploy at least 10 gigawatts of AI datacenters with NVIDIA systems representing millions of GPUs for OpenAI’s next-generation AI infrastructure.\n- To support the partnership, NVIDIA intends to invest up…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Bank of America shocks with AMD stock verdict post Nvidia-Intel deal",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_90d22509-969b-469e-8e89-32a72176fc0c",
+      "timestamp": "2025-09-21",
+      "content": null
+    },
+    {
+      "source": "Windows Central",
+      "headline": "It's insane to me that this mini PC can outperform an NVIDIA RTX 5090 with LLMs and AI workloads",
+      "url": "https://www.windowscentral.com/hardware/hp/hp-z2-mini-g1a-review",
+      "timestamp": "2025-09-21",
+      "content": "I've been testing the HP Z2 Mini (G1a), and it's an insanely capable PC that aims to be an all-in-one workstation for AI, LLMs, and other intense workloads."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "3 tech workers on H-1B visas detail their last 36 hours: canceled trips, anxious parents, and, finally, relief",
+      "url": "https://www.businessinsider.com/h1b-visa-holders-big-tech-last-anxiety-trump-eo-india-2025-9",
+      "timestamp": "2025-09-21",
+      "content": "Three H-1B visa holders who work in tech said their weekends were filled with panic, anxious parents' phone calls, and putting travel plans on hold."
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia AI sales to reach almost $400 billion by 2028, research claims - but then things will get a bit tricky for the world's largest company",
+      "url": "https://www.techradar.com/pro/nvidia-ai-sales-to-reach-almost-usd400-billion-by-2028-claims-research-and-then-things-will-get-a-bit-tricky-for-the-worlds-largest-company",
+      "timestamp": "2025-09-21",
+      "content": "Nvidia’s AI revenue may reach $400 billion by 2028 - yet slowing growth, rising costs, and competition could pose risks."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Nvidia and Intel's Massive Collaboration: What You Need to Know",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8033b3a1-5d53-48ef-aefb-33c7968a86e8",
+      "timestamp": "2025-09-21",
+      "content": null
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Stock market today: Dow, S&P 500, Nasdaq turn higher as Nvidia surges on OpenAI deal",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-turn-higher-as-nvidia-surges-on-openai-deal-234423447.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "US Steel changes course and will keep processing raw steel at Granite City plant in Illinois",
+      "url": "https://biztoc.com/x/cd4d6da022535782",
+      "timestamp": "2025-09-21",
+      "content": ""
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "A profile of Noah Urban, who was a key member of the Scattered Spider group because of his social engineering skills and is serving a 10-year prison sentence",
+      "url": "https://biztoc.com/x/0e4a790dbb4cf532",
+      "timestamp": "2025-09-21",
+      "content": ""
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "How Investors May Respond To BlackRock (BLK) Backing NVIDIA-Ready AI Data Centers in the UK",
+      "url": "https://finance.yahoo.com/news/investors-may-respond-blackrock-blk-110935960.html",
+      "timestamp": "2025-09-21",
+      "content": "Earlier this week, NVIDIA announced a partnership with CoreWeave, Microsoft, Nscale, and others to accelerate the AI industrial revolution in the United..."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "Linux Ready To Upstream Support For Google's PSP Encryption For TCP Connections",
+      "url": "https://www.phoronix.com/news/PSP-Encryption-Linux-6.18",
+      "timestamp": "2025-09-21",
+      "content": "Not to be confused with AMD's Platform Security Processor (PSP), but Google's PSP Security Protocol (PSP) for encryption in-transit for TCP network connections is now ready for the mainline kernel. This initial PSP encryption support for network connections i…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Dow, S&P 500, Nasdaq futures pull back from records as gold powers to fresh all-time high",
+      "url": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-futures-pull-back-from-records-as-gold-powers-to-fresh-all-time-high-234423591.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Stock market today: Dow, S&P 500, Nasdaq futures pull back from records as gold powers to fresh high",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-pull-back-from-records-as-gold-powers-to-fresh-high-234423457.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Dow, S&P 500, Nasdaq futures edge lower on heels of record highs",
+      "url": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-futures-edge-lower-on-heels-of-record-highs-234423326.html",
+      "timestamp": "2025-09-21",
+      "content": "Wall Street is debating what's next after the Fed's shift to rate cuts."
+    },
+    {
+      "source": "Forbes",
+      "headline": "How To Fix ‘Borderlands 4’ Confirmed Console Performance Problems",
+      "url": "https://www.forbes.com/sites/paultassi/2025/09/21/how-to-fix-borderlands-4-confirmed-console-performance-problems/",
+      "timestamp": "2025-09-21",
+      "content": "PS5 and Xbox have serious performance problems with Borderlands 4, and the way to fix them is a little goofy right now."
+    },
+    {
+      "source": "SiliconANGLE News",
+      "headline": "Intel-Nvidia: The baton passes to the CUDA era",
+      "url": "https://siliconangle.com/2025/09/20/intel-nvidia-baton-passes-cuda-era/",
+      "timestamp": "2025-09-21",
+      "content": "In our view, the Intel–Nvidia pact further accentuates Nvidia Corp.’s dominant market position and represents a milestone in the transition to the next era of computing. Just as Intel Corp. had a lock on the market in the ’80s and ’90s, Nvidia has now extende…"
+    },
+    {
+      "source": "Wired",
+      "headline": "Distillation Can Make AI Models Smaller and Cheaper",
+      "url": "https://www.wired.com/story/how-distillation-makes-ai-models-smaller-and-cheaper/",
+      "timestamp": "2025-09-20",
+      "content": "A fundamental technique lets researchers use a big, expensive model to train another model for less."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Abilene’s Energy Setup",
+      "url": "https://www.forbes.com/sites/johnwerner/2025/09/20/abilenes-energy-setup/",
+      "timestamp": "2025-09-20",
+      "content": "Crusoe spearheads Abilene’s Stargate buildout, financing, constructing, and harnessing renewable energy to power massive Nvidia GPU clusters for AI."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "‘Time to Sell,’ Warns Top Citi Analyst on Intel Stock after Nvidia-Fueled Rally",
+      "url": "https://biztoc.com/x/7a383d5d95a9bf6f",
+      "timestamp": "2025-09-20",
+      "content": "Top Citi analyst Christopher Danely downgraded Intel (INTC) to Sell from Neutral, even as he raised his price target to $29 from $24. The downgrade came after Intel surged nearly 23% on news that Nvidia (NVDA) will invest $5 billion for a 4% stake and partner…"
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "6 operating system luxuries Windows users have never known about Linux",
+      "url": "https://www.xda-developers.com/operating-system-luxuries-windows-users-have-never-known-about-linux/",
+      "timestamp": "2025-09-20",
+      "content": "Windows may seem easier, but Linux has a lot of advantages over it. You might not even know these features exist, but they're fantastic."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "CoreWeave, Inc. (CRWV)’s Deal With NVIDIA Is “Very Good,” Says Jim Cramer",
+      "url": "https://finance.yahoo.com/news/coreweave-inc-crwv-deal-nvidia-190514967.html",
+      "timestamp": "2025-09-20",
+      "content": "We recently published 9 Stocks on Jim Cramer’s Radar. CoreWeave, Inc. (NASDAQ:CRWV) is one of the stocks Jim Cramer recently discussed. CoreWeave, Inc..."
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "3 ways I benefited from overclocking my 60Hz monitor",
+      "url": "https://www.xda-developers.com/how-i-benefited-from-overclocking-my-60hz-monitor/",
+      "timestamp": "2025-09-20",
+      "content": "Sometimes, a few extra Hz is all you need"
+    },
+    {
+      "source": "ABC News (AU)",
+      "headline": "Bejing's ban on Nvidia chips shows China is catching up, say experts",
+      "url": "https://www.abc.net.au/news/2025-09-21/what-makes-china-confident-to-ban-nvdia-microchips/105795486",
+      "timestamp": "2025-09-20",
+      "content": "Beijing's decision this week to ban Chinese companies from using microchips made by US firm Nvidia indicates the country is increasingly confident about replacing them with domestically produced chips, experts say."
+    },
+    {
+      "source": "Fc2.com",
+      "headline": "NVIDIAとの協業後もArc GPUの開発は継続される",
+      "url": "https://northwood.blog.fc2.com/blog-entry-12853.html",
+      "timestamp": "2025-09-20",
+      "content": "Intel Arc GPUs Remain in Development, NVIDIA RTX iGPUs Are Complementary（TechPowerUp）Intel says blockbuster Nvidia deal doesn’t change its own roadmap（PC World）先日、IntelとNVIDIAの協業が発表され、“x86 RTX SoC”の開発が行われることなどが明らかにされたが、Intelによるとこの協業はあくまでも補完的なものであり、Intel自身のGPU…"
+    },
+    {
+      "source": "TheStreet",
+      "headline": "Analysts revamp Nvidia stock outlook on its investment in Intel",
+      "url": "https://www.thestreet.com/technology/analysts-revamp-nvidia-stock-outlook-on-its-investment-in-intel-",
+      "timestamp": "2025-09-20",
+      "content": "Analysts provided their opinion on Nvidia stock, following the company's $5 billion investment into Intel."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Daiwa Raises NVDA Target to $205, Says the Chipmaker Is Undervalued",
+      "url": "https://finance.yahoo.com/news/daiwa-raises-nvda-target-205-211036995.html",
+      "timestamp": "2025-09-20",
+      "content": "NVIDIA Corporation (NASDAQ:NVDA) is one of the AI Stocks Analysts Are Tracking Closely. On September 17, Daiwa reiterated the stock as “Outperform” and..."
+    },
+    {
+      "source": "Digitimes",
+      "headline": "Intel-Nvidia's twin strategy faces speed test, but PC path leads, says DIGITIMES analyst",
+      "url": "https://www.digitimes.com/news/a20250919VL203/nvidia-intel-gpu-cpu-packaging.html",
+      "timestamp": "2025-09-20",
+      "content": "Nvidia and Intel on Thursday detailed a sweeping product roadmap that links their CPU and GPU platforms, while underscoring continued collaboration with Taiwan Semiconductor Manufacturing Company (TSMC) and pointing to Intel's advanced packaging as an enabler."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Investing.com’s stocks of the week",
+      "url": "https://finance.yahoo.com/news/investing-com-stocks-week-083010242.html",
+      "timestamp": "2025-09-20",
+      "content": "Investing.com -- U.S. stocks rose on Friday and are on track for weekly gains following the Federal Reserve rate cut on Wednesday."
+    },
+    {
+      "source": "Digitimes",
+      "headline": "TSMC, Largan, Episil push back on hype with blunt market outlooks",
+      "url": "https://www.digitimes.com/news/a20250919PD226/tsmc-market-sic-episil-nvidia.html",
+      "timestamp": "2025-09-20",
+      "content": "SiC applications recently gained attention following reports that TSMC and Nvidia are pushing for advancements, elevating companies like Episil and its subsidiary EPI into the market limelight. Yet this enthusiasm quickly cooled when Episil chairman Jian-Hua …"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Wedbush: Nvidia–Intel (INTC) Deal Is a “Game Changer” for Struggling Chipmaker",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8621872a-de20-4848-acaa-aa69eb9c79d6",
+      "timestamp": "2025-09-20",
+      "content": null
+    },
+    {
+      "source": "Slashdot.org",
+      "headline": "Intel Says Blockbuster Nvidia Deal Doesn't Change Its Own Roadmap",
+      "url": "https://slashdot.org/story/25/09/19/019243/intel-says-blockbuster-nvidia-deal-doesnt-change-its-own-roadmap",
+      "timestamp": "2025-09-19",
+      "content": "If you're wondering what effect Intel's blockbuster deal with Nvidia will have on its existing product roadmaps, Intel has one message for you: it won't. PCWorld: \"We're not discussing specific roadmaps at this time, but the collaboration is complementary to …"
+    },
+    {
+      "source": "BBC News",
+      "headline": "Faisal Islam: Will the US tech bromance turn around the UK economy?",
+      "url": "https://www.bbc.com/news/articles/cn4w7wp24llo",
+      "timestamp": "2025-09-19",
+      "content": "In the week the UK hosted Donald Trump for a second state visit, the country also rolled out the red carpet for US tech firms."
+    },
+    {
+      "source": "Gizmodo.com",
+      "headline": "Nvidia Wants in on the Robotaxi Race",
+      "url": "https://gizmodo.com/nvidia-funds-robotaxis-self-driving-cars-wayze-2000661414",
+      "timestamp": "2025-09-19",
+      "content": "Nvidia is exploring $500 million investment in Wayve Technologies, a London-based AI startup."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Cadence Design And Nvidia Team To Create AI Data Center Digital Twin",
+      "url": "https://www.forbes.com/sites/karlfreund/2025/09/19/cadence-design-and-nvidia-team-to-create-ai-data-center-digital-twin/",
+      "timestamp": "2025-09-19",
+      "content": "Digital Twins will become the standard simulation platform for AI Factories. Cadence and Nvidia are working together to make Nvidia infrastructure models"
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "Dangerous PC hardware myths for novice PC builders",
+      "url": "https://www.xda-developers.com/most-dangerous-pc-hardware-myths-for-new-pc-builders/",
+      "timestamp": "2025-09-19",
+      "content": "Don't take every piece of PC building advice seriously"
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia gained $150 billion on Intel announcement, more than Intel market capitalization - netting a 30x return on its investment in 24 hours with just $5 billion",
+      "url": "https://www.techradar.com/pro/nvidia-gained-usd150-billion-on-intel-announcement-more-than-intel-market-capitalization-netting-a-30x-return-on-its-investment-in-24-hours-with-just-usd5-billion",
+      "timestamp": "2025-09-19",
+      "content": "Nvidia gained $150 billion in market value after shock Intel partnership announcement, rising to $4.28 trillion cap."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Intel Got $5 Billion, but Nvidia Could Be the Big Winner. Here’s Why",
+      "url": "https://biztoc.com/x/0fc46dddd53f043f",
+      "timestamp": "2025-09-19",
+      "content": "With the Intel deal, Nvidia may have just secured its computing dominance."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Forbes Daily: Intel Shares Spike After Deal With Rival Nvidia",
+      "url": "https://www.forbes.com/sites/daniellechemtob/2025/09/19/forbes-daily-intel-shares-spike-after-deal-with-rival-nvidia/",
+      "timestamp": "2025-09-19",
+      "content": "Today’s Forbes Daily newsletter covers the fallout from Kimmel's removal, the FTC sues Ticketmaster and Live Nation, Congress alarmed over TikTok deal and more."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Novice Investor’s Digest For Friday, September 19",
+      "url": "https://www.forbes.com/sites/catherinebrock/2025/09/19/novice-investors-digest-for-friday-september-19/",
+      "timestamp": "2025-09-19",
+      "content": "Stock prices hit new record highs after interest rates decline and Nvidia announces Intel investment. Also: all-at-once rebalancing or gradual?"
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia wants 10Gbps HBM4 to blunt AMD’s MI450, report claims — company said to be pushing suppliers for more bandwidth",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-wants-10gbps-hbm4-to-rival-amd-mi450",
+      "timestamp": "2025-09-19",
+      "content": "Nvidia is reportedly pressing its memory vendors to push beyond JEDEC’s official HBM4 baseline, reportedly requesting 10Gb/s-per-pin stacks for its 2026 Vera Rubin platform."
+    },
+    {
+      "source": "Lwn.net",
+      "headline": "Security updates for Friday",
+      "url": "https://lwn.net/Articles/1038802/",
+      "timestamp": "2025-09-19",
+      "content": "Security updates have been issued by Debian (chromium, cjson, and firefox-esr), Fedora (expat, gh, scap-security-guide, and xen), Oracle (container-tools:rhel8, firefox, grub2, and mysql:8.4), SUSE (busybox, busybox-links, element-web, kernel, shadowsocks-v2r…"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Asia’s Intel Suppliers Soar on Hopes of Nvidia Investment Boost",
+      "url": "https://biztoc.com/x/18e7332c57ac944f",
+      "timestamp": "2025-09-19",
+      "content": ""
+    },
+    {
+      "source": "SamMobile",
+      "headline": "Samsung may supply 10,000 HBM3E chips to Nvidia",
+      "url": "https://www.sammobile.com/news/samsung-may-supply-10000-hbm3e-chips-nvidia/",
+      "timestamp": "2025-09-19",
+      "content": "Last month, we reported that Samsung’s HBM3E chips might have finally met Nvidia's quality standards. Well, we now have information about how many of those chips Samsung will supply to Nvidia for its AI accelerators. According to a report from AlphaBiz, Samsu…"
+    },
+    {
+      "source": "The Verge",
+      "headline": "Nvidia invests $5 billion into Intel to jointly develop PC and data center chips",
+      "url": "https://www.theverge.com/news/780792/nvidia-intel-investment-pc-chips-data-center",
+      "timestamp": "2025-09-18",
+      "content": "Nvidia is throwing Intel a $5 billion life raft, just weeks after similar stakes from the US government and SoftBank. Nvidia is investing $5 billion in Intel common stock in a collaboration that will see the pair “jointly develop multiple generations of custo…"
+    },
+    {
+      "source": "Gizmodo.com",
+      "headline": "Nvidia Appeals to Trump With a $5 Billion Intel Stake",
+      "url": "https://gizmodo.com/nvidia-appeals-to-trump-with-a-5-billion-intel-stake-2000660647",
+      "timestamp": "2025-09-18",
+      "content": "The two competitors will collaborate to develop PC chips and data centers."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Nvidia CEO explains why he's making a $5 billion bet on struggling chip giant Intel",
+      "url": "https://www.businessinsider.com/intel-investment-nvidia-jensen-huang-stock-ai-chip-plans-2025-9",
+      "timestamp": "2025-09-18",
+      "content": "\"Having Jensen's blessing is priceless,\" wrote Bernstein senior analyst  Stacy Rasgon about Nvidia's $5 billion investment in Intel."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Huawei Unveils New AI Tech to Take on Nvidia",
+      "url": "https://finance.yahoo.com/video/huawei-unveils-ai-tech-nvidia-144754921.html",
+      "timestamp": "2025-09-18",
+      "content": "Huawei Technologies Co. unveiled new technology, including SuperPod cluster designs and AI accelerators, to challenge Nvidia which dominates the market..."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Ives Says Pop the Champagne for Intel After Nvidia Investment",
+      "url": "https://finance.yahoo.com/video/ives-says-pop-champagne-intel-143208222.html",
+      "timestamp": "2025-09-18",
+      "content": "Dan Ives of Wedbush Securities talks about Nvidia agreeing to invest $5 billion in Intel. The companies will co-develop chips for PCs and data centers. The..."
+    },
+    {
+      "source": "Wired",
+      "headline": "China Turns Legacy Chips Into a Trade Weapon",
+      "url": "https://www.wired.com/story/china-probe-us-chip-makers-tiktok-deal/",
+      "timestamp": "2025-09-18",
+      "content": "As Washington pushes for a TikTok deal, Beijing is countering with probes into American chipmakers."
+    },
+    {
+      "source": "Barchart.com",
+      "headline": "Nvidia CEO Jensen Huang Says 'You Can’t Overstate the Magic' That is Taiwan Semiconductor, But is TSM Stock a Buy at New Highs?",
+      "url": "https://www.barchart.com/story/news/34900133/nvidia-ceo-jensen-huang-says-you-cant-overstate-the-magic-that-is-taiwan-semiconductor-but-is-tsm-stock-a-buy-at-new-highs",
+      "timestamp": "2025-09-18",
+      "content": "Foundry giant Taiwan Semiconductor will play a key role in the new partnership between Nvidia and Intel, according to CEOs Jensen Huang and Lip-Bu Tan."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Nvidia spent over $900 million to hire Enfabrica CEO, license technology, CNBC reports",
+      "url": "https://finance.yahoo.com/news/nvidia-spent-over-900-million-223552272.html",
+      "timestamp": "2025-09-18",
+      "content": "The deal closed last week and Sankar has already joined Nvidia.  Enfabrica, a Silicon Valley-based chip startup, is tackling one of the biggest technical..."
+    },
+    {
+      "source": "Github.com",
+      "headline": "Nvmath-Python: Nvidia Math Libraries for the Python Ecosystem",
+      "url": "https://github.com/NVIDIA/nvmath-python",
+      "timestamp": "2025-09-18",
+      "content": "NVIDIA Math Libraries for the Python Ecosystem. Contribute to NVIDIA/nvmath-python development by creating an account on GitHub."
+    },
+    {
+      "source": "Kotaku",
+      "headline": "Treyarch Co-Founder Sentenced To Federal Prison After Flying Drone Into Firefighting Aircraft In January",
+      "url": "https://kotaku.com/treyarch-co-founder-game-dev-drone-firefighting-plane-jail-time-federal-court-2000626833",
+      "timestamp": "2025-09-18",
+      "content": "Also: Nvidia and Intel strike up partnership, Microsoft Flight Sim might be coming to PS5, a new Yakuza game has leaked, and be careful while playing classic Doom\nThe post Treyarch Co-Founder Sentenced To Federal Prison After Flying Drone Into Firefighting Ai…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "China’s Showcase of AI Chip Prowess Triggers $240 Billion Rally",
+      "url": "https://finance.yahoo.com/news/china-showcase-ai-chip-prowess-102749077.html",
+      "timestamp": "2025-09-18",
+      "content": "On Thursday, Huawei for the first time publicly laid out its three-year roadmap for chip development, boasting of “super clusters” and vastly faster AI chips..."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Intel and NVIDIA announce partnership that will see \"jointly developed x86 Intel CPUs fused with RTX GPUs\" in shocking move",
+      "url": "https://www.windowscentral.com/hardware/intel/intel-and-nvidia-announce-partnership-that-will-see-jointly-developed-x86-intel-cpus-fused-with-rtx-gpus-in-shocking-move",
+      "timestamp": "2025-09-18",
+      "content": "NVIDIA is partnering up with Intel to product new chips that fuse x86 Intel CPUs with RTX GPUs in an attempt to compete with AMD APUs, along with helping Intel stay afloat in its fight with TSMC."
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Intel and Nvidia sitting in a tree, NVLink-I-N-G",
+      "url": "https://www.theregister.com/2025/09/18/nvidia_intel_deal_nvlink/",
+      "timestamp": "2025-09-18",
+      "content": "But still no hero customer for Chipzilla's Foundry biz\nNvidia is set to become one of Intel's largest shareholders after the GPU giant announced on Thursday it would invest $5 billion in the struggling chipmaker under a co-development agreement targeting PCs …"
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Let's talk about the seating chart for the Trump royal banquet, shall we?",
+      "url": "https://www.businessinsider.com/trump-royal-dinner-uk-king-charles-tiffany-kate-seating-chart-2025-9",
+      "timestamp": "2025-09-18",
+      "content": "Donald Trump sat next to Princess Kate at the UK state dinner attended by business leaders like Tim Cook. Let's see what the seating chart says."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Meet the non-tech companies cashing in on the AI data center spending boom",
+      "url": "https://www.businessinsider.com/rolls-royce-caterpillar-cash-in-on-ai-boom-data-centers-2025-9",
+      "timestamp": "2025-09-18",
+      "content": "As data center spend nears $1 trillion, vendors  like Rolls-Royce, Caterpillar, Schneider Electric, and Vertiv are poised to benefit."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "How Huawei plans to outperform global tech leaders with less powerful chips",
+      "url": "https://tech.yahoo.com/ai/articles/huawei-plans-outperform-global-tech-102217556.html",
+      "timestamp": "2025-09-18",
+      "content": "China's Huawei Technologies said Thursday that it would roll out the world's most powerful AI computing clusters over the next two years as it seeks to..."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "The UK is getting a bite-sized version of Stargate, a sweeping AI infrastructure project from OpenAI and Nvidia",
+      "url": "https://www.businessinsider.com/stargate-uk-donald-trump-state-visit-ai-openai-nvidia-microsoft-2025-09",
+      "timestamp": "2025-09-17",
+      "content": "OpenAI, Nvidia, and Nscale partnered for Stargate UK, pledging tens of billions of dollars in AI infrastructure to boost Britain's computing power."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Huawei's affiliate was neighbors with Nvidia in California for a decade. US lawmakers want to know why.",
+      "url": "https://www.businessinsider.com/huawei-futurewei-nvidia-california-campus-hq-house-committee-probe-moolenaar-2025-9",
+      "timestamp": "2025-09-17",
+      "content": "US lawmakers are asking for information about Huawei's US research arm, which they say shared a campus with Nvidia's headquarters."
+    },
+    {
+      "source": "Openai.com",
+      "headline": "Introducing Stargate UK",
+      "url": "https://openai.com/index/introducing-stargate-uk/",
+      "timestamp": "2025-09-17",
+      "content": "OpenAI, NVIDIA, and Nscale launch Stargate UK, a sovereign AI infrastructure partnership delivering up to 50,000 GPUs and the UK’s largest supercomputer to power national AI innovation, public services, and economic growth."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "China Just Pulled the Plug on Nvidia's China Workaround--Here's Why That Matters",
+      "url": "https://finance.yahoo.com/news/china-just-pulled-plug-nvidias-190414691.html",
+      "timestamp": "2025-09-17",
+      "content": "Beijing tells Alibaba, ByteDance to cancel RTX 6000D orders as U.S.-China chip war hits new flashpoint"
+    },
+    {
+      "source": "BBC News",
+      "headline": "Nvidia boss 'disappointed' by China chip ban",
+      "url": "https://www.bbc.com/news/articles/cqxz29pe1v0o",
+      "timestamp": "2025-09-17",
+      "content": "Jensen Huang told reporters he would be \"patient\" as the US and China grapple for global AI dominance."
+    },
+    {
+      "source": "9to5Mac",
+      "headline": "Tim Cook attends Windsor Castle State Banquet as part of Trump’s visit to the UK",
+      "url": "https://9to5mac.com/2025/09/17/tim-cook-windsor-castle-state-banquet/",
+      "timestamp": "2025-09-17",
+      "content": "Apple CEO Tim Cook was among multiple high-profile guests at a state dinner at Windsor Castle on Wednesday, joining King Charles III and Donald Trump. Here are the details.\n\n\n\n more…"
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Mark Zuckerberg wowed Meta skeptics this time last year. He's about to try to do it again.",
+      "url": "https://www.businessinsider.com/mark-zuckerberg-trying-to-wow-skeptics-ai-glasses-meta-connect-2025-9",
+      "timestamp": "2025-09-17",
+      "content": "From a neural wristband to new smart glasses with cameras, here is what we could see at Meta Connect 2025, as the company strives to impress."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Nvidia boss 'disappointed' by China chip ban",
+      "url": "https://biztoc.com/x/aa008ad1dc400e32",
+      "timestamp": "2025-09-17",
+      "content": "Jensen Huang told reporters he would be \"patient\" as the US and China grapple for global AI dominance."
+    },
+    {
+      "source": "Forbes",
+      "headline": "AI’s Next Dividend Bonanza Is NOT Where You Think",
+      "url": "https://www.forbes.com/sites/brettowens/2025/09/17/ais-next-dividend-bonanza-is-not-where-you-think/",
+      "timestamp": "2025-09-17",
+      "content": "While Wall Street chases NVIDIA, the real AI dividend story is unfolding in the sleepy insurance sector. These “boring” firms are quietly leveraging AI tools..."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Fed Decision, China AI Chip Ban, And TikTok Deal Dominate Markets",
+      "url": "https://www.forbes.com/sites/jjkinahan/2025/09/17/fed-decision-china-ai-chip-ban-and-tiktok-deal-dominate-markets/",
+      "timestamp": "2025-09-17",
+      "content": "Markets await the Fed’s rate cut decision and guidance, while China bans Nvidia AI chips, TikTok’s U.S. ownership deal advances, and StubHub launches its IPO."
+    },
+    {
+      "source": "TechRadar",
+      "headline": "UK sees major investment from some of the biggest names in tech - here's all the top deals announced today",
+      "url": "https://www.techradar.com/pro/uk-tech-space-sees-major-investment-from-some-of-the-biggest-names-in-tech-heres-all-the-top-deal-announced-today",
+      "timestamp": "2025-09-17",
+      "content": "Some of the biggest names in tech have announced billions in investments for UK cloud and AI infrstructure."
+    },
+    {
+      "source": "TheStreet",
+      "headline": "Nvidia suffers a major blow from China",
+      "url": "https://www.thestreet.com/technology/nvidia-suffers-a-major-blow-from-china-",
+      "timestamp": "2025-09-16",
+      "content": "The company keeps running into setbacks in this important market."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "\"Substantially superior to FSR 3.1\" — How modders forced FSR 4 upscaling onto unsupported AMD and NVIDIA cards",
+      "url": "https://www.windowscentral.com/hardware/amd/fsr-4-rdna-2-3-nvidia-amd-unsupported",
+      "timestamp": "2025-09-16",
+      "content": "Remember that FSR 4 source code leak on GitHub from a few weeks ago? Someone used it to get AMD's latest upscaler running on unsupported hardware."
+    },
+    {
+      "source": "The Indian Express",
+      "headline": "Why China is investigating Nvidia for ‘violating’ its anti-monopoly laws",
+      "url": "https://indianexpress.com/article/explained/explained-sci-tech/china-investigating-nvidia-us-ai-race-10253528/",
+      "timestamp": "2025-09-16",
+      "content": "China’s scrutiny of Nvidia is not being seen as an isolated case, but the latest in a series of actions in its AI race with the United States."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Chinese giant Tencent announces domestic AI chip push — says it has fully adapted infrastructure to support homegrown silicon in blow to Nvidia",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tencent-goes-public-with-pivot-to-chinese-chips",
+      "timestamp": "2025-09-16",
+      "content": "Tencent goes public with its pivot to Chinese accelerators, highlighting a deeper break from Nvidia as domestic AI hardware matures."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    },
+    {
+      "source": "Forbes",
+      "headline": "AVGO Stock vs. NVDA & INTC",
+      "url": "https://www.forbes.com/sites/greatspeculations/2025/09/16/avgo-stock-vs-nvda--intc/",
+      "timestamp": "2025-09-16",
+      "content": "The key question is: How does AVGO stock now compare to its peers, such as NVIDIA, Qualcomm, Intel, and Cisco, in terms of size, valuation, growth, and margins?"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "JPMorgan Keeps Overweight Rating on NVDA",
+      "url": "https://finance.yahoo.com/news/jpmorgan-keeps-overweight-rating-nvda-185032696.html",
+      "timestamp": "2025-09-16",
+      "content": "NVIDIA Corporation (NASDAQ:NVDA) is one of the 10 Unrivaled Stocks of the Next 3 Years. On September 4, JPMorgan reaffirmed an Overweight rating on NVIDIA..."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia's China-exclusive RTX 6000D reportedly gets lukewarm reception in China due to hobbled performance — could leave Nvidia with huge backlog of unwanted GPUs",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-china-exclusive-rtx-6000d-reportedly-gets-lukewarm-reception-in-china-due-to-hobbled-performance-could-leave-nvidia-with-huge-backlog-of-unwanted-gpus",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia may struggle to sell the reported two million RTX6000D Chinese GPUs it's set to produce this year, as Chinese firms are showing lukewarm interest amidst ongoing trade negotiations and the uncertain future of Nvidia's B30A GPU."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Nvidia Stock Falls. Reasons to Look Past China Fears",
+      "url": "https://biztoc.com/x/41299aae0239f81b",
+      "timestamp": "2025-09-16",
+      "content": ""
+    },
+    {
+      "source": "Forbes",
+      "headline": "The Nvidia Deal And Taxing Exports: The Constitutionality Of It All",
+      "url": "https://www.forbes.com/sites/taxnotes/2025/09/16/the-nvidia-deal-and-taxing-exports-the-constitutionality-of-it-all/",
+      "timestamp": "2025-09-16",
+      "content": "In this episode of Tax Notes Talk, Tax Notes contributing editors Robert Goulder and Joseph Thorndike discuss the recent Nvidia deal to export chips to China, and they question its constitutionality and implications."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "NVIDIA Corporation (NVDA): A Bull Case Theory",
+      "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-bull-case-154545960.html",
+      "timestamp": "2025-09-16",
+      "content": "We came across a bullish thesis on NVIDIA Corporation on Compounding Your Wealth’s Substack by Sergey. In this article, we will summarize the bulls’ thesis..."
+    }
+  ],
+  "AMD": [
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Super Micro (SMCI) Stock Trades Up, Here Is Why",
+      "url": "https://finance.yahoo.com/news/super-micro-smci-stock-trades-204708134.html",
+      "timestamp": "2025-09-22",
+      "content": "Shares of server solutions provider Super Micro (NASDAQ:SMCI) jumped 3% in the afternoon session after the company unveiled a new lineup of AI-optimized..."
+    },
+    {
+      "source": "Barchart.com",
+      "headline": "This Under-the-Radar Data Center Stock Is Soaring Thanks to the AI Boom",
+      "url": "https://www.barchart.com/story/news/34960304/this-under-the-radar-data-center-stock-is-soaring-thanks-to-the-ai-boom",
+      "timestamp": "2025-09-22",
+      "content": "With demand accelerating, Arista’s AI future looks dynamic."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Microsoft's official Windows 11 version 25H2 RTM ISO media is now available — Download all 38 languages here for x64 or Arm64",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/microsofts-official-windows-11-version-25h2-rtm-iso-media-is-now-available-download-all-28-languages-here-for-x64-or-arm64",
+      "timestamp": "2025-09-22",
+      "content": "Tired of waiting for Microsoft to release Windows 11 version 25H2 via Windows Update? The official RTM ISO media is now online and can be downloaded straight from Microsoft."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD Ryzen AI Max+ \"Strix Halo\" Performance With ROCm 7.0",
+      "url": "https://www.phoronix.com/review/amd-rocm-7-strix-halo",
+      "timestamp": "2025-09-22",
+      "content": "With last week's official release of ROCm 7.0 failing to mention the AMD Ryzen AI Max \"Strix Halo\" SoCs on the supported GPU list, a number of Phoronix readers and from elsewhere were inquiring whether or not Strix Halo works with the new ROCm release. Variou…"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "New VLC update adds official support for Windows 11 on Arm and fixes support for Windows XP",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/new-vlc-update-adds-official-support-for-windows-11-on-arm-and-fixes-support-for-windows-xp",
+      "timestamp": "2025-09-22",
+      "content": "VLCs first official update in years look to come with some needed improvements, including Windows on Arm64 support and fixes for Windows XP Service Pack 3."
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia and Intel’s partnership could introduce the huge performance upgrade for handheld gaming PCs I’ve been hoping for",
+      "url": "https://www.techradar.com/computing/cpu/nvidia-and-intels-partnership-could-introduce-the-huge-performance-upgrade-for-handheld-gaming-pcs-ive-been-hoping-for",
+      "timestamp": "2025-09-22",
+      "content": "AMD is arguably running away with the crown in the handheld gaming PC space, with its most powerful SoC challenging an Nvidia RTX GPU, but it might be in trouble after Nvidia and Intel's partnership."
+    },
+    {
+      "source": "CoinDesk",
+      "headline": "IREN Shares Jump 11% in Pre-Market Trading as Bitcoin Miner Doubles AI Cloud Fleet",
+      "url": "https://www.coindesk.com/markets/2025/09/22/iren-shares-jump-11-in-pre-market-trading-as-bitcoin-miner-doubles-ai-cloud-fleet",
+      "timestamp": "2025-09-22",
+      "content": "Company lifts AI Cloud ARR target to more than $500 million by Q1 2026 after $674 million GPU expansion."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Meet The Company Challenging Nvidia's AI Dominance. (Hint: It's Not AMD)",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_3b1fbde8-2c94-4bbd-86b7-cbdded5f648f",
+      "timestamp": "2025-09-22",
+      "content": null
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Nvidia, AMD Seals $670M GPU Order As IREN Doubles AI Cloud Power",
+      "url": "https://finance.yahoo.com/news/nvidia-amd-seals-670m-gpu-195805440.html",
+      "timestamp": "2025-09-22",
+      "content": "IREN Soars Into AI Race With $670M Nvidia, AMD GPU Megadeal"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Bank of America shocks with AMD stock verdict post Nvidia-Intel deal",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_90d22509-969b-469e-8e89-32a72176fc0c",
+      "timestamp": "2025-09-21",
+      "content": null
+    },
+    {
+      "source": "Windows Central",
+      "headline": "It's insane to me that this mini PC can outperform an NVIDIA RTX 5090 with LLMs and AI workloads",
+      "url": "https://www.windowscentral.com/hardware/hp/hp-z2-mini-g1a-review",
+      "timestamp": "2025-09-21",
+      "content": "I've been testing the HP Z2 Mini (G1a), and it's an insanely capable PC that aims to be an all-in-one workstation for AI, LLMs, and other intense workloads."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "Linux 6.17-rc7 Released: Linux 6.17 Stable Expected Next Week",
+      "url": "https://www.phoronix.com/news/Linux-6.17-rc7",
+      "timestamp": "2025-09-21",
+      "content": "Linus Torvalds just released Linux 6.17-rc7 as the last planned release candidate of the in-development Linux 6.17 kernel that is expected to go final next weekend..."
+    },
+    {
+      "source": "MakeUseOf",
+      "headline": "I taught Obsidian to listen and write my notes for me",
+      "url": "https://www.makeuseof.com/obsidian-voice-notes-setup/",
+      "timestamp": "2025-09-21",
+      "content": "Obsidian makes a decent stenographer."
+    },
+    {
+      "source": "Eurogamer.net",
+      "headline": "Lenovo cancels Legion Go 2 pre-orders on its own website after demand \"substantially exceeded projections\"",
+      "url": "https://www.eurogamer.net/lenovo-cancels-legion-go-2-pre-orders-on-its-own-website-after-demand-substantially-exceeded-projections",
+      "timestamp": "2025-09-21",
+      "content": "Lenovo has confirmed that whilst Legion Go 2 units are now making their way to \"major retailers globally\", some pre-orders placed on Lenovo's very own website will \"need\" to be cancelled. Read more"
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "I tried using a FreeBSD distro that's meant to be run off a flash drive",
+      "url": "https://www.xda-developers.com/i-tried-using-a-freebsd-distro-thats-meant-be-run-off-a-flash-drive/",
+      "timestamp": "2025-09-21",
+      "content": "NomadBSD exceeded all my expectations"
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia AI sales to reach almost $400 billion by 2028, research claims - but then things will get a bit tricky for the world's largest company",
+      "url": "https://www.techradar.com/pro/nvidia-ai-sales-to-reach-almost-usd400-billion-by-2028-claims-research-and-then-things-will-get-a-bit-tricky-for-the-worlds-largest-company",
+      "timestamp": "2025-09-21",
+      "content": "Nvidia’s AI revenue may reach $400 billion by 2028 - yet slowing growth, rising costs, and competition could pose risks."
+    },
+    {
+      "source": "Benzinga",
+      "headline": "Elon Musk Refutes Claims Of xAI's $10 Billion Funding Round, Says 'xAI Is Not Raising Any Capital Right Now'",
+      "url": "https://www.benzinga.com/markets/tech/25/09/47779757/elon-musk-refutes-claims-of-xais-10-billion-funding-round-says-xai-is-not-raising-any-capital-right-now",
+      "timestamp": "2025-09-21",
+      "content": ""
+    },
+    {
+      "source": "Wccftech",
+      "headline": "GMKtec EVO-X2 AI “AMD Ryzen AI MAX+ 395” Mini PC: The World’s Most Powerful SoC For AI, Gaming & Everything",
+      "url": "https://wccftech.com/review/gmktec-evo-x2-ai-amd-ryzen-ai-max-395-mini-pc-the-worlds-most-powerful-soc-for-ai-gaming-everything/",
+      "timestamp": "2025-09-21",
+      "content": "GMKtec has been making Mini PCs for years now. They are based out of the technology hub of Shenzen, China, and have maintained strategic partnerships with AMD, Intel & Microsoft, and currently offer a wide array of solutions, all the way from entry-level to e…"
+    },
+    {
+      "source": "SiliconANGLE News",
+      "headline": "Intel-Nvidia: The baton passes to the CUDA era",
+      "url": "https://siliconangle.com/2025/09/20/intel-nvidia-baton-passes-cuda-era/",
+      "timestamp": "2025-09-21",
+      "content": "In our view, the Intel–Nvidia pact further accentuates Nvidia Corp.’s dominant market position and represents a milestone in the transition to the next era of computing. Just as Intel Corp. had a lock on the market in the ’80s and ’90s, Nvidia has now extende…"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Bank of America shocks with AMD stock verdict post Nvidia-Intel deal",
+      "url": "https://biztoc.com/x/c654825adaa4a671",
+      "timestamp": "2025-09-21",
+      "content": "Advanced Micro Devices (AMD) has spent 2025 clawing from “credible challenger” to a true second engine in the AI arms race.\nCase in point is that its management bumped an annual cadence in accelerators with MI325X heading into mass production and MI350 slated…"
+    },
+    {
+      "source": "Omgubuntu.co.uk",
+      "headline": "VLC’s First Update This Year Adds Qt6 Support, Dark Style + More",
+      "url": "https://www.omgubuntu.co.uk/2025/09/vlc-player-update-2025",
+      "timestamp": "2025-09-20",
+      "content": "It’s been over a year since VLC, a free open source media player you might have heard of before, was last updated — but a new one is about to arrive. VLC 3.0.22 is the twenty-third release in the VLC 3.0 series, which debuted back in 2018. Videolan (the non-p…"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "The Lenovo Legion Go 2 preorder situation goes from bad to worse — preorders start getting cancelled. \"We know this is frustrating.\"",
+      "url": "https://www.windowscentral.com/gaming/the-lenovo-legion-go-2-preorder-situation-goes-from-bad-to-worse-",
+      "timestamp": "2025-09-20",
+      "content": "Lenovo allowed users to preorder the Legion Go 2 with inventory it didn't have, seemingly."
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "6 operating system luxuries Windows users have never known about Linux",
+      "url": "https://www.xda-developers.com/operating-system-luxuries-windows-users-have-never-known-about-linux/",
+      "timestamp": "2025-09-20",
+      "content": "Windows may seem easier, but Linux has a lot of advantages over it. You might not even know these features exist, but they're fantastic."
+    },
+    {
+      "source": "Codingconfessions.com",
+      "headline": "What Makes System Calls Expensive: A Linux Internals Deep Dive",
+      "url": "https://blog.codingconfessions.com/p/what-makes-system-calls-expensive",
+      "timestamp": "2025-09-20",
+      "content": "An explanation of how Linux handles system calls on x86-64 and why they show up as expensive operations in performance profiles"
+    },
+    {
+      "source": "Forbes",
+      "headline": "Abilene’s Energy Setup",
+      "url": "https://www.forbes.com/sites/johnwerner/2025/09/20/abilenes-energy-setup/",
+      "timestamp": "2025-09-20",
+      "content": "Crusoe spearheads Abilene’s Stargate buildout, financing, constructing, and harnessing renewable energy to power massive Nvidia GPU clusters for AI."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Trump is already wielding his ‘golden share’ authority at U.S. Steel, overriding the company’s plans for an Illinois plant, report says",
+      "url": "https://finance.yahoo.com/news/trump-already-wielding-golden-share-225826240.html",
+      "timestamp": "2025-09-20",
+      "content": "This marks the latest move by the administration to exert power over private industry."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Prediction: These AI Chip Stocks Could Soar (Hint: It's Not Nvidia or Broadcom)",
+      "url": "https://biztoc.com/x/674d4c4ee2144920",
+      "timestamp": "2025-09-20",
+      "content": "Key Points\n-\nAMD and Marvell are both currently in the shadows of Nvidia and Broadcom.\n-\nHowever, AMD has a nice opportunity as the AI infrastructure market starts to shift toward inference.\n-\nMarvell, meanwhile, has been winning its own custom AI chip design…"
+    },
+    {
+      "source": "Fortune",
+      "headline": "Trump is already wielding his ‘golden share’ authority at U.S. Steel, overriding the company’s plans for an Illinois plant, report says",
+      "url": "https://fortune.com/2025/09/20/trump-us-steel-nippon-trump-golden-share-granite-city-plant-blocked-politics/",
+      "timestamp": "2025-09-20",
+      "content": "This marks the latest move by the administration to exert power over private industry."
+    },
+    {
+      "source": "Notebookcheck.net",
+      "headline": "AMD Ryzen AI Max+ 395 is powering some of the fastest mini PCs available",
+      "url": "https://www.notebookcheck.net/AMD-Ryzen-AI-Max-395-is-powering-some-of-the-fastest-mini-PCs-available.1116962.0.html",
+      "timestamp": "2025-09-20",
+      "content": "The Zen 5 Strix Halo CPU is proving to be excellent for performance mini PCs. Not only is it fast, but its Radeon 8060S GPU blows every other integrated solution currently available out of the water."
+    },
+    {
+      "source": "TheStreet",
+      "headline": "Analysts revamp Nvidia stock outlook on its investment in Intel",
+      "url": "https://www.thestreet.com/technology/analysts-revamp-nvidia-stock-outlook-on-its-investment-in-intel-",
+      "timestamp": "2025-09-20",
+      "content": "Analysts provided their opinion on Nvidia stock, following the company's $5 billion investment into Intel."
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "Dangerous PC hardware myths for novice PC builders",
+      "url": "https://www.xda-developers.com/most-dangerous-pc-hardware-myths-for-new-pc-builders/",
+      "timestamp": "2025-09-19",
+      "content": "Don't take every piece of PC building advice seriously"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "What Makes Advanced Micro Devices (AMD) an Investment Bet?",
+      "url": "https://finance.yahoo.com/news/makes-advanced-micro-devices-amd-124259433.html",
+      "timestamp": "2025-09-19",
+      "content": "Macquarie Asset Management, an investment management company, released its “Macquarie Core Equity Fund” investor letter for the second quarter of 2025. A..."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Nvidia and Intel Join Hands. Is Trouble Ahead for AMD Stock?",
+      "url": "https://biztoc.com/x/dc908b2969786093",
+      "timestamp": "2025-09-19",
+      "content": ""
+    },
+    {
+      "source": "PC Gamer",
+      "headline": "Nvidia and Intel joining forces could be seen as anti-AMD, but it just serves to highlight AMD's advantage with Ryzen and Radeon under one roof",
+      "url": "https://www.pcgamer.com/hardware/nvidia-and-intel-joining-forces-could-be-seen-as-anti-amd-but-it-just-goes-to-highlight-amds-advantage-with-ryzen-and-radeon-under-one-roof/",
+      "timestamp": "2025-09-19",
+      "content": "A big benefit when it comes to AI."
+    },
+    {
+      "source": "Ozbargain.com.au",
+      "headline": "Corsair iCUE QL140 RGB 140mm PWM White Fan – Single Pack $12 + Free Delivery (Min Spend $40) @ Radium PCs",
+      "url": "https://www.ozbargain.com.au/node/924881",
+      "timestamp": "2025-09-19",
+      "content": "Hi Everyone, we’ve got a spare batch of Corsair iCUE QL140 RGB 140mm PWM White Fans. These are a solid option if you’re after both airflow and lighting, and they fit perfectly into white or …"
+    },
+    {
+      "source": "Ghacks Technology News",
+      "headline": "Steam to end support for Windows 32-bit in 2026",
+      "url": "https://www.ghacks.net/2025/09/19/steam-to-end-support-for-windows-32-bit-in-2026/",
+      "timestamp": "2025-09-19",
+      "content": "Valve has announced that it will be ending support for Steam on 32-bit versions of Windows. This shouldn't affect a lot of users. Okay, I have to ask. What's with all the […]\nThank you for being a Ghacks reader. The post Steam to end support for Windows 32-bi…"
+    },
+    {
+      "source": "SamMobile",
+      "headline": "Samsung may supply 10,000 HBM3E chips to Nvidia",
+      "url": "https://www.sammobile.com/news/samsung-may-supply-10000-hbm3e-chips-nvidia/",
+      "timestamp": "2025-09-19",
+      "content": "Last month, we reported that Samsung’s HBM3E chips might have finally met Nvidia's quality standards. Well, we now have information about how many of those chips Samsung will supply to Nvidia for its AI accelerators. According to a report from AlphaBiz, Samsu…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Musk says xAI is not raising capital after CNBC report on $10 billion funding",
+      "url": "https://finance.yahoo.com/news/xai-raises-10-billion-200-173421386.html",
+      "timestamp": "2025-09-19",
+      "content": "According to the CNBC report, the funding was likely to go to building data centers using Nvidia and AMD graphics processing units, needed to develop next..."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia wants 10Gbps HBM4 to blunt AMD’s MI450, report claims — company said to be pushing suppliers for more bandwidth",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-wants-10gbps-hbm4-to-rival-amd-mi450",
+      "timestamp": "2025-09-19",
+      "content": "Nvidia is reportedly pressing its memory vendors to push beyond JEDEC’s official HBM4 baseline, reportedly requesting 10Gb/s-per-pin stacks for its 2026 Vera Rubin platform."
+    },
+    {
+      "source": "The Verge",
+      "headline": "Nvidia invests $5 billion into Intel to jointly develop PC and data center chips",
+      "url": "https://www.theverge.com/news/780792/nvidia-intel-investment-pc-chips-data-center",
+      "timestamp": "2025-09-18",
+      "content": "Nvidia is throwing Intel a $5 billion life raft, just weeks after similar stakes from the US government and SoftBank. Nvidia is investing $5 billion in Intel common stock in a collaboration that will see the pair “jointly develop multiple generations of custo…"
+    },
+    {
+      "source": "Barchart.com",
+      "headline": "Nvidia CEO Jensen Huang Says 'You Can’t Overstate the Magic' That is Taiwan Semiconductor, But is TSM Stock a Buy at New Highs?",
+      "url": "https://www.barchart.com/story/news/34900133/nvidia-ceo-jensen-huang-says-you-cant-overstate-the-magic-that-is-taiwan-semiconductor-but-is-tsm-stock-a-buy-at-new-highs",
+      "timestamp": "2025-09-18",
+      "content": "Foundry giant Taiwan Semiconductor will play a key role in the new partnership between Nvidia and Intel, according to CEOs Jensen Huang and Lip-Bu Tan."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Nvidia CEO explains why he's making a $5 billion bet on struggling chip giant Intel",
+      "url": "https://www.businessinsider.com/intel-investment-nvidia-jensen-huang-stock-ai-chip-plans-2025-9",
+      "timestamp": "2025-09-18",
+      "content": "\"Having Jensen's blessing is priceless,\" wrote Bernstein senior analyst  Stacy Rasgon about Nvidia's $5 billion investment in Intel."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Intel and NVIDIA announce partnership that will see \"jointly developed x86 Intel CPUs fused with RTX GPUs\" in shocking move",
+      "url": "https://www.windowscentral.com/hardware/intel/intel-and-nvidia-announce-partnership-that-will-see-jointly-developed-x86-intel-cpus-fused-with-rtx-gpus-in-shocking-move",
+      "timestamp": "2025-09-18",
+      "content": "NVIDIA is partnering up with Intel to product new chips that fuse x86 Intel CPUs with RTX GPUs in an attempt to compete with AMD APUs, along with helping Intel stay afloat in its fight with TSMC."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "Linux 6.17 AMD PMF Driver Adding New ACPI ID For Upcoming AMD Platform",
+      "url": "https://www.phoronix.com/news/Linux-6.17-AMD-AMDI0108",
+      "timestamp": "2025-09-18",
+      "content": "A new round of platform-drivers-x86 \"fixes\" were submitted today for the nearly-complete Linux 6.17 kernel cycle. While on the fixes stage of the kernel, the x86 platform driver changes can be interesting when it comes to new device IDs for enabling new produ…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "China’s Showcase of AI Chip Prowess Triggers $240 Billion Rally",
+      "url": "https://finance.yahoo.com/news/china-showcase-ai-chip-prowess-102749077.html",
+      "timestamp": "2025-09-18",
+      "content": "On Thursday, Huawei for the first time publicly laid out its three-year roadmap for chip development, boasting of “super clusters” and vastly faster AI chips..."
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Intel’s deal with Nvidia could utterly rewrite the future of laptops",
+      "url": "https://www.pcworld.com/article/2913537/intels-deal-with-nvidia-could-utterly-rewrite-the-future-of-laptops.html",
+      "timestamp": "2025-09-18",
+      "content": "Intel’s blockbuster deal with Nvidia to jointly design custom PC processors containing RTX GPUs gives Nvidia an entry point into the vast majority of laptops even as Intel trades some of its future away in return for cash.\r\n\n\n\n\nAlthough the mammoth Intel-Nvid…"
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Intel Arc graphics face a murky future after Nvidia’s $5B RTX mashup",
+      "url": "https://www.pcworld.com/article/2913669/intel-arc-graphics-face-a-murky-future-after-nvidias-5b-rtx-mashup.html",
+      "timestamp": "2025-09-18",
+      "content": "Surprise! We woke up this morning to a blockbuster mashup between Intel and Nvidia. Team Green invested a cool $5 billion into Intel, and in exchange, the two companies will be co-creating consumer and data center x86 processors interwoven with Nvidia’s RTX g…"
+    },
+    {
+      "source": "The Indian Express",
+      "headline": "Nvidia bets big on Intel with $5 billion stake and chip partnership",
+      "url": "https://indianexpress.com/article/business/nvidia-bets-big-on-intel-with-5-billion-stake-and-chip-partnership-10257653/",
+      "timestamp": "2025-09-18",
+      "content": "Nvidia, whose must-have chips are powering a global artificial intelligence boom, said in a statement it will pay $23.28 per share for Intel common stock, a price slightly below the $24.90 at which Intel shares closed on Wednesday."
+    },
+    {
+      "source": "PCWorld",
+      "headline": "RTX graphics on CPUs: Nvidia and Intel are officially joining forces",
+      "url": "https://www.pcworld.com/article/2913435/rtx-graphics-on-cpus-nvidia-and-intel-are-joining-forces.html",
+      "timestamp": "2025-09-18",
+      "content": "Nvidia is on top of the world right now, riding waves of investment in “AI” and becoming one of the most powerful and most profitable companies on the planet. Intel? Not so much. The company has been struggling in sales and performance for more than a year.\r\n…"
+    },
+    {
+      "source": "PC Gamer",
+      "headline": "Intel and Nvidia announce stunning plans to combine their CPU and GPU products for both consumer PCs and AI servers, with Nvidia taking a $5 billion stake in Intel",
+      "url": "https://www.pcgamer.com/hardware/processors/intel-and-nvidia-announce-stunning-plans-to-combine-their-cpu-and-gpu-products-for-both-consumer-pcs-and-ai-servers-with-nvidia-taking-a-usd5-billion-stake-in-intel/",
+      "timestamp": "2025-09-18",
+      "content": "Well, we weren't expecting this."
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Huawei throws massive 1-million NPU gauntlet at Nvidia and AMD as it positions itself an alternative to US AI giants",
+      "url": "https://www.techradar.com/pro/huawei-throws-massive-1-million-npu-gauntlet-at-nvidia-and-amd-as-it-positions-itself-an-alternative-to-us-ai-giants",
+      "timestamp": "2025-09-18",
+      "content": "Who needs Instinct or Blackwell when we’ve got the Ascend family from Huawei."
+    },
+    {
+      "source": "Osnews.com",
+      "headline": "Intel to build x86 CPUs with NVIDIA graphics, most likely spelling the end of ARC",
+      "url": "https://www.osnews.com/story/143373/intel-to-build-x86-cpus-with-nvidia-graphics-most-likely-spelling-the-end-of-arc/",
+      "timestamp": "2025-09-18",
+      "content": "Intel is in very dire straits, and as such, the company needs investments and partnerships more than anything. Today, NVIDIA and Intel announced just such a partnership, in which NVIDIA will invest $5 billion into the troubled chip giant, while the two compan…"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Zen 3 refuses to die — AMD quietly adds four new Ryzen chips, including budget CPU F-series options",
+      "url": "https://www.windowscentral.com/hardware/amd/amd-launches-zen-5-4-3-chips-budget",
+      "timestamp": "2025-09-17",
+      "content": "Just when you thought Zen 3 was in the rearview, AMD adds another new CPU. It also announced a new option for Zen 4, as well as two new F-series Ryzen 9000 chips."
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Ruh-roh. DDR5 memory vulnerable to new Rowhammer attack",
+      "url": "https://www.theregister.com/2025/09/17/ddr5_dram_rowhammer/",
+      "timestamp": "2025-09-17",
+      "content": "Google and ETH Zurich found problems with AMD/SK Hynix combo, will probe other hardware\nResearchers from Google and Swiss university ETH Zurich have found a new class of Rowhammer vulnerability that could allow attackers to access info stored in DDR5 memory.…"
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD Hardware Would Ideally Be Supported By ROCm For ~10 Years",
+      "url": "https://www.phoronix.com/news/AMD-ROCm-Hardware-Length",
+      "timestamp": "2025-09-17",
+      "content": "While down to AMD Austin yesterday for the Instinct MI355X and ROCm 7.0 launch, I had the chance to chat again with Anush Elangovan. As the VP of AI Software at AMD, talking with Anush is always insightful and technical in nature. One of the questions I posed…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "AMD (AMD) Downgraded to Hold by Erste Group on Margin Concerns",
+      "url": "https://finance.yahoo.com/news/amd-amd-downgraded-hold-erste-030425678.html",
+      "timestamp": "2025-09-17",
+      "content": "Advanced Micro Devices, Inc. (NASDAQ:AMD) is one of the AI Stocks in the Spotlight for Investors. On September 11, Erste Group analyst Hans Engel downgraded ..."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Vietnam's Vinfast to build $2 bln electric vehicle factory in U.S",
+      "url": "https://biztoc.com/x/c42cdfa6d241dce3",
+      "timestamp": "2025-09-17",
+      "content": ""
+    },
+    {
+      "source": "PC Gamer",
+      "headline": "Researchers argue that 'at least 40%' of the bloated x86 ISA could be removed and emulated to improve CPU efficiency",
+      "url": "https://www.pcgamer.com/hardware/processors/researchers-argue-that-at-least-40-percent-of-the-bloated-x86-isa-could-be-removed-and-emulated-to-improve-cpu-efficiency/",
+      "timestamp": "2025-09-17",
+      "content": "They propose a big SHRINK."
+    },
+    {
+      "source": "Ghacks Technology News",
+      "headline": "Fedora Linux 43 beta released, drops X11 support to go Wayland only",
+      "url": "https://www.ghacks.net/2025/09/17/fedora-linux-43-beta-released-drops-x11-support-to-go-wayland-only/",
+      "timestamp": "2025-09-17",
+      "content": "Fedora Linux 43 beta has been announced. The distro does not support X11 session, it is Wayland-only. This is because GNOME decided to end support for Xorg. Back in 2023, when GNOME […]\nThank you for being a Ghacks reader. The post Fedora Linux 43 beta releas…"
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Modern memory is still vulnerable to Rowhammer vulnerabilities — Phoenix root privilege escalation attack proves that Rowhammer still smashes DDR5 security to bits",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/modern-memory-is-still-vulnerable-to-rowhammer-vulnerabilities-phoenix-root-privilege-escalation-attack-proves-that-rowhammer-still-smashes-ddr5-security-to-bits",
+      "timestamp": "2025-09-17",
+      "content": "A new attack on DDR5 further demonstrates that current countermeasures against Rowhammer-style assaults aren't enough."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "\"Substantially superior to FSR 3.1\" — How modders forced FSR 4 upscaling onto unsupported AMD and NVIDIA cards",
+      "url": "https://www.windowscentral.com/hardware/amd/fsr-4-rdna-2-3-nvidia-amd-unsupported",
+      "timestamp": "2025-09-16",
+      "content": "Remember that FSR 4 source code leak on GitHub from a few weeks ago? Someone used it to get AMD's latest upscaler running on unsupported hardware."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD ROCm 7.0 Begins Rocking Out On GitHub",
+      "url": "https://www.phoronix.com/news/AMD-ROCm-7.0-Rolling-Out",
+      "timestamp": "2025-09-16",
+      "content": "As a pleasant surprise waking up this morning is AMD ROCm 7.0 release tags beginning to appear on GitHub, indicating the likely imminent official release of the ROCm 7.0 compute stack as the open-source AMD Radeon/Instinct software stack aimed to be the open …"
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD ROCm 7.0 Officially Released With Many Significant Improvements",
+      "url": "https://www.phoronix.com/news/AMD-ROCm-7.0-Released",
+      "timestamp": "2025-09-16",
+      "content": "Overnight the AMD ROCm 7.0 release tags began appearing within the public Git repositories. Now AMD ROCm 7.0 is officially released as a very significant step forward for AMD's open-source GPU compute stack for better competing against NVIDIA's CUDA ecosystem…"
+    },
+    {
+      "source": "Fc2.com",
+      "headline": "TSMC 2nmプロセスの最初の顧客はAMD, NVIDIA, MediaTek, Apple",
+      "url": "https://northwood.blog.fc2.com/blog-entry-12845.html",
+      "timestamp": "2025-09-16",
+      "content": "TSMC's first 2 nm Node Customers are Apple, AMD, NVIDIA, and MediaTek; Intel Missing（TechPowerUp）[News] TSMC 2nm Gains Steam: MediaTek Completes First 2nm Tape-Out as Apple Preps A20, M6, R2（TrendForce）TrendForceがTSMC 2nmプロセス―N2の最初の顧客についての記事を掲載している。最も大きいのはApp…"
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    },
+    {
+      "source": "Simonhartcher.com",
+      "headline": "Why I'm Spoiled by Apple Silicon (But Still Love Framework)",
+      "url": "https://simonhartcher.com/posts/2025-09-22-why-im-spoiled-by-apple-silicon-but-still-love-framework/",
+      "timestamp": "2025-09-22",
+      "content": "A personal comparison of battery life between my MacBook M1 Pro and Framework 13"
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Moody's raises Big Red over flag Oracle's mega AI DC buildout blueprint",
+      "url": "https://www.theregister.com/2025/09/22/moodys_raises_questions_over_oracles/",
+      "timestamp": "2025-09-22",
+      "content": "Ratings agency points out there's a risk of relying on a small number of buyers\nRatings agency Moody's has pointed to the dangers inherent in Oracle's $300 billion agreement with OpenAI - one of the deals contributing to a staggering $455 billion pipeline of …"
+    },
+    {
+      "source": "TechRadar",
+      "headline": "'NVLink is the key': Analysts ponder on probably the biggest tech deal of the decade - Intel + Nvidia and what it means for TSMC, AMD and others",
+      "url": "https://www.techradar.com/pro/nvlink-is-the-key-analysts-ponder-on-probably-the-biggest-tech-deal-of-the-decade-intel-nvidia-and-what-it-means-for-tsmc-amd-and-others",
+      "timestamp": "2025-09-22",
+      "content": "Industry commentary sees Nvidia–Intel tie-up as decade-defining, with NVLink at its core, and analysts focused on implications for TSMC and AMD."
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Nvidia adds more air to the AI bubble with vague $100B OpenAI deal",
+      "url": "https://www.theregister.com/2025/09/22/openai_nvidia_chips/",
+      "timestamp": "2025-09-22",
+      "content": "Promises, promises\nanalysis OpenAI and Nvidia have signed a letter of intent wherein OpenAI agrees to buy at least 10 gigawatts of Nvidia systems for its datacenters, while the AI arms dealer returns the favor with an investment of up to $100 billion in the h…"
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "AMD Threadripper CPUs are surprisingly efficient for home labs",
+      "url": "https://www.xda-developers.com/amd-threadripper-is-surprisingly-efficient-for-home-lab/",
+      "timestamp": "2025-09-22",
+      "content": ""
+    }
+  ],
+  "Intel": [
+    {
+      "source": "Stratechery.com",
+      "headline": "Nvidia and Intel, Tan’s Earnings Call Negotiation, Deal Specifics",
+      "url": "https://stratechery.com/2025/nvidia-and-intel-tans-earnings-call-negotiation-deal-specifics/",
+      "timestamp": "2025-09-22",
+      "content": "Intel and Nvidia have made a historic deal; it's good for Intel (and Nvidia), but doesn't solve their — and the U.S.'s — fundamental problems."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Super Micro (SMCI) Stock Trades Up, Here Is Why",
+      "url": "https://finance.yahoo.com/news/super-micro-smci-stock-trades-204708134.html",
+      "timestamp": "2025-09-22",
+      "content": "Shares of server solutions provider Super Micro (NASDAQ:SMCI) jumped 3% in the afternoon session after the company unveiled a new lineup of AI-optimized..."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Ukraine claims first-ever kills of Russian Be-12 seaplanes. These aircraft are said to hunt naval drones.",
+      "url": "https://www.businessinsider.com/ukraine-said-destroyed-russian-aircraft-type-first-time-history-2025-9",
+      "timestamp": "2025-09-22",
+      "content": "Ukraine said it destroyed two Russian Be-12 aircraft, calling it the first time in history that the aircraft type had been destroyed in combat."
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Nvidia and Intel’s collaborative PC chips might not happen for years",
+      "url": "https://www.pcworld.com/article/2915876/nvidia-and-intels-collaborative-pc-chips-might-not-happen-for-years.html",
+      "timestamp": "2025-09-22",
+      "content": "Neither Intel nor Nvidia have said exactly when the first fruits of its co-designed integrated CPUs will ship. But the thinking right now seems to be that it might a take a few years.\r\n\n\n\n\nNvidia announced a $5 billion investment into Intel last week, where I…"
+    },
+    {
+      "source": "Phoronix",
+      "headline": "Linux 6.18 Adding A New Power Savings Option For The Intel Graphics Driver",
+      "url": "https://www.phoronix.com/news/Linux-6.18-SLPC-Power-Profile",
+      "timestamp": "2025-09-22",
+      "content": "Queued up into DRM-Next is a last batch of Intel Xe kernel graphics driver improvements ahead of the Linux 6.18 merge window that is expected to begin next week. With this last minute Intel Xe driver activity is also a new power management knob for those want…"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Microsoft's official Windows 11 version 25H2 RTM ISO media is now available — Download all 38 languages here for x64 or Arm64",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/microsofts-official-windows-11-version-25h2-rtm-iso-media-is-now-available-download-all-28-languages-here-for-x64-or-arm64",
+      "timestamp": "2025-09-22",
+      "content": "Tired of waiting for Microsoft to release Windows 11 version 25H2 via Windows Update? The official RTM ISO media is now online and can be downloaded straight from Microsoft."
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia and Intel’s partnership could introduce the huge performance upgrade for handheld gaming PCs I’ve been hoping for",
+      "url": "https://www.techradar.com/computing/cpu/nvidia-and-intels-partnership-could-introduce-the-huge-performance-upgrade-for-handheld-gaming-pcs-ive-been-hoping-for",
+      "timestamp": "2025-09-22",
+      "content": "AMD is arguably running away with the crown in the handheld gaming PC space, with its most powerful SoC challenging an Nvidia RTX GPU, but it might be in trouble after Nvidia and Intel's partnership."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "TikTok deal won't include 'golden share' or equity for U.S., Trump administration says",
+      "url": "https://biztoc.com/x/8cfe23fecf490f84",
+      "timestamp": "2025-09-22",
+      "content": "President Donald Trump has secured a golden share in U.S. Steel and taken an equity stake in Intel."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "A $5 Billion Reason To Buy Intel Stock Here",
+      "url": "https://biztoc.com/x/05b67cadcad4cc01",
+      "timestamp": "2025-09-22",
+      "content": "Join Barchart Premier to attend LIVE \"Market on Close\" program each Friday with John Rowland.\nFREE 30 Day Trial\n- Market Pulse\n- VolatilityVolume & Open InterestHorizontal StrategiesButterfly Strategies\n-\n- Market PulseResourcesEuropean FuturesEuropean Groupi…"
+    },
+    {
+      "source": "Al Jazeera English",
+      "headline": "Nvidia to invest billions in OpenAI as AI race heats up",
+      "url": "https://www.aljazeera.com/economy/2025/9/22/nvidia-to-invest-billions-in-openai-as-ai-race-heats-up",
+      "timestamp": "2025-09-22",
+      "content": "The company will also provide chips for OpenAI’s data centres."
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Huawei used its own silicon to re-educate DeepSeek so its output won’t bother Beijing",
+      "url": "https://www.theregister.com/2025/09/22/asia_tech_news_roundup/",
+      "timestamp": "2025-09-22",
+      "content": "PLUS: India ponders tax breaks for datacenters; Samsung plans hiring spree; Taliban bans fiber internet; and more\nAsia In Brief Huawei last week revealed that China’s Zhejiang University used its Ascend 1000 accelerators to create a version of DeepSeek’s R1 m…"
+    },
+    {
+      "source": "Scientific American",
+      "headline": "Announcing the #SciAmInTheWild Photography Contest Short List",
+      "url": "https://www.scientificamerican.com/article/announcing-the-sciaminthewild-photography-contest-short-list/",
+      "timestamp": "2025-09-22",
+      "content": "To celebrate Scientific American’s 180th anniversary, we invited readers to place our magazine covers in the wild. See our staff’s favorite submissions"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Stock Market Today: Dow, S&P 500, Nasdaq Set to Open Down; Nvidia, Tesla, Intel, More Movers",
+      "url": "https://biztoc.com/x/0d5aeefbd21c93ee",
+      "timestamp": "2025-09-22",
+      "content": "LIVE\nDow Set to Open Down as the Market Struggles to Find Catalysts\nThe S&P 500 and Nasdaq are also falling in premarket trading.\nLast Updated:\nSep. 22, 2025 at 3:54 AM ET\nKey Events\nLatest Updates\nStocks looked set to slide on Monday, as investors tried to f…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Bank of America shocks with AMD stock verdict post Nvidia-Intel deal",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_90d22509-969b-469e-8e89-32a72176fc0c",
+      "timestamp": "2025-09-21",
+      "content": null
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "A $5 Billion Reason to Buy Intel Stock Here",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_7955d53c-7f2d-4f0c-b7e1-b7026e11d9c2",
+      "timestamp": "2025-09-21",
+      "content": null
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "I tried using a FreeBSD distro that's meant to be run off a flash drive",
+      "url": "https://www.xda-developers.com/i-tried-using-a-freebsd-distro-thats-meant-be-run-off-a-flash-drive/",
+      "timestamp": "2025-09-21",
+      "content": "NomadBSD exceeded all my expectations"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "US Steel changes course and will keep processing raw steel at Granite City plant in Illinois",
+      "url": "https://biztoc.com/x/cd4d6da022535782",
+      "timestamp": "2025-09-21",
+      "content": ""
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "A profile of Noah Urban, who was a key member of the Scattered Spider group because of his social engineering skills and is serving a 10-year prison sentence",
+      "url": "https://biztoc.com/x/0e4a790dbb4cf532",
+      "timestamp": "2025-09-21",
+      "content": ""
+    },
+    {
+      "source": "Digitimes",
+      "headline": "Nvidia's US$5B Intel stake sparks foundry jitters for TSMC, Samsung",
+      "url": "https://www.digitimes.com/news/a20250919PD219/nvidia-intel-investment-samsung-tsmc-government.html",
+      "timestamp": "2025-09-21",
+      "content": "Nvidia's US$5 billion stake in Intel has shaken the global semiconductor landscape, sparking debate over future foundry competition and supply chain realignment. While the deal excludes wafer foundry cooperation, it has put TSMC and Samsung Electronics on ale…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Dow, S&P 500, Nasdaq futures pull back from records as gold powers to fresh all-time high",
+      "url": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-futures-pull-back-from-records-as-gold-powers-to-fresh-all-time-high-234423591.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Stock market today: Dow, S&P 500, Nasdaq futures pull back from records as gold powers to fresh high",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-pull-back-from-records-as-gold-powers-to-fresh-high-234423457.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "SiliconANGLE News",
+      "headline": "Intel-Nvidia: The baton passes to the CUDA era",
+      "url": "https://siliconangle.com/2025/09/20/intel-nvidia-baton-passes-cuda-era/",
+      "timestamp": "2025-09-21",
+      "content": "In our view, the Intel–Nvidia pact further accentuates Nvidia Corp.’s dominant market position and represents a milestone in the transition to the next era of computing. Just as Intel Corp. had a lock on the market in the ’80s and ’90s, Nvidia has now extende…"
+    },
+    {
+      "source": "Medium",
+      "headline": "The Russians Keep Parking Helicopters On the Same Undefended Tarmac In Crimea.",
+      "url": "https://medium.com/war-is-boring/the-russians-keep-parking-helicopters-on-the-same-undefended-tarmac-in-crimea-940b8a3e017f",
+      "timestamp": "2025-09-21",
+      "content": "Ukrainian drones and missiles range freely across Crimea."
+    },
+    {
+      "source": "Wnd.com",
+      "headline": "Intel chief Gabbard sparks controversy after revoking 37 security clearances without White House approval",
+      "url": "https://www.wnd.com/2025/09/intel-chief-gabbard-sparks-controversy-after-revoking-37/",
+      "timestamp": "2025-09-21",
+      "content": "... Read more"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Stock market today: Dow, S&P 500, Nasdaq turn higher as Nvidia surges on OpenAI deal",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-turn-higher-as-nvidia-surges-on-openai-deal-234423447.html",
+      "timestamp": "2025-09-21",
+      "content": "A parade of Fed speakers and a key inflation print are in focus for clues to further rate cuts."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "‘Time to Sell,’ Warns Top Citi Analyst on Intel Stock after Nvidia-Fueled Rally",
+      "url": "https://biztoc.com/x/7a383d5d95a9bf6f",
+      "timestamp": "2025-09-20",
+      "content": "Top Citi analyst Christopher Danely downgraded Intel (INTC) to Sell from Neutral, even as he raised his price target to $29 from $24. The downgrade came after Intel surged nearly 23% on news that Nvidia (NVDA) will invest $5 billion for a 4% stake and partner…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "I’m the VC researcher who helped uncover Intel’s close ties to China. Its nationalization just exposes a corporate governance crisis",
+      "url": "https://finance.yahoo.com/news/m-vc-researcher-helped-uncover-113000708.html",
+      "timestamp": "2025-09-20",
+      "content": "It wasn’t my plan to find myself embroiled in international intrigue involving semiconductors. I'm a VC who used to be the general counsel for a hockey team."
+    },
+    {
+      "source": "Fc2.com",
+      "headline": "NVIDIAとの協業後もArc GPUの開発は継続される",
+      "url": "https://northwood.blog.fc2.com/blog-entry-12853.html",
+      "timestamp": "2025-09-20",
+      "content": "Intel Arc GPUs Remain in Development, NVIDIA RTX iGPUs Are Complementary（TechPowerUp）Intel says blockbuster Nvidia deal doesn’t change its own roadmap（PC World）先日、IntelとNVIDIAの協業が発表され、“x86 RTX SoC”の開発が行われることなどが明らかにされたが、Intelによるとこの協業はあくまでも補完的なものであり、Intel自身のGPU…"
+    },
+    {
+      "source": "Codingconfessions.com",
+      "headline": "What Makes System Calls Expensive: A Linux Internals Deep Dive",
+      "url": "https://blog.codingconfessions.com/p/what-makes-system-calls-expensive",
+      "timestamp": "2025-09-20",
+      "content": "An explanation of how Linux handles system calls on x86-64 and why they show up as expensive operations in performance profiles"
+    },
+    {
+      "source": "TheStreet",
+      "headline": "Analysts revamp Nvidia stock outlook on its investment in Intel",
+      "url": "https://www.thestreet.com/technology/analysts-revamp-nvidia-stock-outlook-on-its-investment-in-intel-",
+      "timestamp": "2025-09-20",
+      "content": "Analysts provided their opinion on Nvidia stock, following the company's $5 billion investment into Intel."
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "6 operating system luxuries Windows users have never known about Linux",
+      "url": "https://www.xda-developers.com/operating-system-luxuries-windows-users-have-never-known-about-linux/",
+      "timestamp": "2025-09-20",
+      "content": "Windows may seem easier, but Linux has a lot of advantages over it. You might not even know these features exist, but they're fantastic."
+    },
+    {
+      "source": "Digitimes",
+      "headline": "Intel-Nvidia's twin strategy faces speed test, but PC path leads, says DIGITIMES analyst",
+      "url": "https://www.digitimes.com/news/a20250919VL203/nvidia-intel-gpu-cpu-packaging.html",
+      "timestamp": "2025-09-20",
+      "content": "Nvidia and Intel on Thursday detailed a sweeping product roadmap that links their CPU and GPU platforms, while underscoring continued collaboration with Taiwan Semiconductor Manufacturing Company (TSMC) and pointing to Intel's advanced packaging as an enabler."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Investing.com’s stocks of the week",
+      "url": "https://finance.yahoo.com/news/investing-com-stocks-week-083010242.html",
+      "timestamp": "2025-09-20",
+      "content": "Investing.com -- U.S. stocks rose on Friday and are on track for weekly gains following the Federal Reserve rate cut on Wednesday."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Wedbush: Nvidia–Intel (INTC) Deal Is a “Game Changer” for Struggling Chipmaker",
+      "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_8621872a-de20-4848-acaa-aa69eb9c79d6",
+      "timestamp": "2025-09-20",
+      "content": null
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "BofA Sees Stronger Demand for ASML’s Chipmaking Tools Amid AI Boom",
+      "url": "https://finance.yahoo.com/news/bofa-sees-stronger-demand-asml-223915890.html",
+      "timestamp": "2025-09-20",
+      "content": "ASML Holding N.V. (NASDAQ:ASML) is one of the AI Stocks Analysts Are Tracking Closely. On September 18, BofA Securities analyst Didier Scemama raised the..."
+    },
+    {
+      "source": "Fortune",
+      "headline": "I’m the VC researcher who helped uncover Intel’s close ties to China. Its nationalization just exposes a corporate governance crisis",
+      "url": "https://fortune.com/2025/09/20/i-helped-expose-intel-china-corporate-governance-crisis/",
+      "timestamp": "2025-09-20",
+      "content": "It wasn’t my plan to find myself embroiled in international intrigue involving semiconductors. I'm a VC who used to be the general counsel for a hockey team."
+    },
+    {
+      "source": "Raw Story",
+      "headline": "GOP lawmaker accuses fellow Republican of 'greatly exaggerating his military service'",
+      "url": "https://www.rawstory.com/mace-mills-military-service/",
+      "timestamp": "2025-09-20",
+      "content": "Rep. Nancy Mace (R-SC) on Saturday accused fellow Republican lawmaker, Rep. Cory Mills (R-FL), of \"greatly exaggerating his military service.\"Mace recently lashed out at Mills and accused him of privately threatening her, following the failure of her resoluti…"
+    },
+    {
+      "source": "Slashdot.org",
+      "headline": "Intel Says Blockbuster Nvidia Deal Doesn't Change Its Own Roadmap",
+      "url": "https://slashdot.org/story/25/09/19/019243/intel-says-blockbuster-nvidia-deal-doesnt-change-its-own-roadmap",
+      "timestamp": "2025-09-19",
+      "content": "If you're wondering what effect Intel's blockbuster deal with Nvidia will have on its existing product roadmaps, Intel has one message for you: it won't. PCWorld: \"We're not discussing specific roadmaps at this time, but the collaboration is complementary to …"
+    },
+    {
+      "source": "Hackaday",
+      "headline": "Imagining the CPS-1: An Early 70s 4-bit Microcomputer from Canada",
+      "url": "https://hackaday.com/2025/09/19/imagining-the-cps-1-an-early-70s-4-bit-microcomputer-from-canada/",
+      "timestamp": "2025-09-19",
+      "content": "[Michael Gardi] wrote in to let us know about his project: CPS-1: Imagining An Early 70s 4-bit Microcomputer. The CPS-1 was the first Canadian microprocessor-based computer. It was built by …read more"
+    },
+    {
+      "source": "XDA Developers",
+      "headline": "Dangerous PC hardware myths for novice PC builders",
+      "url": "https://www.xda-developers.com/most-dangerous-pc-hardware-myths-for-new-pc-builders/",
+      "timestamp": "2025-09-19",
+      "content": "Don't take every piece of PC building advice seriously"
+    },
+    {
+      "source": "TechRadar",
+      "headline": "Nvidia gained $150 billion on Intel announcement, more than Intel market capitalization - netting a 30x return on its investment in 24 hours with just $5 billion",
+      "url": "https://www.techradar.com/pro/nvidia-gained-usd150-billion-on-intel-announcement-more-than-intel-market-capitalization-netting-a-30x-return-on-its-investment-in-24-hours-with-just-usd5-billion",
+      "timestamp": "2025-09-19",
+      "content": "Nvidia gained $150 billion in market value after shock Intel partnership announcement, rising to $4.28 trillion cap."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Markets Hit New Highs As Intel Surges, Government Spending Looms",
+      "url": "https://www.forbes.com/sites/jjkinahan/2025/09/19/markets-hit-new-highs-as-intel-surges-government-spending-looms/",
+      "timestamp": "2025-09-19",
+      "content": "Stocks hit new highs as Intel soared on Nvidia’s $5B stake. Government spending plans, FedEx earnings, and TikTok talks added to a volatile, policy-driven market backdrop."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Forbes Daily: Intel Shares Spike After Deal With Rival Nvidia",
+      "url": "https://www.forbes.com/sites/daniellechemtob/2025/09/19/forbes-daily-intel-shares-spike-after-deal-with-rival-nvidia/",
+      "timestamp": "2025-09-19",
+      "content": "Today’s Forbes Daily newsletter covers the fallout from Kimmel's removal, the FTC sues Ticketmaster and Live Nation, Congress alarmed over TikTok deal and more."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Intel Got $5 Billion, but Nvidia Could Be the Big Winner. Here’s Why",
+      "url": "https://biztoc.com/x/0fc46dddd53f043f",
+      "timestamp": "2025-09-19",
+      "content": "With the Intel deal, Nvidia may have just secured its computing dominance."
+    },
+    {
+      "source": "Forbes",
+      "headline": "Novice Investor’s Digest For Friday, September 19",
+      "url": "https://www.forbes.com/sites/catherinebrock/2025/09/19/novice-investors-digest-for-friday-september-19/",
+      "timestamp": "2025-09-19",
+      "content": "Stock prices hit new record highs after interest rates decline and Nvidia announces Intel investment. Also: all-at-once rebalancing or gradual?"
+    },
+    {
+      "source": "The Verge",
+      "headline": "Nvidia invests $5 billion into Intel to jointly develop PC and data center chips",
+      "url": "https://www.theverge.com/news/780792/nvidia-intel-investment-pc-chips-data-center",
+      "timestamp": "2025-09-18",
+      "content": "Nvidia is throwing Intel a $5 billion life raft, just weeks after similar stakes from the US government and SoftBank. Nvidia is investing $5 billion in Intel common stock in a collaboration that will see the pair “jointly develop multiple generations of custo…"
+    },
+    {
+      "source": "Gizmodo.com",
+      "headline": "Nvidia Appeals to Trump With a $5 Billion Intel Stake",
+      "url": "https://gizmodo.com/nvidia-appeals-to-trump-with-a-5-billion-intel-stake-2000660647",
+      "timestamp": "2025-09-18",
+      "content": "The two competitors will collaborate to develop PC chips and data centers."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Nvidia CEO explains why he's making a $5 billion bet on struggling chip giant Intel",
+      "url": "https://www.businessinsider.com/intel-investment-nvidia-jensen-huang-stock-ai-chip-plans-2025-9",
+      "timestamp": "2025-09-18",
+      "content": "\"Having Jensen's blessing is priceless,\" wrote Bernstein senior analyst  Stacy Rasgon about Nvidia's $5 billion investment in Intel."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Ives Says Pop the Champagne for Intel After Nvidia Investment",
+      "url": "https://finance.yahoo.com/video/ives-says-pop-champagne-intel-143208222.html",
+      "timestamp": "2025-09-18",
+      "content": "Dan Ives of Wedbush Securities talks about Nvidia agreeing to invest $5 billion in Intel. The companies will co-develop chips for PCs and data centers. The..."
+    },
+    {
+      "source": "Wired",
+      "headline": "China Turns Legacy Chips Into a Trade Weapon",
+      "url": "https://www.wired.com/story/china-probe-us-chip-makers-tiktok-deal/",
+      "timestamp": "2025-09-18",
+      "content": "As Washington pushes for a TikTok deal, Beijing is countering with probes into American chipmakers."
+    },
+    {
+      "source": "Barchart.com",
+      "headline": "Nvidia CEO Jensen Huang Says 'You Can’t Overstate the Magic' That is Taiwan Semiconductor, But is TSM Stock a Buy at New Highs?",
+      "url": "https://www.barchart.com/story/news/34900133/nvidia-ceo-jensen-huang-says-you-cant-overstate-the-magic-that-is-taiwan-semiconductor-but-is-tsm-stock-a-buy-at-new-highs",
+      "timestamp": "2025-09-18",
+      "content": "Foundry giant Taiwan Semiconductor will play a key role in the new partnership between Nvidia and Intel, according to CEOs Jensen Huang and Lip-Bu Tan."
+    },
+    {
+      "source": "Kotaku",
+      "headline": "Treyarch Co-Founder Sentenced To Federal Prison After Flying Drone Into Firefighting Aircraft In January",
+      "url": "https://kotaku.com/treyarch-co-founder-game-dev-drone-firefighting-plane-jail-time-federal-court-2000626833",
+      "timestamp": "2025-09-18",
+      "content": "Also: Nvidia and Intel strike up partnership, Microsoft Flight Sim might be coming to PS5, a new Yakuza game has leaked, and be careful while playing classic Doom\nThe post Treyarch Co-Founder Sentenced To Federal Prison After Flying Drone Into Firefighting Ai…"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Intel and NVIDIA announce partnership that will see \"jointly developed x86 Intel CPUs fused with RTX GPUs\" in shocking move",
+      "url": "https://www.windowscentral.com/hardware/intel/intel-and-nvidia-announce-partnership-that-will-see-jointly-developed-x86-intel-cpus-fused-with-rtx-gpus-in-shocking-move",
+      "timestamp": "2025-09-18",
+      "content": "NVIDIA is partnering up with Intel to product new chips that fuse x86 Intel CPUs with RTX GPUs in an attempt to compete with AMD APUs, along with helping Intel stay afloat in its fight with TSMC."
+    },
+    {
+      "source": "Kotaku",
+      "headline": "Dell Tower PC Desktop Is Cheaper Than Ever, Probably to Clear Shelves Before Amazon Prime Big Deal Days",
+      "url": "https://kotaku.com/dell-tower-pc-desktop-is-cheaper-than-ever-probably-to-clear-shelves-before-amazon-prime-big-deal-days-2000626589",
+      "timestamp": "2025-09-18",
+      "content": "Save 33% on the Dell Vostro 3030 PC tower for a limited time at Amazon.\nThe post Dell Tower PC Desktop Is Cheaper Than Ever, Probably to Clear Shelves Before Amazon Prime Big Deal Days appeared first on Kotaku."
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Intel and Nvidia sitting in a tree, NVLink-I-N-G",
+      "url": "https://www.theregister.com/2025/09/18/nvidia_intel_deal_nvlink/",
+      "timestamp": "2025-09-18",
+      "content": "But still no hero customer for Chipzilla's Foundry biz\nNvidia is set to become one of Intel's largest shareholders after the GPU giant announced on Thursday it would invest $5 billion in the struggling chipmaker under a co-development agreement targeting PCs …"
+    },
+    {
+      "source": "Windows Central",
+      "headline": "Should Microsoft make its own wearable AI hardware with Copilot?",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/should-microsoft-make-its-own-wearable-ai-hardware-with-copilot",
+      "timestamp": "2025-09-18",
+      "content": "Dan & Zac discuss the latest on Windows 11, and whether or not Microsoft should consider making AI wearable hardware powered by Copilot to compete with devices like the newly announced Meta Ray Ban Displays."
+    },
+    {
+      "source": "Al Jazeera English",
+      "headline": "Nvidia to become one of Intel’s biggest shareholders with new investment",
+      "url": "https://www.aljazeera.com/economy/2025/9/18/nvidia-to-become-one-of-intels-biggest-shareholders-with-new-investment",
+      "timestamp": "2025-09-18",
+      "content": "The White House denies any involvement with the deal which came after Nvidia’s CEO met US President Donald Trump."
+    },
+    {
+      "source": "GSMArena.com",
+      "headline": "Nvidia invests $5 billion in Intel, x86 APUs with Nvidia RTX GPU chiplets incoming",
+      "url": "https://www.gsmarena.com/nvidia_invests_5_billion_in_intel_x86_apus_with_nvidia_rtx_gpu_chiplets_incoming-news-69570.php",
+      "timestamp": "2025-09-18",
+      "content": "Did you feel that? There was a tectonic shift in the PC market just now – Nvidia announced that it is buying $5 billion worth of Intel’s common stock and, more importantly, the two companies will jointly build products for PC and servers.\n\nHere’s the most exc…"
+    },
+    {
+      "source": "Gizmodo.com",
+      "headline": "I Watched Every Jimmy Kimmel Monologue Since Charlie Kirk Was Killed and All I Got Was This Sinking Feeling",
+      "url": "https://gizmodo.com/why-jimmy-kimmel-was-canceled-2000660731",
+      "timestamp": "2025-09-18",
+      "content": "Most critics aren't even playing the clip of what Kimmel said."
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Intel says blockbuster Nvidia deal doesn’t change its own roadmap",
+      "url": "https://www.pcworld.com/article/2913872/intel-nvidia-deal-doesnt-change-its-roadmap.html",
+      "timestamp": "2025-09-18",
+      "content": "If you’re wondering what effect Intel’s blockbuster deal with Nvidia will have on its existing product roadmaps, Intel has one message for you: it won’t.\r\n\n\n\n\n“We’re not discussing specific roadmaps at this time, but the collaboration is complementary to Inte…"
+    },
+    {
+      "source": "PCWorld",
+      "headline": "Intel Arc graphics face a murky future after Nvidia’s $5B RTX mashup",
+      "url": "https://www.pcworld.com/article/2913669/intel-arc-graphics-face-a-murky-future-after-nvidias-5b-rtx-mashup.html",
+      "timestamp": "2025-09-18",
+      "content": "Surprise! We woke up this morning to a blockbuster mashup between Intel and Nvidia. Team Green invested a cool $5 billion into Intel, and in exchange, the two companies will be co-creating consumer and data center x86 processors interwoven with Nvidia’s RTX g…"
+    },
+    {
+      "source": "Kotaku",
+      "headline": "Apple Seems to Be Clearing Out the 2025 M4 MacBook Air at an All-Time Low Before Amazon Prime Big Deal Days",
+      "url": "https://kotaku.com/apple-seems-to-be-clearing-out-the-2025-m4-macbook-air-at-an-all-time-low-before-amazon-prime-big-deal-days-2000626103",
+      "timestamp": "2025-09-17",
+      "content": "If Apple is clearing the decks for an early 2026 release of a new model, now's the time to grab the super-fast M4 model at a great price.\nThe post Apple Seems to Be Clearing Out the 2025 M4 MacBook Air at an All-Time Low Before Amazon Prime Big Deal Days appe…"
+    },
+    {
+      "source": "Cheezburger.com",
+      "headline": "Employee quits stable job for better position elsewhere, then gets fired on day four with no justified explanation: '[They] told me I wasn't the right fit!'",
+      "url": "https://cheezburger.com/42430981/employee-quits-stable-job-for-better-position-elsewhere-then-gets-fired-on-day-four-with-no",
+      "timestamp": "2025-09-17",
+      "content": "Every time an employee begins work at a new company, it's a gamble. There is only so much research one can do in advance, and there is only so much intel one can obtain during the application and interview processes. At the end of the day, you rarely know for…"
+    },
+    {
+      "source": "PC Gamer",
+      "headline": "Researchers argue that 'at least 40%' of the bloated x86 ISA could be removed and emulated to improve CPU efficiency",
+      "url": "https://www.pcgamer.com/hardware/processors/researchers-argue-that-at-least-40-percent-of-the-bloated-x86-isa-could-be-removed-and-emulated-to-improve-cpu-efficiency/",
+      "timestamp": "2025-09-17",
+      "content": "They propose a big SHRINK."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "\"A painful reset\" — Fiverr lays off 30% of its employees in a sweeping AI-first overhaul",
+      "url": "https://www.windowscentral.com/artificial-intelligence/fiverr-announces-layoffs-ai-restructuring",
+      "timestamp": "2025-09-17",
+      "content": "Fiverr's CEO recently announced that the company is cutting about 30% of its staff to focus on AI restructuring. Here's why this sort of news is no longer surprising."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "Stock market today: Nasdaq, Dow, S&P 500 rise after Fed signals more cuts, Nvidia bets on Intel",
+      "url": "https://finance.yahoo.com/news/live/stock-market-today-nasdaq-dow-sp-500-rise-after-fed-signals-more-cuts-nvidia-bets-on-intel-231448487.html",
+      "timestamp": "2025-09-17",
+      "content": "Markets are shaking off initial hesitation prompted by Powell's warning that there's no 'risk-free path' for policy."
+    },
+    {
+      "source": "Osnews.com",
+      "headline": "Haiku vastly improves git status performance",
+      "url": "https://www.osnews.com/story/143365/haiku-vastly-improves-git-status-performance/",
+      "timestamp": "2025-09-17",
+      "content": "Another month, another summary of changes in Haiku, the BeOS-inspired operating system. The main focus this past month has been improving the performance of git status, which has been measurably worse on Haiku than on Linux running on similar hardware. This w…"
+    },
+    {
+      "source": "Project Syndicate",
+      "headline": "Lawless State Capitalism Is No Answer to China’s Rise",
+      "url": "https://www.project-syndicate.org/commentary/trump-state-capitalism-lawless-and-no-answer-to-china-rivalry-by-curtis-j-milhaupt-and-angela-huyue-zhang-2025-09",
+      "timestamp": "2025-09-17",
+      "content": "Invoking national security and the economic rivalry with China, the Trump administration is pursuing legally dubious interventions and control of private industry, with potentially high costs for US dynamism. Like the panic over Japan's rise in the 1980s, the…"
+    },
+    {
+      "source": "Kotaku",
+      "headline": "New Splinter Cell Show Trailer Seems To Pick A Canon Ending For Chaos Theory",
+      "url": "https://kotaku.com/new-splinter-cell-trailer-netflix-deathwatch-chaos-theory-ending-john-wick-2000626077",
+      "timestamp": "2025-09-16",
+      "content": "I still miss Michael Ironside, but Sam Fisher sounds perfectly old, grumpy, and deadly in the upcoming animated series\nThe post New Splinter Cell Show Trailer Seems To Pick A Canon Ending For Chaos Theory appeared first on Kotaku."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Ukraine says Russia's new jet-powered attack drone is full of foreign parts and immune to electronic warfare",
+      "url": "https://www.businessinsider.com/russia-jet-powered-drone-immune-electronic-warfare-ukraine-says-2025-9",
+      "timestamp": "2025-09-16",
+      "content": "The Geran-3, modeled after the Iranian-made Shahed-238, is faster and more advanced than its predecessor."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Intel Core Ultra 3 205 delivers impressive results in early review — reportedly surpasses previous-gen Core i3-14100 and Core i5-14400",
+      "url": "https://www.tomshardware.com/pc-components/cpus/intel-core-ultra-3-205-delivers-impressive-results-in-early-review-reportedly-surpasses-previous-gen-core-i3-14100-and-core-i5-14400",
+      "timestamp": "2025-09-16",
+      "content": "Intel's Core Ultra 3 205 has impressed in early testing, with decent performance scores surpassing previous Intel budget picks."
+    },
+    {
+      "source": "Forbes",
+      "headline": "AVGO Stock vs. NVDA & INTC",
+      "url": "https://www.forbes.com/sites/greatspeculations/2025/09/16/avgo-stock-vs-nvda--intc/",
+      "timestamp": "2025-09-16",
+      "content": "The key question is: How does AVGO stock now compare to its peers, such as NVIDIA, Qualcomm, Intel, and Cisco, in terms of size, valuation, growth, and margins?"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "What Is Going On With Intel Stock On Tuesday?",
+      "url": "https://biztoc.com/x/a6deb868479fe7b3",
+      "timestamp": "2025-09-16",
+      "content": "President Donald Trump's administration plans to take a stake in Intel Corp (NASDAQ:INTC) to help the key U.S. chipmaker unlock value. The administration aims to replicate the public-private model that fueled Taiwan Semiconductor Manufacturing Co's (NYSE:TSM)…"
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Microsoft blocks bait for ‘fastest-growing’ 365 phish kit, seizes 338 domains",
+      "url": "https://www.theregister.com/2025/09/16/microsoft_cloudflare_shut_down_raccoono365/",
+      "timestamp": "2025-09-16",
+      "content": "Redmond names alleged ringleader, claims 5K+ creds stolen and $100k pocketed\nMicrosoft has seized 338 websites associated with RaccoonO365 and identified the leader of the phishing service - Joshua Ogundipe - as part of a larger effort to disrupt what Redmond…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "MGX co-invests with Silver Lake in Altera acquisition",
+      "url": "https://finance.yahoo.com/news/mgx-co-invests-silver-lake-142459477.html",
+      "timestamp": "2025-09-16",
+      "content": "DUBAI (Reuters) -MGX, an Abu Dhabi artificial intelligence investment firm and partner of Silver Lake, said on Tuesday it has joined the buyout group in..."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    },
+    {
+      "source": "Forbes",
+      "headline": "The Nvidia Deal And Taxing Exports: The Constitutionality Of It All",
+      "url": "https://www.forbes.com/sites/taxnotes/2025/09/16/the-nvidia-deal-and-taxing-exports-the-constitutionality-of-it-all/",
+      "timestamp": "2025-09-16",
+      "content": "In this episode of Tax Notes Talk, Tax Notes contributing editors Robert Goulder and Joseph Thorndike discuss the recent Nvidia deal to export chips to China, and they question its constitutionality and implications."
+    },
+    {
+      "source": "Digitimes",
+      "headline": "Intel China chairmanship changes hands: Wang Rui retires, Wang Zhicong takes over",
+      "url": "https://www.digitimes.com/news/a20250916VL205/intel-chairman-growth.html",
+      "timestamp": "2025-09-16",
+      "content": "Intel announced on September 16, 2025, that Dr. Wang Rui, chair of Intel China with more than 30 years at the company, will retire this month. The leadership transition has been underway since February 2025, when Wang Zhicong was named vice chairman to prepar…"
+    },
+    {
+      "source": "Cybersecuritydive.com",
+      "headline": "How the retail sector teams up to defend against cybercrime",
+      "url": "https://www.cybersecuritydive.com/news/retail-isac-lessons-learned-scattered-spider/758504/",
+      "timestamp": "2025-09-16",
+      "content": "The cyberthreat intel-sharing and collaboration group RH-ISAC is helping companies confront cyberattacks. But the challenge is delivering timely intelligence in a dynamic threat environment."
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "Nvidia": [
+    {
+      "source": "TheStreet",
+      "headline": "Nvidia suffers a major blow from China",
+      "url": "https://www.thestreet.com/technology/nvidia-suffers-a-major-blow-from-china-",
+      "timestamp": "2025-09-16",
+      "content": "The company keeps running into setbacks in this important market."
+    },
+    {
+      "source": "Windows Central",
+      "headline": "\"Substantially superior to FSR 3.1\" — How modders forced FSR 4 upscaling onto unsupported AMD and NVIDIA cards",
+      "url": "https://www.windowscentral.com/hardware/amd/fsr-4-rdna-2-3-nvidia-amd-unsupported",
+      "timestamp": "2025-09-16",
+      "content": "Remember that FSR 4 source code leak on GitHub from a few weeks ago? Someone used it to get AMD's latest upscaler running on unsupported hardware."
+    },
+    {
+      "source": "The Indian Express",
+      "headline": "Why China is investigating Nvidia for ‘violating’ its anti-monopoly laws",
+      "url": "https://indianexpress.com/article/explained/explained-sci-tech/china-investigating-nvidia-us-ai-race-10253528/",
+      "timestamp": "2025-09-16",
+      "content": "China’s scrutiny of Nvidia is not being seen as an isolated case, but the latest in a series of actions in its AI race with the United States."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Chinese giant Tencent announces domestic AI chip push — says it has fully adapted infrastructure to support homegrown silicon in blow to Nvidia",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tencent-goes-public-with-pivot-to-chinese-chips",
+      "timestamp": "2025-09-16",
+      "content": "Tencent goes public with its pivot to Chinese accelerators, highlighting a deeper break from Nvidia as domestic AI hardware matures."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    },
+    {
+      "source": "Forbes",
+      "headline": "AVGO Stock vs. NVDA & INTC",
+      "url": "https://www.forbes.com/sites/greatspeculations/2025/09/16/avgo-stock-vs-nvda--intc/",
+      "timestamp": "2025-09-16",
+      "content": "The key question is: How does AVGO stock now compare to its peers, such as NVIDIA, Qualcomm, Intel, and Cisco, in terms of size, valuation, growth, and margins?"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "JPMorgan Keeps Overweight Rating on NVDA",
+      "url": "https://finance.yahoo.com/news/jpmorgan-keeps-overweight-rating-nvda-185032696.html",
+      "timestamp": "2025-09-16",
+      "content": "NVIDIA Corporation (NASDAQ:NVDA) is one of the 10 Unrivaled Stocks of the Next 3 Years. On September 4, JPMorgan reaffirmed an Overweight rating on NVIDIA..."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia's China-exclusive RTX 6000D reportedly gets lukewarm reception in China due to hobbled performance — could leave Nvidia with huge backlog of unwanted GPUs",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-china-exclusive-rtx-6000d-reportedly-gets-lukewarm-reception-in-china-due-to-hobbled-performance-could-leave-nvidia-with-huge-backlog-of-unwanted-gpus",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia may struggle to sell the reported two million RTX6000D Chinese GPUs it's set to produce this year, as Chinese firms are showing lukewarm interest amidst ongoing trade negotiations and the uncertain future of Nvidia's B30A GPU."
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "Nvidia Stock Falls. Reasons to Look Past China Fears",
+      "url": "https://biztoc.com/x/41299aae0239f81b",
+      "timestamp": "2025-09-16",
+      "content": ""
+    },
+    {
+      "source": "Forbes",
+      "headline": "The Nvidia Deal And Taxing Exports: The Constitutionality Of It All",
+      "url": "https://www.forbes.com/sites/taxnotes/2025/09/16/the-nvidia-deal-and-taxing-exports-the-constitutionality-of-it-all/",
+      "timestamp": "2025-09-16",
+      "content": "In this episode of Tax Notes Talk, Tax Notes contributing editors Robert Goulder and Joseph Thorndike discuss the recent Nvidia deal to export chips to China, and they question its constitutionality and implications."
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "NVIDIA Corporation (NVDA): A Bull Case Theory",
+      "url": "https://finance.yahoo.com/news/nvidia-corporation-nvda-bull-case-154545960.html",
+      "timestamp": "2025-09-16",
+      "content": "We came across a bullish thesis on NVIDIA Corporation on Compounding Your Wealth’s Substack by Sergey. In this article, we will summarize the bulls’ thesis..."
+    }
+  ],
+  "AMD": [
+    {
+      "source": "Windows Central",
+      "headline": "\"Substantially superior to FSR 3.1\" — How modders forced FSR 4 upscaling onto unsupported AMD and NVIDIA cards",
+      "url": "https://www.windowscentral.com/hardware/amd/fsr-4-rdna-2-3-nvidia-amd-unsupported",
+      "timestamp": "2025-09-16",
+      "content": "Remember that FSR 4 source code leak on GitHub from a few weeks ago? Someone used it to get AMD's latest upscaler running on unsupported hardware."
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD ROCm 7.0 Begins Rocking Out On GitHub",
+      "url": "https://www.phoronix.com/news/AMD-ROCm-7.0-Rolling-Out",
+      "timestamp": "2025-09-16",
+      "content": "As a pleasant surprise waking up this morning is AMD ROCm 7.0 release tags beginning to appear on GitHub, indicating the likely imminent official release of the ROCm 7.0 compute stack as the open-source AMD Radeon/Instinct software stack aimed to be the open …"
+    },
+    {
+      "source": "Phoronix",
+      "headline": "AMD ROCm 7.0 Officially Released With Many Significant Improvements",
+      "url": "https://www.phoronix.com/news/AMD-ROCm-7.0-Released",
+      "timestamp": "2025-09-16",
+      "content": "Overnight the AMD ROCm 7.0 release tags began appearing within the public Git repositories. Now AMD ROCm 7.0 is officially released as a very significant step forward for AMD's open-source GPU compute stack for better competing against NVIDIA's CUDA ecosystem…"
+    },
+    {
+      "source": "Fc2.com",
+      "headline": "TSMC 2nmプロセスの最初の顧客はAMD, NVIDIA, MediaTek, Apple",
+      "url": "https://northwood.blog.fc2.com/blog-entry-12845.html",
+      "timestamp": "2025-09-16",
+      "content": "TSMC's first 2 nm Node Customers are Apple, AMD, NVIDIA, and MediaTek; Intel Missing（TechPowerUp）[News] TSMC 2nm Gains Steam: MediaTek Completes First 2nm Tape-Out as Apple Preps A20, M6, R2（TrendForce）TrendForceがTSMC 2nmプロセス―N2の最初の顧客についての記事を掲載している。最も大きいのはApp…"
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    }
+  ],
+  "Intel": [
+    {
+      "source": "Kotaku",
+      "headline": "New Splinter Cell Show Trailer Seems To Pick A Canon Ending For Chaos Theory",
+      "url": "https://kotaku.com/new-splinter-cell-trailer-netflix-deathwatch-chaos-theory-ending-john-wick-2000626077",
+      "timestamp": "2025-09-16",
+      "content": "I still miss Michael Ironside, but Sam Fisher sounds perfectly old, grumpy, and deadly in the upcoming animated series\nThe post New Splinter Cell Show Trailer Seems To Pick A Canon Ending For Chaos Theory appeared first on Kotaku."
+    },
+    {
+      "source": "Business Insider",
+      "headline": "Ukraine says Russia's new jet-powered attack drone is full of foreign parts and immune to electronic warfare",
+      "url": "https://www.businessinsider.com/russia-jet-powered-drone-immune-electronic-warfare-ukraine-says-2025-9",
+      "timestamp": "2025-09-16",
+      "content": "The Geran-3, modeled after the Iranian-made Shahed-238, is faster and more advanced than its predecessor."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Intel Core Ultra 3 205 delivers impressive results in early review — reportedly surpasses previous-gen Core i3-14100 and Core i5-14400",
+      "url": "https://www.tomshardware.com/pc-components/cpus/intel-core-ultra-3-205-delivers-impressive-results-in-early-review-reportedly-surpasses-previous-gen-core-i3-14100-and-core-i5-14400",
+      "timestamp": "2025-09-16",
+      "content": "Intel's Core Ultra 3 205 has impressed in early testing, with decent performance scores surpassing previous Intel budget picks."
+    },
+    {
+      "source": "Forbes",
+      "headline": "AVGO Stock vs. NVDA & INTC",
+      "url": "https://www.forbes.com/sites/greatspeculations/2025/09/16/avgo-stock-vs-nvda--intc/",
+      "timestamp": "2025-09-16",
+      "content": "The key question is: How does AVGO stock now compare to its peers, such as NVIDIA, Qualcomm, Intel, and Cisco, in terms of size, valuation, growth, and margins?"
+    },
+    {
+      "source": "Biztoc.com",
+      "headline": "What Is Going On With Intel Stock On Tuesday?",
+      "url": "https://biztoc.com/x/a6deb868479fe7b3",
+      "timestamp": "2025-09-16",
+      "content": "President Donald Trump's administration plans to take a stake in Intel Corp (NASDAQ:INTC) to help the key U.S. chipmaker unlock value. The administration aims to replicate the public-private model that fueled Taiwan Semiconductor Manufacturing Co's (NYSE:TSM)…"
+    },
+    {
+      "source": "Theregister.com",
+      "headline": "Microsoft blocks bait for ‘fastest-growing’ 365 phish kit, seizes 338 domains",
+      "url": "https://www.theregister.com/2025/09/16/microsoft_cloudflare_shut_down_raccoono365/",
+      "timestamp": "2025-09-16",
+      "content": "Redmond names alleged ringleader, claims 5K+ creds stolen and $100k pocketed\nMicrosoft has seized 338 websites associated with RaccoonO365 and identified the leader of the phishing service - Joshua Ogundipe - as part of a larger effort to disrupt what Redmond…"
+    },
+    {
+      "source": "Yahoo Entertainment",
+      "headline": "MGX co-invests with Silver Lake in Altera acquisition",
+      "url": "https://finance.yahoo.com/news/mgx-co-invests-silver-lake-142459477.html",
+      "timestamp": "2025-09-16",
+      "content": "DUBAI (Reuters) -MGX, an Abu Dhabi artificial intelligence investment firm and partner of Silver Lake, said on Tuesday it has joined the buyout group in..."
+    },
+    {
+      "source": "Tom's Hardware UK",
+      "headline": "Nvidia tipped to be TSMC's first 16A customer, ahead of Apple — Feynman GPUs could make full use of GAA transistors and backside power",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-dethrones-apple-to-debut-tsmc-a16",
+      "timestamp": "2025-09-16",
+      "content": "Nvidia will be the first customer to use TSMC’s A16, a 1.6nm-class process that marries gate-all-around (GAA) transistors with backside power delivery."
+    },
+    {
+      "source": "Forbes",
+      "headline": "The Nvidia Deal And Taxing Exports: The Constitutionality Of It All",
+      "url": "https://www.forbes.com/sites/taxnotes/2025/09/16/the-nvidia-deal-and-taxing-exports-the-constitutionality-of-it-all/",
+      "timestamp": "2025-09-16",
+      "content": "In this episode of Tax Notes Talk, Tax Notes contributing editors Robert Goulder and Joseph Thorndike discuss the recent Nvidia deal to export chips to China, and they question its constitutionality and implications."
+    },
+    {
+      "source": "Digitimes",
+      "headline": "Intel China chairmanship changes hands: Wang Rui retires, Wang Zhicong takes over",
+      "url": "https://www.digitimes.com/news/a20250916VL205/intel-chairman-growth.html",
+      "timestamp": "2025-09-16",
+      "content": "Intel announced on September 16, 2025, that Dr. Wang Rui, chair of Intel China with more than 30 years at the company, will retire this month. The leadership transition has been underway since February 2025, when Wang Zhicong was named vice chairman to prepar…"
+    },
+    {
+      "source": "Cybersecuritydive.com",
+      "headline": "How the retail sector teams up to defend against cybercrime",
+      "url": "https://www.cybersecuritydive.com/news/retail-isac-lessons-learned-scattered-spider/758504/",
+      "timestamp": "2025-09-16",
+      "content": "The cyberthreat intel-sharing and collaboration group RH-ISAC is helping companies confront cyberattacks. But the challenge is delivering timely intelligence in a dynamic threat environment."
+    }
+  ]
+}
