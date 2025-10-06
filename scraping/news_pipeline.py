@@ -320,17 +320,20 @@ def main():
     print("=" * 50)
     print("1. News Scraping and Processing")
     print("2. Resume from checkpoint")
+
+    days = int(input("Enter number of days to scrape (default 30): ").strip() or 30)
+    max_content = int(input("Enter max content per company (default 50): ").strip() or 50)
     
     choice = input("\nSelect mode (1-2): ").strip()
     
     if choice == "1":
-        result = pipeline.run_hybrid_pipeline(days=30, max_content_per_company=50)
+        result = pipeline.run_hybrid_pipeline(days=days, max_content_per_company=max_content)
         pipeline.update_dataset(result)
     
     elif choice == "2":
         stage = input("Resume from stage (raw/filtered): ")
         filepath = input("Checkpoint file path: ")
-        result = pipeline.resume_from_stage(stage, filepath, max_content_per_company=20)
+        result = pipeline.resume_from_stage(stage, filepath, max_content_per_company=max_content)
         if result:
             pipeline.update_dataset(result)
     
