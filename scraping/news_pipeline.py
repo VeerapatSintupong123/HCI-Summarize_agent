@@ -18,22 +18,41 @@ from typing import Dict, List, Optional, Union
 from newspaper import Article
 from tqdm import tqdm
 import re
-
+from dotenv import load_dotenv
+load_dotenv()
 class NewsAPIScraper:
-    def __init__(self, api_key: str = 'a5e0c9cbf67f45e3980f7e9723cffb90'):
-        self.api_key = api_key
+    def __init__(self):
+        self.api_key = os.getenv("NEWS_API_KEY")
         self.companies = ["NVIDIA", "AMD", "Intel"]  # Keep API names for scraping
     
-    def scrape_all_companies(self, days: int = 7) -> Dict[str, List[Dict]]:
+    def scrape_all_companies(self, days: int = 7, start_date: str = None) -> Dict[str, List[Dict]]:
         print("🚀 Starting news scraping...")
         company_articles = {company: [] for company in self.companies}
         
-        for i in range(1, days + 1):
-            date = (datetime.now() - timedelta(days=i)).strftime('%Y-%m-%d')
+        # Calculate date range
+        if start_date:
+            try:
+                start_dt = datetime.strptime(start_date, '%Y-%m-%d')
+                print(f"📅 Starting from: {start_date}")
+            except ValueError:
+                print(f"❌ Invalid date format '{start_date}'. Using default (days ago from today)")
+                start_dt = datetime.now() - timedelta(days=days)
+        else:
+            start_dt = datetime.now() - timedelta(days=days)
+        
+        # Generate date list
+        dates_to_scrape = []
+        for i in range(days):
+            date = (start_dt + timedelta(days=i)).strftime('%Y-%m-%d')
+            dates_to_scrape.append(date)
+        
+        print(f"📅 Scraping from {dates_to_scrape[0]} to {dates_to_scrape[-1]} ({len(dates_to_scrape)} days)")
+        
+        for date in dates_to_scrape:
             print(f"📅 {date}")
             
             for company in self.companies:
-                url = f"https://newsapi.org/v2/everything?q={company}&from={date}&to={date}&language=en&apiKey={self.api_key}&pageSize=20"
+                url = f"https://newsapi.org/v2/everything?q={company}&from={date}&to={date}&language=en&apiKey={self.api_key}"
                 
                 try:
                     response = requests.get(url)
@@ -88,25 +107,67 @@ class ContentFetcher:
     def __init__(self):
         ssl._create_default_https_context = ssl._create_unverified_context
     
-    def enrich_articles(self, company_data: Dict[str, List[Dict]], max_per_company: int = None) -> Dict[str, List[Dict]]:
+    def enrich_articles(self, company_data: Dict[str, List[Dict]], max_per_day: int = None) -> Dict[str, List[Dict]]:
+        from collections import defaultdict
+        import random
         enriched_data = {}
         
         for company, articles in company_data.items():
             print(f"📄 {company}: fetching content...")
-            articles_to_process = articles[:max_per_company] if max_per_company else articles
+            
+            # Group articles by date
+            grouped = defaultdict(list)
+            for article in articles:
+                # Extract date from timestamp (format: YYYY-MM-DD or YYYY-MM-DDTHH:MM:SSZ)
+                timestamp = article.get('timestamp', '')
+                if timestamp:
+                    # Extract just the date part (YYYY-MM-DD)
+                    if 'T' in timestamp:
+                        date_part = timestamp.split('T')[0]
+                    else:
+                        date_part = timestamp[:10]  # Take first 10 characters
+                    grouped[date_part].append(article)
+                else:
+                    # If no timestamp, group under 'unknown'
+                    grouped['unknown'].append(article)
+            
+            # Pick up to max_per_day for each date (randomly)
+            articles_to_process = []
+            if max_per_day:
+                for date, group in grouped.items():
+                    # Randomly sample up to max_per_day articles, or all if less than max_per_day
+                    sample_size = min(max_per_day, len(group))
+                    random_selection = random.sample(group, sample_size)
+                    articles_to_process.extend(random_selection)
+                print(f"📅 {company}: Randomly selected {max_per_day} articles per day, total: {len(articles_to_process)}")
+            else:
+                articles_to_process = articles
+                print(f"📅 {company}: Processing all {len(articles_to_process)} articles")
             
             for i, article in enumerate(tqdm(articles_to_process), 1):
                 if not article.get('content'):
-                    try:
-                        news_article = Article(article['url'])
-                        news_article.download()
-                        news_article.parse()
-                        article['content'] = news_article.text or None
-                    except:
-                        article['content'] = None
+                    max_retries = 3
+                    retry_count = 0
+                    
+                    while retry_count < max_retries:
+                        try:
+                            news_article = Article(article['url'])
+                            news_article.download()
+                            news_article.parse()
+                            article['content'] = news_article.text or None
+                            break  # Success, exit retry loop
+                        except Exception as e:
+                            retry_count += 1
+                            if retry_count < max_retries:
+                                print(f"  ⚠️  Retry {retry_count}/{max_retries} for URL: {article.get('url', 'Unknown')}")
+                                time.sleep(5)
+                            else:
+                                print(f"  ❌ Failed to fetch content after {max_retries} attempts: {article.get('url', 'Unknown')}")
+                                article['content'] = None
 
-                if hasattr(article, 'description'):
-                    article.delattr('description', None)  # Remove description
+                # Remove description field if it exists
+                if 'description' in article:
+                    del article['description']
                 
                 if i % 10 == 0:
                     time.sleep(1)
@@ -149,7 +210,6 @@ class NewsPipeline:
         self.content_fetcher = ContentFetcher()
     
     def transform_to_dataset_format(self, company_data: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
-        """Transform data to match the 19092025.json format"""
         formatted_data = {}
         
         company_name_map = {
@@ -223,14 +283,14 @@ class NewsPipeline:
         with open(filepath, 'r', encoding='utf-8') as f:
             return json.load(f)
     
-    def run_hybrid_pipeline(self, days: int = 7, max_content_per_company: int = 50) -> str:
+    def run_hybrid_pipeline(self, days: int = 7, max_per_day: int = 10, start_date: str = None) -> str:
         """Hybrid approach: fast operations in memory, slow operations with checkpoints"""
         print("⚡ Running HYBRID pipeline...")
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         
         # Stage 1: Scraping (fast, but save checkpoint)
         print("\n=== Stage 1: Scraping ===")
-        raw_data = self.scraper.scrape_all_companies(days)
+        raw_data = self.scraper.scrape_all_companies(days, start_date)
         self.save_checkpoint("raw", raw_data, timestamp)
         
         # Stage 2: Filtering (fast, in-memory)
@@ -240,13 +300,13 @@ class NewsPipeline:
         # Stage 3: Content Fetching (slow, with progress checkpoints)
         print("\n=== Stage 3: Content Fetching (with checkpoints) ===")
         filtered_file = self.save_checkpoint("filtered", filtered_data, timestamp)
-        enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_content_per_company)
+        enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_per_day)
         final_file = self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         print(f"\n⚡ Hybrid pipeline complete! Final data: {final_file}")
         return final_file
     
-    def resume_from_stage(self, stage: str, filepath: str, max_content_per_company: int = 50) -> str:
+    def resume_from_stage(self, stage: str, filepath: str, max_per_day: int = 10) -> str:
         """Resume pipeline from a specific stage"""
         print(f"🔄 Resuming from {stage} stage...")
         data = self.load_checkpoint(filepath)
@@ -256,12 +316,12 @@ class NewsPipeline:
             # Continue with filtering and content fetching
             filtered_data = self.filter.filter_company_data(data)
             self.save_checkpoint("filtered", filtered_data, timestamp)
-            enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_content_per_company)
+            enriched_data = self.content_fetcher.enrich_articles(filtered_data, max_per_day)
             return self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         elif stage == "filtered":
             # Continue with content fetching
-            enriched_data = self.content_fetcher.enrich_articles(data, max_content_per_company)
+            enriched_data = self.content_fetcher.enrich_articles(data, max_per_day)
             return self.save_checkpoint("final", enriched_data, timestamp, transform_format=True)
         
         else:
@@ -322,18 +382,23 @@ def main():
     print("2. Resume from checkpoint")
     
     choice = input("\nSelect mode (1-2): ").strip()
-
-    days = int(input("Enter number of days to scrape (default 30): ").strip() or 30)
-    max_content = int(input("Enter max content per company (default 50): ").strip() or 50)
     
     if choice == "1":
-        result = pipeline.run_hybrid_pipeline(days=days, max_content_per_company=max_content)
+        days = int(input("Enter number of days to scrape (default 30): ").strip() or 30)
+        max_content = int(input("Enter max content per day and company (default 20): ").strip() or 20)
+        
+        # Get start date if user wants to specify it
+        start_date_input = input("Enter start date (YYYY-MM-DD) or press Enter for default: ").strip()
+        start_date = start_date_input if start_date_input else datetime.now().strftime('%Y-%m-%d')
+
+        result = pipeline.run_hybrid_pipeline(days=days, max_per_day=max_content, start_date=start_date)
         pipeline.update_dataset(result)
     
     elif choice == "2":
+        max_content = int(input("Enter max content per day and company (default 10): ").strip() or 10)
         stage = input("Resume from stage (raw/filtered): ")
         filepath = input("Checkpoint file path: ")
-        result = pipeline.resume_from_stage(stage, filepath, max_content_per_company=max_content)
+        result = pipeline.resume_from_stage(stage, filepath, max_per_day=max_content)
         if result:
             pipeline.update_dataset(result)
     
