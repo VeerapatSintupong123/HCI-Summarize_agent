@@ -3,64 +3,51 @@ from dotenv import load_dotenv
 from smolagents import ToolCallingAgent, InferenceClientModel, tool, OpenAIServerModel
 from chunk_news.vector_db import get_retriever
 from datetime import datetime
-from tavily import TavilyClient
 import time
 
-# --- Load env ---
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_WORKER_MODEL_ID = os.getenv("HF_WORKER_MODEL_ID", "gemini-2.5-flash")
-# --- Model ---
+
 model = OpenAIServerModel(
     model_id=HF_WORKER_MODEL_ID,
     api_base="https://generativelanguage.googleapis.com/v1beta/",
     api_key=GEMINI_API_KEY,
 )
 
-
-# --- Tools ---
-retriever = get_retriever()
-tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY"))
+retriever_instance = get_retriever()
+print("✅ Retriever instance initialized.")
 
 @tool
-def local_retriever_tool(query: str) -> str:
+def local_retriever_tool(queries: list[str]) -> str:
     """
-    Searches the LOCAL news vector database (from 2025) to find historical context.
-    Use this for information known before October 2025.
-    Returns the combined text of the most relevant document chunks.
-
+    Performs multiple rounds of retrieval, each with a different query.
+    
     Args:
-        query (str): The search query string used to retrieve relevant document chunks.
+        queries (list[str]): A list of queries for each retrieval round.
+        top_k (int): Number of top results per round.
 
     Returns:
-        str: Combined text of the most relevant document chunks.
+        str: Combined text of retrieved document chunks from all rounds.
     """
-    print(f"-> Tool 'local_retriever_tool' called with query: '{query}'")
-    docs = retriever.invoke(query)
-    context = "\n\n---\n\n".join(d.page_content for d in docs)
-    print(f"-> Found {len(docs)} relevant document chunks.")
+    
+    combined_docs = []
+    
+    for i, query in enumerate(queries):
+        print(f"  🔹 Retrieval round {i+1}: query='{query}'")
+        docs = retriever_instance.invoke(query)
+        combined_docs.extend(d.page_content for d in docs)
+    
+    seen = set()
+    unique_docs = []
+    for doc in combined_docs:
+        if doc not in seen:
+            seen.add(doc)
+            unique_docs.append(doc)
+
+    context = "\n\n---\n\n".join(unique_docs)
+    print(f"-> Total unique chunks retrieved: {len(unique_docs)}")
     return context
-
-
-# @tool
-# def web_search_tool(query: str) -> str:
-#     """
-#     Searches the web for real-time, up-to-date information.
-#     Use this for recent events, current stock prices, or information not found in the local database.
-#     Returns a concise answer from the web.
-
-#     Args:
-#         query (str): The search query string for the web search.
-
-#     Returns:
-#         str: A concise answer from the web search results.
-#     """
-#     print(f"-> Tool 'web_search_tool' called with query: '{query}'")
-#     response = tavily_client.search(query=query, search_depth="basic")
-#     if response and response.get('results'):
-#         return response['results'][0]['content']
-#     return "No results found from web search."
-
 
 @tool
 def get_current_date_tool() -> str:
@@ -91,26 +78,34 @@ def delay_tool(seconds: int) -> str:
     print("-> Delay finished.")
     return f"Successfully delayed for {seconds} seconds."
 
-# --- Summary Worker Agent ---
 summary_worker_agent = ToolCallingAgent(
     model=model,
-    tools=[local_retriever_tool, get_current_date_tool, delay_tool],
+    tools=[local_retriever_tool, delay_tool],
     name="Summary_Worker_Agent",
-    description="Finds financial news using retriever and date tool and summarizes the content",
-    stream_outputs=False,
+    description=(
+        "You are a Summary Worker Agent. "
+        "Your role is to carefully read financial news articles, including the headlines, "
+        "and gather additional context using the local_retriever_tool for related news of the same day. "
+        "You then create a clear and concise summary that captures the key facts, events, and context, "
+        "so that the leader agent can make informed decisions quickly. "
+        "Focus on presenting the news in a structured, easy-to-understand way, highlighting the most important points."
+    ),
+    stream_outputs=False
 )
+print("✅ Summary Worker Agent initialized.")
 
-# --- Analysis Worker Agent ---
 analysis_worker_agent = ToolCallingAgent(
     model=model,
-    tools=[local_retriever_tool, get_current_date_tool, delay_tool],
+    tools=[local_retriever_tool, delay_tool],
     name="Analysis_Worker_Agent",
-    description="Analyze financial impact trends from financial news using retriever and date tool",
-    stream_outputs=False,
+    description=(
+        "You are an Analysis Worker Agent. "
+        "Your role is to read the provided news article and any additional context retrieved via local_retriever_tool. "
+        "You analyze the financial impact, market trends, and strategic implications of the news. "
+        "Provide a professional yet accessible analysis that identifies key risks, opportunities, "
+        "short-term and long-term effects on the company, competitors, and market sentiment. "
+        "Your insights help the leader agent make strategic decisions, so focus on clarity and actionable takeaways."
+    ),
+    stream_outputs=False
 )
-
-# --- (Optional) Standalone Run ---
-if __name__ == "__main__":
-    query = "Summarize financial impact for NVIDIA Q2 earnings"
-    result = agent.run(query)
-    print("\nWorker Result:\n", result)
+print("✅ Analysis Worker Agent initialized.")

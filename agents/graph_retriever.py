@@ -30,6 +30,8 @@ for chipmaker in data:
                 chipmaker=chipmaker
             )
 
+print("✅ Graph loaded with nodes and edges.")
+
 @tool
 def get_7day_summary(chipmaker: str) -> str:
     """
@@ -128,5 +130,7 @@ graph_retriever = ToolCallingAgent(
     description="Handles graph queries with graph retrieval tools.",
     stream_outputs=False,
 )
+
+print("✅ Graph Retriever Agent initialized.")
 
 # graph_retriever.run("Give me a 7-day summary of news for Nvidia. List 5 entities related to Nvidia. List 5 relations related to Nvidia. What are the relations between Nvidia and ARM?")

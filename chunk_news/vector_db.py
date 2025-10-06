@@ -106,7 +106,7 @@ def load_vector(path: Path):
     Returns:
         The loaded FAISS database object.
     """
-    print(f"Loading vector database from: {path}")
+    print(f"🔄 Loading vector database from: {path}")
     embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)
     # The allow_dangerous_deserialization flag is needed for FAISS with pickle
     db = FAISS.load_local(str(path), embeddings, allow_dangerous_deserialization=True)

@@ -1,0 +1,6 @@
+modify prompt
+
+- add date
+- easy word
+- more relation
+- eval with ground truth
