@@ -13,6 +13,9 @@ NEWS_DATE_FILE = os.getenv("NEWS_DATE_FILE", "")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
 
+headlines = ""
+data_path = os.path.join("data", NEWS_DATE_FILE)
+
 langfuse = get_client()
 if langfuse.auth_check():
     print("✅ Langfuse client is authenticated and ready!")
@@ -35,9 +38,6 @@ leader = ToolCallingAgent(
     stream_outputs=False,
 )
 print("✅ Leader Agent initialized.")
-
-headlines = ""
-data_path = os.path.join("scrape_news", NEWS_DATE_FILE)
 
 with open(data_path, 'r', encoding='utf-8') as f:
     news_data = json.load(f)
@@ -105,7 +105,7 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
 4. Final Output Generation:
     After collecting the outputs from `graph_retriever`, `Summary_Worker_Agent`, and `Analysis_Worker_Agent`, your goal is to compose a clear, narrative-style report — not JSON. 
     The final output must be written in easy word and natural language, suitable for a decision-maker who needs to quickly grasp the situation and its implications.
-    
+
     Structure the final response as follows:
 
     1. **Summary Paragraph**
