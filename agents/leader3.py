@@ -51,6 +51,8 @@ with open(data_path, 'r', encoding='utf-8') as f:
 
 print("✅ News data loaded.")
 
+today = NEWS_DATE_FILE.split('.')[0]
+
 initial_guide = f"""
 **Input Data:**
 - News Headline: "{headlines}"
@@ -64,6 +66,8 @@ initial_guide = f"""
 query = f"""
 You are the Leader Agent, an expert orchestrator. Your primary goal is to manage a team of specialist agents to process a news article and produce a combined JSON output.
 
+**Today is {today}.**
+
 **Available Agents:**
 - `Summary_Worker_Agent`: Specializes in summarizing text.
 - `Analysis_Worker_Agent`: Specializes in analyzing financial impact and trends.
@@ -73,15 +77,18 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
 {initial_guide}
 
 **Importance**
-Use information from all four agents to create a comprehensive and insightful final report. The summary provides the factual basis, the analysis offers depth and implications, and the graph_retriever adds context and relationships that enhance understanding. Together, they ensure the final output is well-rounded, informative, and actionable.
+- Use information from all four agents to create a comprehensive and insightful final report. The summary provides the factual basis, the analysis offers depth and implications, and the graph_retriever adds context and relationships that enhance understanding. Together, they ensure the final output is well-rounded, informative, and actionable.
+- Keep in mind date: {today} is the date of the news article.
 
 **Your Task Instructions (The Plan):**
-1.  **Extract Graph Context (Detailed Sub-plan):** Delegate to the `graph_retriever` with the following logical steps:
+1.  **Extract Graph Context (Detailed Sub-plan):** Delegate to the `graph_retriever` (graph_retriever use in 7 day ago news to get context.) with the following logical steps:
     a. **Identify Primary Company:** First, determine the primary chipmaker (NVIDIA, AMD, or Intel) from the news headline.
     b. **Get Specific Summary:** Use `get_7day_summary` for that primary chipmaker to get focused recent context.
     c. **Find All Related Entities:** Use `get_entities_from_chipmaker` to list all known associated entities (companies, products, people).
     d. **Deep Dive on Relationships:** This is crucial. Identify other key entities mentioned *in the news content*. For each of these secondary entities, use `get_relations_between_entities` to find the precise relationship between the primary company and the secondary entity. This will uncover the direct implications of the news.
     e. **Consolidate Findings:** Combine all retrieved information (summary, entity list, and specific relationships) into a structured context report.    
+    - **MANDATORY DELAY:** Before Start this step, you **MUST** instruct it to call the `delay_tool` with `seconds=90`. This is a critical step for rate limit management.
+    f. **Output Format:** add relation of triplets like "(Entity A) --[Relationship]--> (Entity B)"
 
 2.  **Gather High-Impact Market Context (Detailed Sub-plan):** Delegate to the `enhanced_search_agent` to gather broader market and competitive context. Your goal is to find other significant, recent news that helps understand the landscape surrounding the main article.
     a. **Identify Key Search Terms:** First, extract the core companies, products, and concepts from the news content (e.g., "NVIDIA H200", "data center revenue", "AMD MI300X", "Intel foundry").
@@ -107,6 +114,8 @@ Use information from all four agents to create a comprehensive and insightful fi
     - **MANDATORY DELAY:** Before Start this step, you **MUST** instruct it to call the `delay_tool` with `seconds=90`. This is a critical step for rate limit management.
 
 5. Final Output Generation:
+    The final output must be written in easy word and natural language, suitable for a decision-maker who needs to quickly grasp the situation and its implications.
+
     After collecting the results from `graph_retriever`, `enhanced_search_agent`, `Summary_Worker_Agent`, and `Analysis_Worker_Agent`, generate a cohesive report in the following structured format:
     - A well-structured paragraph that integrates the summary from `Summary_Worker_Agent`, the analysis from `Analysis_Worker_Agent`, insights and relationships from `graph_retriever`, and the high-impact market context from `enhanced_search_agent`. This paragraph should clearly highlight:
         - Main events of the news article

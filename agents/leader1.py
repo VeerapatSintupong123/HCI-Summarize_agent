@@ -49,6 +49,9 @@ with open(data_path, 'r', encoding='utf-8') as f:
 
 print("✅ News data loaded.")
 
+today = NEWS_DATE_FILE.split('.')[0]
+
+
 initial_guide = f"""
 **Input Data:**
 - News Headline: "{headlines}"
@@ -61,6 +64,8 @@ initial_guide = f"""
 
 query = f"""
 You are the Leader Agent, an expert orchestrator. Your primary goal is to manage a team of specialist agents to process a news article and produce a combined JSON output.
+
+**Today is {today}.**
 
 **Available Agents:**
 - `Summary_Worker_Agent`: Specializes in summarizing text.
@@ -83,7 +88,7 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
 After collecting the results from both agents, generate a cohesive report in the following format:
 - Paragraph: A well-structured paragraph that integrates the summary from the Summary_Worker_Agent and the analysis from the Analysis_Worker_Agent. This should highlight the main events and their financial implications in clear, natural language.
 - Key Insight (short paragraph): A concise, standalone paragraph that synthesizes the most important takeaway from both the summary and the analysis, emphasizing the broader financial significance of the news. It should be slightly more detailed than a single sentence but remain compact and impactful.
-- Bullet Points: A concise list of the most significant implications or insights, making it easy to understand the critical points at a glance.
+- Bullet Points: A concise list of the most significant implications or insights, making it easy to understand the critical points at a glance and using easy word.
 
 """
 
