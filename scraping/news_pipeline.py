@@ -20,7 +20,7 @@ from tqdm import tqdm
 import re
 
 class NewsAPIScraper:
-    def __init__(self, api_key: str = '7eb571b97f8440118c46dc8c74279e0e'):
+    def __init__(self, api_key: str = 'a5e0c9cbf67f45e3980f7e9723cffb90'):
         self.api_key = api_key
         self.companies = ["NVIDIA", "AMD", "Intel"]  # Keep API names for scraping
     
@@ -104,8 +104,9 @@ class ContentFetcher:
                         article['content'] = news_article.text or None
                     except:
                         article['content'] = None
-                
-                article.delattr('description', None)  # Remove description
+
+                if hasattr(article, 'description'):
+                    article.delattr('description', None)  # Remove description
                 
                 if i % 10 == 0:
                     time.sleep(1)
@@ -319,17 +320,20 @@ def main():
     print("=" * 50)
     print("1. News Scraping and Processing")
     print("2. Resume from checkpoint")
+
+    days = int(input("Enter number of days to scrape (default 30): ").strip() or 30)
+    max_content = int(input("Enter max content per company (default 50): ").strip() or 50)
     
     choice = input("\nSelect mode (1-2): ").strip()
     
     if choice == "1":
-        result = pipeline.run_hybrid_pipeline(days=7, max_content_per_company=20)
+        result = pipeline.run_hybrid_pipeline(days=days, max_content_per_company=max_content)
         pipeline.update_dataset(result)
     
     elif choice == "2":
         stage = input("Resume from stage (raw/filtered): ")
         filepath = input("Checkpoint file path: ")
-        result = pipeline.resume_from_stage(stage, filepath, max_content_per_company=20)
+        result = pipeline.resume_from_stage(stage, filepath, max_content_per_company=max_content)
         if result:
             pipeline.update_dataset(result)
     
