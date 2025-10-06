@@ -20,7 +20,7 @@ from tqdm import tqdm
 import re
 
 class NewsAPIScraper:
-    def __init__(self, api_key: str = '7eb571b97f8440118c46dc8c74279e0e'):
+    def __init__(self, api_key: str = 'a5e0c9cbf67f45e3980f7e9723cffb90'):
         self.api_key = api_key
         self.companies = ["NVIDIA", "AMD", "Intel"]  # Keep API names for scraping
     
@@ -104,8 +104,9 @@ class ContentFetcher:
                         article['content'] = news_article.text or None
                     except:
                         article['content'] = None
-                
-                article.delattr('description', None)  # Remove description
+
+                if hasattr(article, 'description'):
+                    article.delattr('description', None)  # Remove description
                 
                 if i % 10 == 0:
                     time.sleep(1)
@@ -323,7 +324,7 @@ def main():
     choice = input("\nSelect mode (1-2): ").strip()
     
     if choice == "1":
-        result = pipeline.run_hybrid_pipeline(days=7, max_content_per_company=20)
+        result = pipeline.run_hybrid_pipeline(days=30, max_content_per_company=50)
         pipeline.update_dataset(result)
     
     elif choice == "2":
