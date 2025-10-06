@@ -12,6 +12,9 @@ NEWS_DATE_FILE = os.getenv("NEWS_DATE_FILE", "")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
 
+headlines = ""
+data_path = os.path.join("data", NEWS_DATE_FILE)
+
 langfuse = get_client()
 if langfuse.auth_check():
     print("✅ Langfuse client is authenticated and ready!")
@@ -34,9 +37,6 @@ leader = ToolCallingAgent(
     stream_outputs=False,
 )
 print("✅ Leader Agent initialized.")
-
-headlines = ""
-data_path = os.path.join("scrape_news", NEWS_DATE_FILE)
 
 with open(data_path, 'r', encoding='utf-8') as f:
     news_data = json.load(f)
@@ -85,10 +85,12 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
     - Be written in clear, professional language, ensuring the insights are easy to understand and can be utilized for strategic decision-making.
 
 3. Final Output Generation:
+    The final output must be written in easy word and natural language, suitable for a decision-maker who needs to quickly grasp the situation and its implications.
+
 After collecting the results from both agents, generate a cohesive report in the following format:
 - Paragraph: A well-structured paragraph that integrates the summary from the Summary_Worker_Agent and the analysis from the Analysis_Worker_Agent. This should highlight the main events and their financial implications in clear, natural language.
 - Key Insight (short paragraph): A concise, standalone paragraph that synthesizes the most important takeaway from both the summary and the analysis, emphasizing the broader financial significance of the news. It should be slightly more detailed than a single sentence but remain compact and impactful.
-- Bullet Points: A concise list of the most significant implications or insights, making it easy to understand the critical points at a glance and using easy word.
+- Bullet Points: A concise list of the most significant implications or insights, making it easy to understand the critical points at a glance.
 
 """
 
