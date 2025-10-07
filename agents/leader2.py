@@ -6,7 +6,7 @@ from smolagents import OpenAIServerModel, tool, ToolCallingAgent
 from openinference.instrumentation.smolagents import SmolagentsInstrumentor
 from agents.worker import summary_worker_agent,analysis_worker_agent
 from agents.graph_retriever import graph_retriever
-from langfuse import get_client
+from langfuse import observe, get_client
 
 load_dotenv()
 NEWS_DATE_FILE = os.getenv("NEWS_DATE_FILE", "") 
@@ -14,7 +14,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 HF_LEADER_MODEL_ID = os.getenv("HF_LEADER_MODEL_ID", "gemini-2.5-flash")
 
 headlines = ""
-data_path = os.path.join("data", NEWS_DATE_FILE)
+data_path = os.path.join("data/query", NEWS_DATE_FILE)
 
 langfuse = get_client()
 if langfuse.auth_check():
@@ -107,6 +107,7 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
     The final output must be written in easy word and natural language, suitable for a decision-maker who needs to quickly grasp the situation and its implications.
 
     Structure the final response as follows:
+    - Title: Summary Report of Financial News ({today})
 
     1. **Summary Paragraph**
         Write a cohesive and readable paragraph that seamlessly combines:
@@ -127,9 +128,27 @@ You are the Leader Agent, an expert orchestrator. Your primary goal is to manage
         - Notable risks or opportunities identified in the summary or analysis
         - High-impact implications for market strategy or investor decisions
         Each bullet should be clear and concise (one sentence each), directly reflecting the insights found by the agents and show relation of triplets like "(Entity A) --[Relationship]--> (Entity B)".
+
+Example Output:
+### Summary Report of Financial News (26/01/2025)
+
+### Summary Paragraph
+Summary Paragraph
+
+### Key Insight
+Key Insight
+
+### Key Implications
+Bullet List of Implications
 """
 
-response = leader.run(query)
+trace_name = f"Leader2_{today}"
+@observe()
+def process_request(query):
+    # Add to the current trace
+    langfuse.update_current_trace(session_id="2", name=trace_name)
+    return leader.run(query)
+response = process_request(query)
 
 with open('summary_leader2.md', 'w', encoding='utf-8') as f:
     f.write(response)
