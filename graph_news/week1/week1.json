@@ -1,0 +1,4713 @@
+{
+  "Nvidia": [
+    {
+      "date": "2025-09-15",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "violates",
+            "detail": "anti-monopoly laws"
+          },
+          "object": "China"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "faces",
+            "detail": "antitrust probe in December 2024"
+          },
+          "object": "SAMR"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "acquires",
+            "detail": "Mellanox in 2020"
+          },
+          "object": "Mellanox"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "$6.9 billion deal with Mellanox in March 2019"
+          },
+          "object": "Mellanox"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "complies",
+            "detail": "with the law"
+          },
+          "object": "law"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "at the heart of"
+          },
+          "object": "tensions"
+        },
+        {
+          "subject": "US",
+          "relation": {
+            "verb": "requires",
+            "detail": "export license for H20 chip in April"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "expects",
+            "detail": "$5.5 billion hit"
+          },
+          "object": "earnings"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "sells",
+            "detail": "H20 chips in China in July"
+          },
+          "object": "China"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "receives",
+            "detail": "export assurances from US"
+          },
+          "object": "US"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "a titan of the"
+          },
+          "object": "industry"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "benefits",
+            "detail": "from investor interest"
+          },
+          "object": "AI"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "holds",
+            "detail": "immense market"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "the face of"
+          },
+          "object": "hype"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "hits",
+            "detail": "$4 trillion"
+          },
+          "object": "valuation"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "outperforms",
+            "detail": "on valuation"
+          },
+          "object": "Apple"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "DLSS upscaling"
+          },
+          "object": "DLSS"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "creates",
+            "detail": "frame generation"
+          },
+          "object": "tools"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "supplies",
+            "detail": "GPUs for AI"
+          },
+          "object": "world"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "faces",
+            "detail": "H20 chip ban in April"
+          },
+          "object": "China"
+        },
+        {
+          "subject": "Jensen",
+          "relation": {
+            "verb": "reaches",
+            "detail": "deal with President Trump in July"
+          },
+          "object": "Trump"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "orders",
+            "detail": "300,000 H20 chips"
+          },
+          "object": "TSMC"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "stockpiles",
+            "detail": "600,000 H20 chips"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "pays",
+            "detail": "15% chip tax"
+          },
+          "object": "US"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "states",
+            "detail": "GPUs have no trackers"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "trades",
+            "detail": "close to all-time"
+          },
+          "object": "highs"
+        },
+        {
+          "subject": "Canonical",
+          "relation": {
+            "verb": "partners",
+            "detail": "to provide AI solutions"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "provides",
+            "detail": "turnkey AI solutions for"
+          },
+          "object": "enterprise"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "parallel computing platform"
+          },
+          "object": "CUDA"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "produces",
+            "detail": "RTX series"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "holds",
+            "detail": "top GPU spots on"
+          },
+          "object": "Steam"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "earns",
+            "detail": "$17 billion revenue"
+          },
+          "object": "China"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "has",
+            "detail": "CEO"
+          },
+          "object": "Jensen"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "supplies",
+            "detail": null
+          },
+          "object": "hardware"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "most valuable"
+          },
+          "object": "company"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "hardware"
+          },
+          "object": "leader"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "focuses",
+            "detail": null
+          },
+          "object": "AI"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "AI"
+          },
+          "object": "PCs"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": null
+          },
+          "object": "Robotics"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partners",
+            "detail": null
+          },
+          "object": "Toyota"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partners",
+            "detail": null
+          },
+          "object": "Tesla"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "had",
+            "detail": "top gaming"
+          },
+          "object": "revenue"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "had",
+            "detail": "smaller datacenter"
+          },
+          "object": "revenue"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "sees",
+            "detail": "datacenter segment"
+          },
+          "object": "growth"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Microsoft"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Meta"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Google"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Amazon"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Oracle"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "Tiktok"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "CoreWeave"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "competes",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "relies",
+            "detail": "for production"
+          },
+          "object": "TSMC"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "relies",
+            "detail": "for memory chips"
+          },
+          "object": "Samsung"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "loses",
+            "detail": "consumer video card"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "jumps",
+            "detail": "6.5%"
+          },
+          "object": "price"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "climbs",
+            "detail": "1200% in three years"
+          },
+          "object": "price"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "removes",
+            "detail": "from online marketplace"
+          },
+          "object": "RTX 5090"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "removes",
+            "detail": "from online marketplace"
+          },
+          "object": "RTX 5080"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": null
+          },
+          "object": "RTX 5070"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "produces",
+            "detail": "Founders Edition"
+          },
+          "object": "RTX 50"
+        },
+        {
+          "subject": "Davidson",
+          "relation": {
+            "verb": "upgrades",
+            "detail": "to Buy"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "AI platforms for"
+          },
+          "object": "datacenters"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "AI platforms for"
+          },
+          "object": "cars"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "AI platforms for"
+          },
+          "object": "robotics"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "AI platforms for"
+          },
+          "object": "cloud"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "makes",
+            "detail": "Jetson"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "makes",
+            "detail": "Jetson Orin"
+          },
+          "object": "Nano"
+        },
+        {
+          "subject": "Colin",
+          "relation": {
+            "verb": "joins",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "open-source GPU"
+          },
+          "object": "drivers"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "networking"
+          },
+          "object": "products"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "data center"
+          },
+          "object": "offerings"
+        },
+        {
+          "subject": "SuperMicro",
+          "relation": {
+            "verb": "ships",
+            "detail": "Nvidia Blackwell"
+          },
+          "object": "solutions"
+        },
+        {
+          "subject": "SuperMicro",
+          "relation": {
+            "verb": "partners",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Gearbox",
+          "relation": {
+            "verb": "posts",
+            "detail": "Nvidia optimization"
+          },
+          "object": "guide"
+        },
+        {
+          "subject": "Gearbox",
+          "relation": {
+            "verb": "uses",
+            "detail": "Nvidia"
+          },
+          "object": "app"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "uses",
+            "detail": "L2 cache"
+          },
+          "object": "strategy"
+        },
+        {
+          "subject": "Blackwell",
+          "relation": {
+            "verb": "has",
+            "detail": "L2"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "creates",
+            "detail": "video graphics"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "holds",
+            "detail": "94% market"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "provides",
+            "detail": "custom graphics for Switch 2"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "uses",
+            "detail": "CUDA"
+          },
+          "object": "cores"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "uses",
+            "detail": null
+          },
+          "object": "VRAM"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "uses",
+            "detail": "Ti"
+          },
+          "object": "branding"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "sells",
+            "detail": "downgraded versions due to US restrictions"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "revises",
+            "detail": "down $8 billion in May"
+          },
+          "object": "revenue"
+        },
+        {
+          "subject": "Huang",
+          "relation": {
+            "verb": "lobbies",
+            "detail": "for H20 chip sales"
+          },
+          "object": "Trump"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "gives",
+            "detail": "15% cut of China revenue"
+          },
+          "object": "government"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "denies",
+            "detail": "kill switch and backdoor claims"
+          },
+          "object": "claim"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "delays",
+            "detail": "H20"
+          },
+          "object": "shipments"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "concedes",
+            "detail": "disappointing from China"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "provides",
+            "detail": "optimal settings for Borderlands 4"
+          },
+          "object": "charts"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "recommends",
+            "detail": "Game Ready Driver 581.29"
+          },
+          "object": "app"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "for GeForce graphics cards"
+          },
+          "object": "guide"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "wins",
+            "detail": "over DA Davidson"
+          },
+          "object": "firm"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "on Jim Cramer's radar"
+          },
+          "object": "stock"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "works",
+            "detail": "with Kioxia to build SSD"
+          },
+          "object": "Kioxia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "plans",
+            "detail": "to use SSDs for AI performance"
+          },
+          "object": "SSDs"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "shows",
+            "detail": "in building SSDs with 100 million IOPS"
+          },
+          "object": "interest"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "includes",
+            "detail": "AI-driven"
+          },
+          "object": "filters"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "adds",
+            "detail": "new GeForce Now"
+          },
+          "object": "games"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "establishes",
+            "detail": "GFN"
+          },
+          "object": "Thursday"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "supports",
+            "detail": "over 2,300 GeForce Now"
+          },
+          "object": "games"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "doubles",
+            "detail": "GeForce Now library"
+          },
+          "object": "size"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "introduces",
+            "detail": "Install-to-Play"
+          },
+          "object": "feature"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "backs",
+            "detail": "Series A funding for"
+          },
+          "object": "Cusp"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "creates",
+            "detail": "millionaire"
+          },
+          "object": "staffers"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "releases",
+            "detail": "Open Model License Agreement for"
+          },
+          "object": "weights"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "rolls",
+            "detail": "GeForce Now service update"
+          },
+          "object": "Wednesday"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "Ultimate $20-per-month"
+          },
+          "object": "subscription"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "updates",
+            "detail": "GeForce Now with RTX 5080"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "reduces",
+            "detail": "GeForce Now latency below 30ms"
+          },
+          "object": "latency"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "promotes",
+            "detail": "Multi-Frame Generation"
+          },
+          "object": "capabilities"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "Shield set-top"
+          },
+          "object": "box"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "introduces",
+            "detail": "Cinematic quality"
+          },
+          "object": "mode"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "updates",
+            "detail": "Steam Deck"
+          },
+          "object": "app"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "releases",
+            "detail": "Lenovo Legion Go S"
+          },
+          "object": "app"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "opens",
+            "detail": "GeForce Now for new titles on"
+          },
+          "object": "servers"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "plans",
+            "detail": "to add more GeForce Now"
+          },
+          "object": "games"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "considers",
+            "detail": "nuclear"
+          },
+          "object": "energy"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "Rubin CPX with 128GB"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "disaggregated"
+          },
+          "object": "inference"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "Dynamo"
+          },
+          "object": "software"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "Vera Rubin NVL144 CPX"
+          },
+          "object": "rack"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "plans",
+            "detail": "Rubin CPX and NVL144 CPX for late 2026"
+          },
+          "object": "shipments"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "includes",
+            "detail": "Rubin Ultra, Feynman in"
+          },
+          "object": "roadmap"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "extends",
+            "detail": "Rubin"
+          },
+          "object": "architecture"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "triplets": [
+        {
+          "subject": "Oracle",
+          "relation": {
+            "verb": "has",
+            "detail": "cloud contracts with"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Borderlands",
+          "relation": {
+            "verb": "recommends",
+            "detail": "minimum GPU RTX 2070"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Borderlands",
+          "relation": {
+            "verb": "recommends",
+            "detail": "recommended GPU RTX 3080"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "DLSS",
+          "relation": {
+            "verb": "needs",
+            "detail": "GeForce RTX 50 series"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "hosts",
+            "detail": "AI Podcast"
+          },
+          "object": "podcast"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "uses",
+            "detail": "to train AI"
+          },
+          "object": "data"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "states",
+            "detail": "content use legal"
+          },
+          "object": "use"
+        },
+        {
+          "subject": "David",
+          "relation": {
+            "verb": "sued",
+            "detail": "for Cosmos AI"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "launches",
+            "detail": "Blackwell for GeForce"
+          },
+          "object": "Blackwell"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "integrates",
+            "detail": "DLSS 4 into GeForce"
+          },
+          "object": "DLSS"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "brings",
+            "detail": "RTX 5080-based to GeForce"
+          },
+          "object": "machines"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "cloud gaming service"
+          },
+          "object": "GeForce"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "updates to RTX Remix"
+          },
+          "object": "updates"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "offers",
+            "detail": "RTX Remix update app"
+          },
+          "object": "app"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "gives",
+            "detail": "visual effects tools to modders"
+          },
+          "object": "tools"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "claims",
+            "detail": "particles render without reduction"
+          },
+          "object": "particles"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "recommends",
+            "detail": "RTX 30-series cards"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "publishes",
+            "detail": "RTX Remix video"
+          },
+          "object": "video"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "adds",
+            "detail": "scripting support in Remix"
+          },
+          "object": "support"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "states",
+            "detail": "165 games compatible with Remix"
+          },
+          "object": "games"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "modding platform"
+          },
+          "object": "Remix"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "releases",
+            "detail": "for Remix"
+          },
+          "object": "update"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "requires",
+            "detail": "for Remix mods"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partners",
+            "detail": "with surveillance firms"
+          },
+          "object": "firms"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "adds",
+            "detail": "AI to camera systems"
+          },
+          "object": "capabilities"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "supplies",
+            "detail": "for training AI"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "ends",
+            "detail": "with surveillance firms"
+          },
+          "object": "relationships"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "collaborates",
+            "detail": "with police researchers"
+          },
+          "object": "researchers"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "supplies",
+            "detail": "for surveillance research"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "of Synopsys"
+          },
+          "object": "partner"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "powers",
+            "detail": "for Nebius"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "participates",
+            "detail": "in Mistral funding"
+          },
+          "object": "round"
+        }
+      ]
+    }
+  ],
+  "AMD": [
+    {
+      "date": "2025-09-15",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offer",
+            "detail": "cards from RX 5700 XT to RX 9070 XT"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "developer",
+          "relation": {
+            "verb": "release",
+            "detail": "optimization guides for GPUs"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "work",
+            "detail": "on checkpoint/restore ROCm workloads"
+          },
+          "object": "workloads"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "add",
+            "detail": "CRIU support for GEM objects"
+          },
+          "object": "drivers"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "enhance",
+            "detail": "GCN 1.0 and 1.1 support on AMDGPU driver"
+          },
+          "object": "driver"
+        },
+        {
+          "subject": "ASUS",
+          "relation": {
+            "verb": "use",
+            "detail": "Ryzen Z1 Extreme processor"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "MSI",
+          "relation": {
+            "verb": "pass",
+            "detail": "on offerings"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "chips",
+          "relation": {
+            "verb": "appear",
+            "detail": "in Steam Deck"
+          },
+          "object": "Deck"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "appear",
+            "detail": "in Lenovo Legion Go"
+          },
+          "object": "Go"
+        },
+        {
+          "subject": "Xbox",
+          "relation": {
+            "verb": "feature",
+            "detail": "None"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "agree",
+            "detail": "to pay 15% chip tax for licenses to China"
+          },
+          "object": "tax"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "become",
+            "detail": "None"
+          },
+          "object": "supporter"
+        },
+        {
+          "subject": "Radeon",
+          "relation": {
+            "verb": "release",
+            "detail": "eight years ago"
+          },
+          "object": "card"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "deliver",
+            "detail": "up to 50 TOPS AI computing power"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "give",
+            "detail": "x86 alternative"
+          },
+          "object": "makers"
+        },
+        {
+          "subject": "markets",
+          "relation": {
+            "verb": "shift",
+            "detail": "toward"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "shift",
+            "detail": "to leader in benchmarks, efficiency, value"
+          },
+          "object": "leader"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "gain",
+            "detail": "ground in high-end"
+          },
+          "object": "market"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "increase",
+            "detail": "revenue share to 27.8% in Q2 2025"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "increase",
+            "detail": "revenue share to 39.3% in desktop CPU market"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "drive",
+            "detail": "surge in desktop CPU market"
+          },
+          "object": "surge"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "occupy",
+            "detail": "all top 30 slots for professional workloads"
+          },
+          "object": "slots"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "earn",
+            "detail": "None"
+          },
+          "object": "trust"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offer",
+            "detail": "better real-world performance"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "use",
+            "detail": "less power"
+          },
+          "object": "power"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "become",
+            "detail": "more reliable choice for buyers"
+          },
+          "object": "choice"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "outperform",
+            "detail": "Intel Core i9-12900K"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "deliver",
+            "detail": "34% higher FPS"
+          },
+          "object": "FPS"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "have",
+            "detail": "more L3 cache (144MB)"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "have",
+            "detail": "lower power consumption"
+          },
+          "object": "consumption"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "guarantee",
+            "detail": "AM5 platform support until 2027"
+          },
+          "object": "support"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "fall",
+            "detail": "stock by 4%"
+          },
+          "object": "stock"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "Orion APU"
+          },
+          "object": "Orion"
+        },
+        {
+          "subject": "Orion",
+          "relation": {
+            "verb": "features",
+            "detail": "10 Zen 6 cores"
+          },
+          "object": "cores"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "RDNA 5"
+          },
+          "object": "architecture"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "advances",
+            "detail": "by 2027"
+          },
+          "object": "architecture"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "pushes",
+            "detail": "forward"
+          },
+          "object": "development"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "receives",
+            "detail": "P-State driver fixes"
+          },
+          "object": "drivers"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "VMSCAPE vulnerability"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Ryzen"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "outperforms",
+            "detail": "Snapdragon X Elite"
+          },
+          "object": "Elite"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "is",
+            "detail": "an AI"
+          },
+          "object": "stock"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "stock price target $185"
+          },
+          "object": "target"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "MI355 chip"
+          },
+          "object": "MI355"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "acknowledges",
+            "detail": "pricing uplift"
+          },
+          "object": "MI325"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "rack solution"
+          },
+          "object": "MI400"
+        },
+        {
+          "subject": "Meta",
+          "relation": {
+            "verb": "tests",
+            "detail": "MI400 rack solution"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "Microsoft",
+          "relation": {
+            "verb": "tests",
+            "detail": "MI400 rack solution"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "Oracle",
+          "relation": {
+            "verb": "tests",
+            "detail": "MI400 rack solution"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "xAI",
+          "relation": {
+            "verb": "tests",
+            "detail": "MI400 rack solution"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "for data centers"
+          },
+          "object": "semiconductors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "sells",
+            "detail": "for gaming"
+          },
+          "object": "semiconductors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "for AI"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "sells",
+            "detail": "for embedded applications"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "for data centers"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "sells",
+            "detail": "for gaming"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Ryzen 5"
+          },
+          "object": "5600G"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "stock"
+          },
+          "object": "cooler"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "trades",
+            "detail": "close to all-time highs"
+          },
+          "object": "stock"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "remains",
+            "detail": "in market share"
+          },
+          "object": "stagnant"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "graphics architecture"
+          },
+          "object": "RDNA4"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "fills",
+            "detail": "discrete GPU line"
+          },
+          "object": "RX9000"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "improves",
+            "detail": "across rasterization, compute, raytracing"
+          },
+          "object": "efficiency"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "caters",
+            "detail": "ML"
+          },
+          "object": "workloads"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "improves",
+            "detail": "efficiency"
+          },
+          "object": "raytracing"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "improves",
+            "detail": "efficiency"
+          },
+          "object": "machinelearning"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "improves",
+            "detail": ""
+          },
+          "object": "rasterization"
+        },
+        {
+          "subject": "RX9070XT",
+          "relation": {
+            "verb": "has",
+            "detail": "two media"
+          },
+          "object": "engines"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "features",
+            "detail": "faster decoding"
+          },
+          "object": "speed"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "targets",
+            "detail": "encoding quality for H.264, H.265, AV1"
+          },
+          "object": "codecs"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "gets",
+            "detail": "higher VMAF"
+          },
+          "object": "scores"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "preserves",
+            "detail": "high contrast"
+          },
+          "object": "outlines"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "handles",
+            "detail": "better"
+          },
+          "object": "text"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "improves",
+            "detail": "encoding, ~190 to ~200 FPS"
+          },
+          "object": "speed"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "adds",
+            "detail": "Radeon Image Sharpening"
+          },
+          "object": "filter"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "targets",
+            "detail": "multi-monitor idle"
+          },
+          "object": "power"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "variable refresh, FreeSync"
+          },
+          "object": "rates"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "gets",
+            "detail": "intermediate GDDR6 power"
+          },
+          "object": "state"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "retains",
+            "detail": "Workgroup Processor"
+          },
+          "object": "layout"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "gets",
+            "detail": "raytracing units, BVH nodes, scheduler"
+          },
+          "object": "improvements"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "scalar"
+          },
+          "object": "unit"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "gains",
+            "detail": "scalar floating point"
+          },
+          "object": "instructions"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "brings",
+            "detail": "scalar floating point to discrete GPUs"
+          },
+          "object": "capability"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "splits",
+            "detail": "signal/wait actions"
+          },
+          "object": "barrier"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "has",
+            "detail": "8 MB L2"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "finds",
+            "detail": "raytracing benefit from L2"
+          },
+          "object": "workloads"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "cuts",
+            "detail": "fetched beyond L2"
+          },
+          "object": "data"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "shifts",
+            "detail": "making faster caches bigger"
+          },
+          "object": "strategy"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "lacks",
+            "detail": "mid-level L1"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "allocates",
+            "detail": "area/transistor to L2"
+          },
+          "object": "budget"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "brings",
+            "detail": "transparent compression"
+          },
+          "object": "improvements"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "throughout SoC"
+          },
+          "object": "compression"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "summarizes",
+            "detail": ""
+          },
+          "object": "targets"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "applies",
+            "detail": "Infinity Cache"
+          },
+          "object": "compression"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "achieves",
+            "detail": "better with smaller Infinity Cache"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "explains",
+            "detail": "RAS in RDNA4"
+          },
+          "object": "features"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "uses",
+            "detail": "detect/correct errors"
+          },
+          "object": "parity/ECC"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "handles",
+            "detail": "unrecoverable"
+          },
+          "object": "errors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "covers",
+            "detail": "in CPU documentation"
+          },
+          "object": "MP0/MP1"
+        },
+        {
+          "subject": "MP0",
+          "relation": {
+            "verb": "handles",
+            "detail": "Secure Encrypted Virtualization"
+          },
+          "object": "features"
+        },
+        {
+          "subject": "MP0",
+          "relation": {
+            "verb": "is",
+            "detail": ""
+          },
+          "object": "PSP"
+        },
+        {
+          "subject": "MP1",
+          "relation": {
+            "verb": "is",
+            "detail": ""
+          },
+          "object": "SMU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "labels",
+            "detail": "separately on RDNA4"
+          },
+          "object": "MP1/SMU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "in graphics since Vega"
+          },
+          "object": "InfinityFabric"
+        },
+        {
+          "subject": "InfinityFabric",
+          "relation": {
+            "verb": "implements",
+            "detail": "large last level"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "consists",
+            "detail": "16 Coherent Station"
+          },
+          "object": "blocks"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "has",
+            "detail": "4 MB per CS instance"
+          },
+          "object": "cache"
+        },
+        {
+          "subject": "InfinityFabric",
+          "relation": {
+            "verb": "supports",
+            "detail": ""
+          },
+          "object": "DVFS"
+        },
+        {
+          "subject": "InfinityFabric",
+          "relation": {
+            "verb": "has",
+            "detail": "1024 bytes per clock"
+          },
+          "object": "bandwidth"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "disables",
+            "detail": "SoC for harvesting"
+          },
+          "object": "components"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": ""
+          },
+          "object": "capabilities"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "emphasizes",
+            "detail": ""
+          },
+          "object": "options"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "chooses",
+            "detail": "monolithic for RDNA4"
+          },
+          "object": "design"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "monolithic for RDNA3 products"
+          },
+          "object": "designs"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "brings",
+            "detail": "many"
+          },
+          "object": "improvements"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "optimizes",
+            "detail": ""
+          },
+          "object": "efficiency"
+        },
+        {
+          "subject": "RX9070",
+          "relation": {
+            "verb": "offers",
+            "detail": "similar to RX7900XT"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "RX9070",
+          "relation": {
+            "verb": "leads",
+            "detail": ""
+          },
+          "object": "workloads"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "achieves",
+            "detail": "using compression, structures, cache"
+          },
+          "object": "efficiency"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "packs",
+            "detail": "into 356.5 mm² die"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "lags",
+            "detail": "video encoding"
+          },
+          "object": "capabilities"
+        },
+        {
+          "subject": "RDNA4",
+          "relation": {
+            "verb": "prevents",
+            "detail": "behind in video encoding"
+          },
+          "object": "falling"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "sees",
+            "detail": "significant on will-it-scale tests"
+          },
+          "object": "change"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "tests",
+            "detail": "Sheaves on servers"
+          },
+          "object": "patches"
+        },
+        {
+          "subject": "EPYC",
+          "relation": {
+            "verb": "improves",
+            "detail": "on Sheaves benchmarks"
+          },
+          "object": "performance"
+        },
+        {
+          "subject": "OneXGPU",
+          "relation": {
+            "verb": "uses",
+            "detail": ""
+          },
+          "object": "RX7600M"
+        },
+        {
+          "subject": "RX7600M",
+          "relation": {
+            "verb": "offers",
+            "detail": "2,048 stream"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "InfinityCache",
+          "relation": {
+            "verb": "limits",
+            "detail": "bandwidth efficiency"
+          },
+          "object": "gains"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "is",
+            "detail": "tech, long term buy"
+          },
+          "object": "stock"
+        },
+        {
+          "subject": "HSBC",
+          "relation": {
+            "verb": "reiterates",
+            "detail": "Buy on AMD"
+          },
+          "object": "rating"
+        },
+        {
+          "subject": "HSBC",
+          "relation": {
+            "verb": "cuts",
+            "detail": "$185 from $200 for AMD"
+          },
+          "object": "target"
+        },
+        {
+          "subject": "M1355",
+          "relation": {
+            "verb": "sells",
+            "detail": "for $23,000"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "HSBC",
+          "relation": {
+            "verb": "lowers",
+            "detail": "$13.9 billion for AMD's AI GPU"
+          },
+          "object": "revenue"
+        },
+        {
+          "subject": "HSBC",
+          "relation": {
+            "verb": "believes",
+            "detail": "underestimates AMD's AI GPU"
+          },
+          "object": "WallStreet"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "benefits",
+            "detail": "cloud service with M1400"
+          },
+          "object": "providers"
+        },
+        {
+          "subject": "M1400",
+          "relation": {
+            "verb": "diversifies",
+            "detail": "AMD's revenue"
+          },
+          "object": "base"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "designs",
+            "detail": "CPUs, GPUs, adaptive computing"
+          },
+          "object": "products"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "advances",
+            "detail": "AI, cloud computing"
+          },
+          "object": "markets"
+        },
+        {
+          "subject": "OmniBook",
+          "relation": {
+            "verb": "has",
+            "detail": "AI 7 350"
+          },
+          "object": "Ryzen"
+        },
+        {
+          "subject": "OmniBook",
+          "relation": {
+            "verb": "has",
+            "detail": "860M Graphics"
+          },
+          "object": "Radeon"
+        },
+        {
+          "subject": "Programmer",
+          "relation": {
+            "verb": "uses",
+            "detail": "7532 CPU"
+          },
+          "object": "EPYC"
+        },
+        {
+          "subject": "SMCI",
+          "relation": {
+            "verb": "partners",
+            "detail": "for GPU data center infrastructure"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "triplets": [
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "is",
+            "detail": "minimum processor for Borderlands 4"
+          },
+          "object": "Requirement"
+        },
+        {
+          "subject": "Radeon",
+          "relation": {
+            "verb": "is",
+            "detail": "minimum graphics for Borderlands 4"
+          },
+          "object": "Requirement"
+        },
+        {
+          "subject": "Ryzen",
+          "relation": {
+            "verb": "is",
+            "detail": "recommended processor for Borderlands 4"
+          },
+          "object": "Recommendation"
+        },
+        {
+          "subject": "Radeon",
+          "relation": {
+            "verb": "is",
+            "detail": "recommended graphics for Borderlands 4"
+          },
+          "object": "Recommendation"
+        },
+        {
+          "subject": "Beelink",
+          "relation": {
+            "verb": "features",
+            "detail": "Ryzen 7 6800H CPU"
+          },
+          "object": "Ryzen"
+        },
+        {
+          "subject": "Acemagic",
+          "relation": {
+            "verb": "features",
+            "detail": "Ryzen 7 CPU"
+          },
+          "object": "Ryzen"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "faces",
+            "detail": "competition from"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "VMSCAPE",
+          "relation": {
+            "verb": "affects",
+            "detail": "Zen 1-5 CPUs"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "prepares",
+            "detail": "for VMSCAPE vulnerability"
+          },
+          "object": "Fix"
+        },
+        {
+          "subject": "Linux",
+          "relation": {
+            "verb": "includes",
+            "detail": "for AMD P-State driver"
+          },
+          "object": "Fix"
+        },
+        {
+          "subject": "Linux",
+          "relation": {
+            "verb": "fixes",
+            "detail": "CPPC.min_perf for AMD P-State driver"
+          },
+          "object": "Setting"
+        },
+        {
+          "subject": "Linux",
+          "relation": {
+            "verb": "prevents",
+            "detail": "EPP setting for AMD P-State driver"
+          },
+          "object": "Issue"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "gives",
+            "detail": "15% revenue cut in China"
+          },
+          "object": "Government"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "Spectre-based, Zen CPUs"
+          },
+          "object": "vulnerability"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "experiences",
+            "detail": "VMSCAPE leak, 32 B/s, Zen 4"
+          },
+          "object": "memory"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "insufficient host-guest separation, Zen"
+          },
+          "object": "CPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "issues",
+            "detail": "Security Brief"
+          },
+          "object": "brief"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "acknowledges",
+            "detail": "potential"
+          },
+          "object": "vulnerability"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "plans",
+            "detail": "software"
+          },
+          "object": "fix"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "positions",
+            "detail": "for AI leadership"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "compares",
+            "detail": "to Milan CPUs"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "aims",
+            "detail": "outperform Rubin Ultra"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "describes",
+            "detail": "no asterisk generation"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "breaks",
+            "detail": "Intel dominance, 2021"
+          },
+          "object": "dominance"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "after MI355"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "designs",
+            "detail": "silicon and software"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "lags Blackwell Ultra"
+          },
+          "object": "MI355X"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "launches",
+            "detail": "2026"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "ships",
+            "detail": "rack-level solutions"
+          },
+          "object": "MI450"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "acknowledges",
+            "detail": "Nvidia"
+          },
+          "object": "dominance"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "benefits",
+            "detail": "from Nvidia delay"
+          },
+          "object": "delay"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "for RX 9080 XT launch"
+          },
+          "object": "opportunity"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "GPU"
+          },
+          "object": "RX9080XT"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "given by Lisa Su"
+          },
+          "object": "keynote"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "powers",
+            "detail": "Strix Halo, unified memory"
+          },
+          "object": "PC"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "provides",
+            "detail": "Ryzen AI 9 365 Strix Point"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "Ryzen AI 9 365"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "WeiShaojun",
+          "relation": {
+            "verb": "criticizes",
+            "detail": "GPU usage"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "sees",
+            "detail": "from Oracle growth"
+          },
+          "object": "benefit"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "shows",
+            "detail": "stock, little"
+          },
+          "object": "movement"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "becomes",
+            "detail": "rising"
+          },
+          "object": "competitor"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "provides",
+            "detail": "Ryzen AI 7 350"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": "None"
+          },
+          "object": "Multithreading"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "Ryzen AI, 50 TOPS"
+          },
+          "object": "NPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "provides",
+            "detail": "Ryzen 7 260"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "Ryzen AI, 16 TOPS"
+          },
+          "object": "NPU"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "is",
+            "detail": "included in list by Ken Fisher"
+          },
+          "object": "Fisher"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "becomes",
+            "detail": "most under-owned U.S. semiconductor"
+          },
+          "object": "stock"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "relative weighting down by 80% year-over-year"
+          },
+          "object": "weighting"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "gains",
+            "detail": "continued over Philadelphia Semiconductor Index"
+          },
+          "object": "Index"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "projects",
+            "detail": "22% sales"
+          },
+          "object": "growth"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "gains",
+            "detail": "market share against Intel"
+          },
+          "object": "share"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "focuses",
+            "detail": "on designing and developing"
+          },
+          "object": "semiconductors"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": null
+          },
+          "object": "CPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": null
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "AI"
+          },
+          "object": "accelerators"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "embedded"
+          },
+          "object": "solutions"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "serves",
+            "detail": "data"
+          },
+          "object": "centers"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "serves",
+            "detail": "client"
+          },
+          "object": "computing"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "serves",
+            "detail": null
+          },
+          "object": "gaming"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Ryzen 7 7730U"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "cloud contract with Oracle"
+          },
+          "object": "contract"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Ryzen 7 2700X"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Radeon RX 5700 XT"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Ryzen 7 5800X"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Radeon RX 6800 XT"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "leads",
+            "detail": null
+          },
+          "object": "ArrowLake"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "faces",
+            "detail": "competitive challenge from"
+          },
+          "object": "NovaLake"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "emphasizes",
+            "detail": "raw GPU"
+          },
+          "object": "count"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "emphasizes",
+            "detail": "interconnect"
+          },
+          "object": "efficiency"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "prepares",
+            "detail": "large-scale computing"
+          },
+          "object": "system"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "builds",
+            "detail": "in response to Nvidia SuperPod"
+          },
+          "object": "MegaPod"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "arranges",
+            "detail": "MegaPod across three racks"
+          },
+          "object": "MegaPod"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "combines",
+            "detail": "Verano CPUs in MegaPod"
+          },
+          "object": "CPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "combines",
+            "detail": "MI500 accelerators in MegaPod"
+          },
+          "object": "accelerators"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "pairs",
+            "detail": "Verano CPU with MI500 GPU"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "delivers",
+            "detail": "64"
+          },
+          "object": "CPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "delivers",
+            "detail": "256"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "intends",
+            "detail": "expand capacity to outmatch competitors"
+          },
+          "object": "capacity"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offers",
+            "detail": "256 GPU"
+          },
+          "object": "packages"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "relys",
+            "detail": "on single-GPU"
+          },
+          "object": "packages"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "deploys",
+            "detail": "Vulcano network"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "releases",
+            "detail": "end of 2027"
+          },
+          "object": "MegaPod"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "plans",
+            "detail": "to combine Verano"
+          },
+          "object": "CPUs"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "plans",
+            "detail": "to combine MI500"
+          },
+          "object": "accelerators"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "plans",
+            "detail": "to combine Pensando Vulcano network"
+          },
+          "object": "cards"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "strengthens",
+            "detail": "in semiconductor market"
+          },
+          "object": "position"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "emerges",
+            "detail": "strong challenger to NVIDIA in GPU market"
+          },
+          "object": "challenger"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produces",
+            "detail": "Radeon"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "provides",
+            "detail": "for Copilot+ PCs"
+          },
+          "object": "CPUs"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "make",
+            "detail": "Radeon RX 7900 XT"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "release",
+            "detail": "Radeon RX 7900 XT in 2022"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "equip",
+            "detail": "RX 7900 XT with 20GB VRAM"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "compete",
+            "detail": "with Radeon"
+          },
+          "object": "NVIDIA"
+        },
+        {
+          "subject": "NVIDIA",
+          "relation": {
+            "verb": "outperform",
+            "detail": "Radeon in ray tracing"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "produce",
+            "detail": "Ryzen 9 9950X3D"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "Metis",
+          "relation": {
+            "verb": "work",
+            "detail": "with Ryzen processors"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "CyberPowerPC",
+          "relation": {
+            "verb": "use",
+            "detail": "Ryzen 5 7600 and Radeon RX 7600"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "Bosgame",
+          "relation": {
+            "verb": "include",
+            "detail": "Ryzen 5 3550H processor"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offer",
+            "detail": "Ryzen 9 9950X3D and Ryzen 7 9800X3D"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "price",
+            "detail": "Ryzen 7 9800X3D at $470"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "price",
+            "detail": "Ryzen 9 9950X3D at $670"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "design",
+            "detail": "Ryzen with Zen 5 architecture"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "fabricate",
+            "detail": "Ryzen processors on TSMC 4nm"
+          },
+          "object": "TSMC"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "feature",
+            "detail": "Ryzen 9 9950X3D with 16 cores"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "feature",
+            "detail": "Ryzen 7 9800X3D with 8 cores"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "design",
+            "detail": "Ryzen 9 9950X3D with dual-CCD, 3D V-Cache"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "design",
+            "detail": "Ryzen 7 9800X3D with single-CCD, 96MB L3 cache"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "specify",
+            "detail": "Ryzen 9 9950X3D boosts to 5.7GHz"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "specify",
+            "detail": "Ryzen 7 9800X3D boosts to 5.2GHz"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "introduce",
+            "detail": "second-gen 3D V-Cache technology"
+          },
+          "object": "technology"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "enable",
+            "detail": "full overclocking on Zen 5 X3D CPUs"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "redesign",
+            "detail": "3D V-Cache placement for improved thermals"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "use",
+            "detail": "AM5 socket for Ryzen processors"
+          },
+          "object": "socket"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "support",
+            "detail": "DDR5 5600 MT/s memory with Ryzen"
+          },
+          "object": "RAM"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offer",
+            "detail": "EXPO memory overclocking technology"
+          },
+          "object": "technology"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "provide",
+            "detail": "24 PCIe 5.0 lanes from Ryzen CPUs"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "rate",
+            "detail": "Ryzen 9 9950X3D at 170W TDP"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "rate",
+            "detail": "Ryzen 7 9800X3D at 120W TDP"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "design",
+            "detail": "Ryzen 7 9800X3D for high efficiency"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "offer",
+            "detail": "Ryzen 7 9800X3D with superior value"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "outperform",
+            "detail": "Intel chips in gaming"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "HP",
+          "relation": {
+            "verb": "feature",
+            "detail": "Ryzen AI 9 HX 375 processor"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "EliteBook",
+          "relation": {
+            "verb": "use",
+            "detail": "AMD processor"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "EliteBook",
+          "relation": {
+            "verb": "feature",
+            "detail": "Ryzen AI 7 PRO 350 CPU"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "EliteBook",
+          "relation": {
+            "verb": "feature",
+            "detail": "Ryzen 5 Pro 230"
+          },
+          "object": "AMD"
+        }
+      ]
+    }
+  ],
+  "Intel": [
+    {
+      "date": "2025-09-15",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "equips",
+            "detail": "older Mac"
+          },
+          "object": "Mac"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "co-founds",
+            "detail": "Cloud Hypervisor project (2018)"
+          },
+          "object": "project"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "Cloud Hypervisor (VMM)"
+          },
+          "object": "Hypervisor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": "physical (for AI)"
+          },
+          "object": "hardware"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "serves",
+            "detail": "on AOMedia steering"
+          },
+          "object": "committee"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "Core Ultra Series 2"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "integrates",
+            "detail": "NPU in Core Ultra V models"
+          },
+          "object": "NPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "integrates",
+            "detail": "Arc Graphics"
+          },
+          "object": "Graphics"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "offers",
+            "detail": "NPU (48 TOPS)"
+          },
+          "object": "NPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core Ultra (with NPU)"
+          },
+          "object": "SoC"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "integrates",
+            "detail": "DirectML, ONNX runtime into"
+          },
+          "object": "platform"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "embraces",
+            "detail": "RISC-V"
+          },
+          "object": "architecture"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "lowers",
+            "detail": "2025 operating expense target to $16.8 billion"
+          },
+          "object": "target"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "records",
+            "detail": "$18.8 billion loss (2024)"
+          },
+          "object": "loss"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "streamlines",
+            "detail": "operations (under CEO Tan)"
+          },
+          "object": "operation"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "management changes (under CEO Tan)"
+          },
+          "object": "change"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "receives",
+            "detail": "10% equity stake (from US Government)"
+          },
+          "object": "stake"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "agrees",
+            "detail": "to sell 51% of Altera (valuing at $8.75 billion)"
+          },
+          "object": "Altera"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "pays",
+            "detail": "$17 billion for Altera (2015)"
+          },
+          "object": "amount"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "completes",
+            "detail": "Altera sale (September 12)"
+          },
+          "object": "transaction"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "keeps",
+            "detail": "2026 operating expense target at $16 billion"
+          },
+          "object": "target"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "reduces",
+            "detail": "workforce (over fifth smaller)"
+          },
+          "object": "workforce"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "adopts",
+            "detail": "tighter cost discipline (under CEO Tan)"
+          },
+          "object": "discipline"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core i5"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": null
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "P-State"
+          },
+          "object": "drivers"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "faces",
+            "detail": "CPU security"
+          },
+          "object": "VMSCAPE"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "offers",
+            "detail": "Alder Lake-N or Twin Lake"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "mobile processor"
+          },
+          "object": "N150"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Graphics"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": "Quick Sync"
+          },
+          "object": "technology"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "I266-V Ethernet"
+          },
+          "object": "controller"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "AX101 Wi-Fi 6"
+          },
+          "object": "card"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "states",
+            "detail": "N150 supports 16 GB"
+          },
+          "object": "RAM"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "limits",
+            "detail": "maximum 5 PCIe Root"
+          },
+          "object": "ports"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "powers",
+            "detail": null
+          },
+          "object": "macOS"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "triplets": [
+        {
+          "subject": "MacBook",
+          "relation": {
+            "verb": "uses",
+            "detail": "2019 Pro"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Mac",
+          "relation": {
+            "verb": "uses",
+            "detail": "2019 Pro"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "iMac",
+          "relation": {
+            "verb": "uses",
+            "detail": "2020"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "supports",
+            "detail": "last is Tahoe"
+          },
+          "object": "macOS"
+        },
+        {
+          "subject": "Leopard",
+          "relation": {
+            "verb": "runs on",
+            "detail": "only"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "performs",
+            "detail": "None"
+          },
+          "object": "layoffs"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "performs",
+            "detail": "None"
+          },
+          "object": "reorganizations"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "loses",
+            "detail": "Linux engineering"
+          },
+          "object": "talent"
+        },
+        {
+          "subject": "Colin",
+          "relation": {
+            "verb": "leaves",
+            "detail": "None"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Colin",
+          "relation": {
+            "verb": "works for",
+            "detail": "four years"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "Core Ultra 200H"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "None"
+          },
+          "object": "graphics"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "starts",
+            "detail": "Cloud"
+          },
+          "object": "Hypervisor"
+        },
+        {
+          "subject": "Hypervisor",
+          "relation": {
+            "verb": "removes",
+            "detail": "Intel support"
+          },
+          "object": "SGX"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "Granite"
+          },
+          "object": "Rapids"
+        },
+        {
+          "subject": "Patches",
+          "relation": {
+            "verb": "test on",
+            "detail": "Intel"
+          },
+          "object": "servers"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sees",
+            "detail": "Ronak Singhal"
+          },
+          "object": "departure"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sells",
+            "detail": "Core i5-110"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "rebadges",
+            "detail": "Core i5-10400 as i5-110"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "faces",
+            "detail": null
+          },
+          "object": "issues"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "calls",
+            "detail": "Core Series 1"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "prices",
+            "detail": "i5-110 for $200"
+          },
+          "object": "Core"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "has",
+            "detail": "Coffee Lake, affected by VMSCAPE"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "says",
+            "detail": "existing mitigations"
+          },
+          "object": "flaw"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "loses",
+            "detail": "second chief Xeon"
+          },
+          "object": "architect"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "undergoes",
+            "detail": "deep restructuring"
+          },
+          "object": "restructuring"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "has",
+            "detail": "Lip-Bu Tan"
+          },
+          "object": "CEO"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "experiences",
+            "detail": "Data Center Group"
+          },
+          "object": "turmoil"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sees",
+            "detail": "Sailesh Kottapalli"
+          },
+          "object": "departure"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sees",
+            "detail": "Justin Hotard"
+          },
+          "object": "departure"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sees",
+            "detail": "Sandra Riviera"
+          },
+          "object": "departure"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "appoints",
+            "detail": "Kevork Kechichian as head of DCG"
+          },
+          "object": "Kevork"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "employs",
+            "detail": "Ronak Singhal since 1997"
+          },
+          "object": "Ronak"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "revamps",
+            "detail": "under Lip-Bu Tan"
+          },
+          "object": "company"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "shifts",
+            "detail": "accelerators to AI subdivision"
+          },
+          "object": "development"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "has",
+            "detail": "P-State"
+          },
+          "object": "drivers"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "fixes",
+            "detail": "hibernation regression, Linux 6.16"
+          },
+          "object": "regression"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "has",
+            "detail": "confusing naming"
+          },
+          "object": "scheme"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core Ultra 9 285K"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core Ultra 9 285HX"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core Ultra 288V"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Core 210H"
+          },
+          "object": "chip"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Series 1"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "uses",
+            "detail": "Arrow Lake"
+          },
+          "object": "architecture"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "4004"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "4040"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Ultra"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Coffee"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "launches",
+            "detail": "Coffee Lake"
+          },
+          "object": "2017"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": null
+          },
+          "object": "Mitigations"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": "for BTI, BHI, ITS"
+          },
+          "object": "Guidance"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "collaborates",
+            "detail": "on mitigations"
+          },
+          "object": "Linux"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Lunar"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Granite"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Atom"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Pentium"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Celeron"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "UHD"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "introduces",
+            "detail": null
+          },
+          "object": "i5-110"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "markets",
+            "detail": "as Core Series 1"
+          },
+          "object": "i5-110"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "launches",
+            "detail": "Core 5 120"
+          },
+          "object": "Processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "adds",
+            "detail": "to Core Series 1"
+          },
+          "object": "i5-110"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "uses",
+            "detail": "14nm+++"
+          },
+          "object": "Technology"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "introduces",
+            "detail": "two new since LGA1200"
+          },
+          "object": "Sockets"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "prices",
+            "detail": "$200"
+          },
+          "object": "i5-110"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "NPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "Arc"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": null
+          },
+          "object": "H-series"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "13th Gen i7-1355U"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "Iris Xe"
+          },
+          "object": "Graphics"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "N150"
+          },
+          "object": "processor"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "UHD"
+          },
+          "object": "Graphics"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "Core i7-9700"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "Arc A580"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "produces",
+            "detail": "Core i7-12700"
+          },
+          "object": "CPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "Arc B580"
+          },
+          "object": "GPU"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "None"
+          },
+          "object": "architectures"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "cuts",
+            "detail": "manager"
+          },
+          "object": "roles"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "plans",
+            "detail": "Arrow Lake refresh"
+          },
+          "object": "launch"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "Nova Lake by 2026"
+          },
+          "object": "designs"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "refreshes",
+            "detail": "Arrow Lake next year"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "launches",
+            "detail": "Nova Lake by 2027"
+          },
+          "object": "designs"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Alder Lake-N/Twin Lake"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "12th-gen Core"
+          },
+          "object": "processors"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "makes",
+            "detail": "Jasper Lake"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provides",
+            "detail": "for Chinese policing systems"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "sells",
+            "detail": "to Chinese police"
+          },
+          "object": "technology"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "partners",
+            "detail": "Chinese surveillance, for AI camera systems"
+          },
+          "object": "companies"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "partners",
+            "detail": "Chinese fingerprinting"
+          },
+          "object": "company"
+        },
+        {
+          "subject": "Synopsys",
+          "relation": {
+            "verb": "partners",
+            "detail": ""
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "is",
+            "detail": "in embedded systems market"
+          },
+          "object": "company"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "announces",
+            "detail": "senior leadership"
+          },
+          "object": "appointments"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "names",
+            "detail": "EVP and GM Data Center Group"
+          },
+          "object": "Kechichian"
+        },
+        {
+          "subject": "Kechichian",
+          "relation": {
+            "verb": "joins",
+            "detail": "from Arm"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Tan",
+          "relation": {
+            "verb": "is",
+            "detail": "of Intel"
+          },
+          "object": "CEO"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "confirms",
+            "detail": "SVP and GM Client Computing Group"
+          },
+          "object": "Johnson"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "creates",
+            "detail": "Central Engineering, led by Iyengar"
+          },
+          "object": "Group"
+        },
+        {
+          "subject": "Iyengar",
+          "relation": {
+            "verb": "leads",
+            "detail": "Central Engineering at Intel"
+          },
+          "object": "Group"
+        },
+        {
+          "subject": "Iyengar",
+          "relation": {
+            "verb": "establishes",
+            "detail": "custom silicon at Intel"
+          },
+          "object": "business"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "expands",
+            "detail": "Chandrasekaran, includes Foundry Services"
+          },
+          "object": "role"
+        },
+        {
+          "subject": "Chandrasekaran",
+          "relation": {
+            "verb": "joins",
+            "detail": "in 2024 from Micron"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "O'Buckley",
+          "relation": {
+            "verb": "is",
+            "detail": "GM Foundry Services at Intel"
+          },
+          "object": "SVP"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "announces",
+            "detail": "Holthaus, CEO Intel Products"
+          },
+          "object": "departure"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "names",
+            "detail": "new CEO, March 2025"
+          },
+          "object": "Tan"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "embarks",
+            "detail": "under Tan's leadership"
+          },
+          "object": "restructuring"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "structures",
+            "detail": "report to CEO"
+          },
+          "object": "units"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "appoints",
+            "detail": "Chief Technology and AI Officer"
+          },
+          "object": "Katti"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "expands",
+            "detail": "AI"
+          },
+          "object": "capabilities"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "implements",
+            "detail": "to board"
+          },
+          "object": "changes"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "adds",
+            "detail": "to board"
+          },
+          "object": "Meurice"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "adds",
+            "detail": "to board"
+          },
+          "object": "Sanghi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "Nvidia": [
+    {
+      "date": "2025-09-22",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "keeps",
+            "detail": "central to AI systems"
+          },
+          "object": "hardware"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "locks in",
+            "detail": "as strategic partner"
+          },
+          "object": "OpenAI"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "provides",
+            "detail": "for OpenAI data centers"
+          },
+          "object": "chips"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partners",
+            "detail": ""
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "with OpenAI for 10GW AI datacenters"
+          },
+          "object": "deal"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "up to $100 billion"
+          },
+          "object": "OpenAI"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "ships",
+            "detail": "4 to 5 million globally"
+          },
+          "object": "GPUs"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "triplets": [
+        {
+          "subject": "NVIDIA",
+          "relation": {
+            "verb": "announce",
+            "detail": "partnership with CoreWeave, Microsoft, Nscale"
+          },
+          "object": "partnership"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "reach",
+            "detail": "AI revenue $400 billion by 2028"
+          },
+          "object": "revenue"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "face",
+            "detail": "slowing growth, rising costs, competition"
+          },
+          "object": "risks"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "pushes",
+            "detail": "with TSMC"
+          },
+          "object": "advancements"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "makes",
+            "detail": ""
+          },
+          "object": "microchips"
+        },
+        {
+          "subject": "Beijing",
+          "relation": {
+            "verb": "bans",
+            "detail": "use of chips"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "details",
+            "detail": "with Intel"
+          },
+          "object": "roadmap"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "collaborates",
+            "detail": ""
+          },
+          "object": "TSMC"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "has",
+            "detail": "for AI"
+          },
+          "object": "clusters"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "secures",
+            "detail": "computing"
+          },
+          "object": "dominance"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "gains",
+            "detail": "$150 billion market"
+          },
+          "object": "value"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "holds",
+            "detail": "$4.28 trillion market"
+          },
+          "object": "cap"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "partnership with Intel"
+          },
+          "object": "partnership"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "announces",
+            "detail": "investment in Intel"
+          },
+          "object": "investment"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "requests",
+            "detail": "10Gb/s-per-pin for 2026 Vera Rubin platform"
+          },
+          "object": "stacks"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": "Vera Rubin for 2026"
+          },
+          "object": "platform"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "works",
+            "detail": "with Cadence to make infrastructure models"
+          },
+          "object": "models"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "explores",
+            "detail": "$500 million in Wayve Technologies"
+          },
+          "object": "investment"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "triplets": [
+        {
+          "subject": "Sankar",
+          "relation": {
+            "verb": "joins",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Huawei",
+          "relation": {
+            "verb": "challenges",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "dominates",
+            "detail": null
+          },
+          "object": "market"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "develops",
+            "detail": null
+          },
+          "object": "nvmath-python"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partners",
+            "detail": "to produce chips"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "competes",
+            "detail": "against AMD APUs"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "triplets": [
+        {
+          "subject": "Huawei",
+          "relation": {
+            "verb": "shares",
+            "detail": "campus"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "China",
+          "relation": {
+            "verb": "bans",
+            "detail": "AI chips"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "launches",
+            "detail": "Stargate UK partnership"
+          },
+          "object": "OpenAI"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "launches",
+            "detail": "Stargate UK partnership"
+          },
+          "object": "Nscale"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "triplets": [
+        {
+          "subject": "China",
+          "relation": {
+            "verb": "scrutinizes",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "AVGO",
+          "relation": {
+            "verb": "compares",
+            "detail": "peers"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "Unrivaled Stock"
+          },
+          "object": "Stock"
+        },
+        {
+          "subject": "JPMorgan",
+          "relation": {
+            "verb": "reaffirms",
+            "detail": "Overweight rating"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Tencent",
+          "relation": {
+            "verb": "breaks",
+            "detail": "deeper"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "runs",
+            "detail": null
+          },
+          "object": "Setbacks"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "produces",
+            "detail": "two million RTX6000D Chinese"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "Firms",
+          "relation": {
+            "verb": "express",
+            "detail": "lukewarm interest"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "B30A",
+          "relation": {
+            "verb": "has",
+            "detail": "uncertain"
+          },
+          "object": "Future"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "is",
+            "detail": "first customer for"
+          },
+          "object": "A16"
+        },
+        {
+          "subject": "Compounding",
+          "relation": {
+            "verb": "publishes",
+            "detail": "bullish thesis"
+          },
+          "object": "Nvidia"
+        }
+      ]
+    }
+  ],
+  "AMD": [
+    {
+      "date": "2025-09-22",
+      "triplets": [
+        {
+          "subject": "Tie-up",
+          "relation": {
+            "verb": "implicates",
+            "detail": null
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "ROCm",
+          "relation": {
+            "verb": "fails",
+            "detail": "to mention"
+          },
+          "object": "Strix"
+        },
+        {
+          "subject": "IREN",
+          "relation": {
+            "verb": "makes",
+            "detail": "GPU deal"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "partners",
+            "detail": null
+          },
+          "object": "GMKtec"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "bumps",
+            "detail": "in accelerators"
+          },
+          "object": "cadence"
+        },
+        {
+          "subject": "MI325X",
+          "relation": {
+            "verb": "heads",
+            "detail": "into mass"
+          },
+          "object": "production"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "slates",
+            "detail": null
+          },
+          "object": "MI350"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "trails",
+            "detail": null
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "trails",
+            "detail": null
+          },
+          "object": "Broadcom"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "in AI inference market"
+          },
+          "object": "opportunity"
+        },
+        {
+          "subject": "Zen",
+          "relation": {
+            "verb": "is",
+            "detail": "excellent for mini performance"
+          },
+          "object": "PCs"
+        },
+        {
+          "subject": "Radeon",
+          "relation": {
+            "verb": "outperforms",
+            "detail": "integrated"
+          },
+          "object": "solutions"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "triplets": [
+        {
+          "subject": "centers",
+          "relation": {
+            "verb": "use",
+            "detail": "GPUs"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "triplets": [
+        {
+          "subject": "NVIDIA",
+          "relation": {
+            "verb": "competes",
+            "detail": "in APUs"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "competes",
+            "detail": "in APUs"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "announces",
+            "detail": "F-series Ryzen 9000"
+          },
+          "object": "Chips"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "Rowhammer on DDR5"
+          },
+          "object": "Vulnerability"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "has",
+            "detail": "in Austin"
+          },
+          "object": "Office"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "launches",
+            "detail": "MI355X"
+          },
+          "object": "Instinct"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "launches",
+            "detail": "version 7.0"
+          },
+          "object": "ROCm"
+        },
+        {
+          "subject": "Anush",
+          "relation": {
+            "verb": "works",
+            "detail": "as VP AI Software"
+          },
+          "object": "AMD"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "is",
+            "detail": "AI stock, NASDAQ"
+          },
+          "object": "Stock"
+        },
+        {
+          "subject": "Hans",
+          "relation": {
+            "verb": "downgrades",
+            "detail": "on September 11"
+          },
+          "object": "AMD"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "triplets": [
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "develops",
+            "detail": null
+          },
+          "object": "FSR4"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "releases",
+            "detail": null
+          },
+          "object": "ROCm7.0"
+        },
+        {
+          "subject": "AMD",
+          "relation": {
+            "verb": "uses",
+            "detail": "from TSMC"
+          },
+          "object": "2nm"
+        }
+      ]
+    }
+  ],
+  "Intel": [
+    {
+      "date": "2025-09-22",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "partner",
+            "detail": ""
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "Xe kernel graphics"
+          },
+          "object": "driver"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "adds",
+            "detail": "power management"
+          },
+          "object": "knob"
+        },
+        {
+          "subject": "Trump",
+          "relation": {
+            "verb": "invests",
+            "detail": "equity"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "co-designs",
+            "detail": ""
+          },
+          "object": "CPUs"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "US$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "dominates",
+            "detail": "in '80s and '90s"
+          },
+          "object": "market"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "triplets": [
+        {
+          "subject": "Danely",
+          "relation": {
+            "verb": "downgrade",
+            "detail": "to Sell"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Danely",
+          "relation": {
+            "verb": "raise",
+            "detail": "to $29"
+          },
+          "object": "target"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "experience",
+            "detail": "nearly 23%"
+          },
+          "object": "surge"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invest",
+            "detail": "$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "partner",
+            "detail": ""
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develop",
+            "detail": "Arc"
+          },
+          "object": "GPUs"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "maintain",
+            "detail": "own"
+          },
+          "object": "roadmap"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develop",
+            "detail": "x86 RTX"
+          },
+          "object": "SoC"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "detail",
+            "detail": "with Nvidia"
+          },
+          "object": "roadmap"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "link",
+            "detail": "CPU and GPU"
+          },
+          "object": "platforms"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "collaborate",
+            "detail": "continued"
+          },
+          "object": "TSMC"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "provide",
+            "detail": "advanced"
+          },
+          "object": "packaging"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "triplets": [
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "announces",
+            "detail": "partnership"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "$5B"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "soars",
+            "detail": "on Nvidia stake"
+          },
+          "object": "value"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "triplets": [
+        {
+          "subject": "Nvidia",
+          "relation": {
+            "verb": "invests",
+            "detail": "$5 billion"
+          },
+          "object": "Intel"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "partners",
+            "detail": "with Nvidia"
+          },
+          "object": "Nvidia"
+        },
+        {
+          "subject": "Intel",
+          "relation": {
+            "verb": "develops",
+            "detail": "with Nvidia"
+          },
+          "object": "products"
+        }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "triplets": []
+    },
+    {
+      "date": "2025-09-16",
+      "triplets": [
+        {
+          "subject": "Core",
+          "relation": {
+            "verb": "surpasses",
+            "detail": "in early testing"
+          },
+          "object": "picks"
+        },
+        {
+          "subject": "administration",
+          "relation": {
+            "verb": "plans",
+            "detail": "in Intel"
+          },
+          "object": "stake"
+        }
+      ]
+    }
+  ]
+}
