@@ -3,8 +3,8 @@ import networkx as nx
 import json
 from dotenv import load_dotenv
 import os
-
-with open(r"graph_news\23092025_graph.json", "r", encoding="utf-8") as f:
+week = os.getenv("WEEK", "week1")
+with open(fr"graph_news\{week}\{week}.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 G = nx.MultiDiGraph()
@@ -41,7 +41,7 @@ def get_7day_summary(chipmaker: str) -> str:
         chipmaker (str): the name of the chipmaker, e.g., "Nvidia", "AMD", "Intel"
     """
     dict_file = {"AMD":"amd_7day.md", "INTEL":"intel_7day.md", "NVIDIA":"nvidia_7day.md"}
-    with open(r"graph_news\\" + dict_file[chipmaker.upper()], "r", encoding="utf-8") as f:
+    with open(fr"graph_news\{week}\{dict_file[chipmaker.upper()]}", "r", encoding="utf-8") as f:
         summary = f.read()
         return summary
 
@@ -55,7 +55,7 @@ def get_across_summary() -> str:
     Args:
         None
     """
-    with open(r"graph_news\summary.md", mode="r", encoding="utf-8") as f:
+    with open(fr"graph_news\{week}\summary.md", mode="r", encoding="utf-8") as f:
         summary = f.read()
         return summary
 
