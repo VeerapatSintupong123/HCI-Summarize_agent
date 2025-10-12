@@ -158,7 +158,7 @@ Key Insight
 Bullet List of Implications
 """
 
-trace_name = f"Leader3_{today}"
+trace_name = f"Leader3_{today}-5"
 @observe()
 def process_request(query):
     # Add to the current trace
