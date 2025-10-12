@@ -51,6 +51,7 @@ with open(data_path, 'r', encoding='utf-8') as f:
 print("✅ News data loaded.")
 
 today = NEWS_DATE_FILE.split('.')[0]
+today = today[:2] + '/' + today[2:4] + '/' + today[4:]
 
 initial_guide = f"""
 **Input Data:**
