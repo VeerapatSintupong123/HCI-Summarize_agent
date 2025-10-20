@@ -1,12 +1,13 @@
 
 CRITICAL: Your entire response MUST be a single, valid JSON object and nothing else. Your response must begin with '{' and end with '}'.
 
-You are an expert evaluator, acting as an LLM-as-a-Judge. 
+You are an expert financial analyst and strategist. Your goal is to evaluate the *quality, insight, and utility* of a "Candidate Summary".
 
-**Input to Judge:**
+**Reference Context (Documents provided as a *starting point*):**
+The summary was generated using these documents as a starting point. The summary *is allowed* to include relevant, verifiable external information not present in these references.
 
-this base of news articles:
-### Nvidia ###
+1.  **Current News (`base`):**
+    ### Nvidia ###
 The company keeps running into setbacks in this important market.
 Remember that FSR 4 source code leak on GitHub from a few weeks ago? Someone used it to get AMD's latest upscaler running on unsupported hardware.
 China’s scrutiny of Nvidia is not being seen as an isolated case, but the latest in a series of actions in its AI race with the United States.
@@ -40,54 +41,275 @@ The cyberthreat intel-sharing and collaboration group RH-ISAC is helping compani
 
 
 
-this summary from the following news articles:
+2.  **Historical Context (`historic_summary`):**
+    
+### amd_7day.md
+As an analyst specializing in the semiconductor industry, here's a summary of AMD's risks and opportunities over the last 7 days based on the provided knowledge triplets:
+
+### Risks for AMD:
+
+*   **Regulatory & Geopolitical Costs:**
+    *   AMD -(agree/to pay 15% chip tax for licenses to China)-> tax → AMD faces a significant 15% chip tax or revenue cut in China, impacting margins in a crucial market.
+    *   AMD -(gives/15% revenue cut in China)-> Government → Reinforces the financial impact of doing business in China.
+*   **Competitive Disadvantages & Market Share Challenges:**
+    *   MSI -(pass/on offerings)-> AMD → A key partner (MSI) is passing on AMD's offerings, indicating potential struggles in securing design wins or competitive pressure.
+    *   NVIDIA -(outperform/Radeon in ray tracing)-> AMD → Radeon GPUs are still lagging NVIDIA in ray tracing performance, a critical feature in modern graphics.
+    *   AMD -(has/lags Blackwell Ultra)-> MI355X → AMD's MI355X AI chip is acknowledged to lag behind NVIDIA's Blackwell Ultra, indicating a gap in competitive performance in a high-growth segment.
+    *   AMD -(acknowledges)-> Nvidia -(dominance)-> None → AMD itself acknowledges NVIDIA's market dominance, highlighting the uphill battle for market share in GPUs, especially AI accelerators.
+    *   AMD -(faces/competitive challenge from)-> NovaLake → AMD anticipates a strong competitive challenge from Intel's upcoming NovaLake CPU architecture.
+    *   RX9070 -(offers/similar to RX7900XT)-> performance → If RX9070 is intended as a next-generation product, offering similar performance to the RX7900XT suggests a potentially underwhelming generational improvement.
+    *   AMD -(lags/video encoding)-> capabilities → AMD has a known weakness in video encoding capabilities, though RDNA4 aims to mitigate this.
+    *   InfinityCache -(limits/bandwidth efficiency)-> gains → There are technical limitations where InfinityCache restricts bandwidth efficiency gains, potentially hindering performance.
+    *   RDNA4 -(lacks/mid-level L1)-> cache → The RDNA4 architecture is noted to lack a mid-level L1 cache, which could be a performance or architectural trade-off.
+*   **Security Vulnerabilities:**
+    *   AMD -(has/VMSCAPE vulnerability)-> processors → AMD processors, including Zen 1-5, are affected by the VMSCAPE vulnerability, posing security risks.
+    *   VMSCAPE -(affects/Zen 1-5 CPUs)-> AMD → Specifically impacts a broad range of AMD's CPU lineup.
+    *   AMD -(experiences/VMSCAPE leak, 32 B/s, Zen 4)-> memory → The VMSCAPE vulnerability includes memory leaks on Zen 4 architectures.
+    *   AMD -(has/insufficient host-guest separation, Zen)-> CPUs → Zen CPUs exhibit insufficient host-guest separation, a critical security flaw for virtualization environments.
+    *   AMD -(has/Spectre-based, Zen CPUs)-> vulnerability → Ongoing Spectre-based vulnerabilities persist across Zen CPUs.
+*   **Financial & Investor Sentiment:**
+    *   AMD -(fall/stock by 4%)-> stock → AMD's stock experienced a 4% decline, indicating recent negative market reaction.
+    *   HSBC -(cuts/$185 from $200 for AMD)-> target → HSBC lowered its price target for AMD's stock, suggesting a moderated outlook.
+    *   HSBC -(lowers/$13.9 billion for AMD's AI GPU)-> revenue → HSBC significantly lowered its AI GPU revenue projection for AMD, raising concerns about its AI market penetration and financial performance.
+    *   AMD -(has/relative weighting down by 80% year-over-year)-> weighting → Institutional investor weighting in AMD has decreased substantially, indicating reduced confidence among major investors.
+    *   WeiShaojun -(criticizes/GPU usage)-> AMD → AMD faces criticism regarding GPU usage, potentially hinting at efficiency issues or specific application shortcomings.
+
+### Opportunities for AMD:
+
+*   **AI Leadership & Robust Product Roadmap:**
+    *   AMD -(deliver/up to 50 TOPS AI computing power)-> chips → AMD offers competitive AI computing power with its chips.
+    *   AMD -(develops)-> MI355 chip → Introduction of new AI accelerator chips like MI355.
+    *   AMD -(offers/rack solution)-> MI400 → Provides comprehensive rack solutions for AI data centers.
+    *   Meta -(tests/MI400 rack solution)-> AMD; Microsoft -(tests/MI400 rack solution)-> AMD; Oracle -(tests/MI400 rack solution)-> AMD; xAI -(tests/MI400 rack solution)-> AMD → Major tech giants are actively testing AMD's MI400 AI solutions, signaling significant potential adoption.
+    *   AMD -(benefits/cloud service with M1400)-> providers → AMD stands to benefit from cloud service providers adopting M1400.
+    *   M1400 -(diversifies/AMD's revenue)-> base → New AI products like M1400 are diversifying AMD's revenue streams.
+    *   AMD -(develops/for AI)-> processors; AMD -(develops/for data centers)-> semiconductors; AMD -(develops/for data centers)-> GPUs → Strong strategic focus on high-growth AI and data center markets.
+    *   AMD -(positions/for AI leadership)-> MI450 → AMD is actively positioning the MI450 for AI leadership, aiming to outperform competitors.
+    *   AMD -(aims/outperform Rubin Ultra)-> chips → Ambitious performance targets for future AI chips.
+    *   AMD -(describes/no asterisk generation)-> MI450 → Confident messaging around the MI450's capabilities.
+    *   AMD -(launches/2026)-> MI450; AMD -(releases/end of 2027)-> MegaPod → Clear long-term product roadmap for next-gen AI accelerators and supercomputing infrastructure.
+    *   AMD -(builds/in response to Nvidia SuperPod)-> MegaPod → Developing a competitive large-scale AI system (MegaPod) to rival NVIDIA.
+    *   AMD -(intends/expand capacity to outmatch competitors)-> capacity → Ambitious plans to scale capacity and outperform rivals.
+    *   AMD -(offers/Ryzen AI, 50 TOPS)-> NPU; AMD -(offers/Ryzen AI, 16 TOPS)-> NPU → Broad range of AI-enabled NPUs for various performance needs.
+*   **Strong CPU Performance & Market Gains:**
+    *   AMD -(increase/revenue share to 39.3% in desktop CPU market)-> share → Significant growth in desktop CPU market share.
+    *   Ryzen -(drive/surge in desktop CPU market)-> surge → Ryzen CPUs are a key driver of this market surge.
+    *   AMD -(occupy/all top 30 slots for professional workloads)-> slots → Dominance in professional workload benchmarks.
+    *   AMD -(offer/better real-world performance)-> performance; AMD -(use/less power)-> power → Competitive advantages in performance and power efficiency.
+    *   AMD -(outperform/Intel Core i9-12900K)-> Intel; Ryzen -(deliver/34% higher FPS)-> FPS → Demonstrates performance leadership against Intel, especially in gaming.
+    *   Ryzen -(have/more L3 cache (144MB))-> cache; Ryzen -(have/lower power consumption)-> consumption → Technical advantages in cache and power efficiency.
+    *   AMD -(guarantee/AM5 platform support until 2027)-> support → Long-term platform support builds customer confidence.
+    *   Ryzen -(outperforms/Snapdragon X Elite)-> Elite → Competitive edge against ARM-based solutions like Snapdragon X Elite.
+    *   AMD -(produces/Ryzen 9 9950X3D); AMD -(offer/Ryzen 9 9950X3D and Ryzen 7 9800X3D)-> CPU → Launching new high-performance Zen 5 X3D CPUs with advanced features like second-gen 3D V-Cache and full overclocking.
+    *   AMD -(design/Ryzen with Zen 5 architecture)-> CPU; AMD -(fabricate/Ryzen processors on TSMC 4nm)-> TSMC → Leveraging cutting-edge architecture and manufacturing process for competitive advantage.
+    *   AMD -(gains/market share against Intel)-> share; Intel -(faces/competition from)-> AMD → Continual market share gains against main rival Intel.
+    *   AMD -(leads)-> ArrowLake → AMD is leading against Intel's ArrowLake products.
+*   **GPU Innovation & Ecosystem Support:**
+    *   developer -(release/optimization guides for GPUs)-> AMD → Strong developer ecosystem support.
+    *   AMD -(add/CRIU support for GEM objects)-> drivers; AMD -(enhance/GCN 1.0 and 1.1 support on AMDGPU driver)-> driver; AMD -(receives/P-State driver fixes)-> drivers; Linux -(includes/for AMD P-State driver)-> Fix → Continuous driver improvements and feature additions.
+    *   AMD -(uses/RDNA 5)-> architecture; AMD -(advances/by 2027)-> architecture; RDNA4 -(brings/many)-> improvements; RDNA4 -(optimizes)-> efficiency → Clear roadmap and significant architectural improvements (RDNA4) focusing on efficiency, rasterization, compute, raytracing, and ML.
+    *   RDNA4 -(caters/ML)-> workloads; RDNA4 -(improves/efficiency)-> machinelearning → Targeting ML workloads with improved efficiency in RDNA4.
+    *   AMD -(adds/Radeon Image Sharpening)-> filter → Feature enhancements for user experience.
+    *   AMD -(develops)-> RX9080XT → Development of new high-end GPUs.
+*   **Expanding Design Wins & Partnerships:**
+    *   ASUS -(use/Ryzen Z1 Extreme processor)-> AMD; chips -(appear/in Steam Deck)-> Deck; Ryzen -(appear/in Lenovo Legion Go)-> Go → Securing prominent design wins in handheld gaming and mobile devices.
+    *   Xbox -(feature)-> AMD → Continued presence in console gaming.
+    *   OmniBook -(has/AI 7 350)-> Ryzen; HP -(feature/Ryzen AI 9 HX 375 processor)-> AMD; EliteBook -(use/AMD processor)-> AMD → Significant design wins in the emerging AI PC market with major OEMs like HP.
+    *   SMCI -(partners/for GPU data center infrastructure)-> AMD → Strategic partnership with Super Micro Computer for data center infrastructure.
+    *   AMD -(has/cloud contract with Oracle)-> contract; AMD -(sees/from Oracle growth)-> benefit → Securing major cloud contracts and benefiting from partner growth.
+    *   Ryzen -(is/recommended processor for Borderlands 4)-> Recommendation; Radeon -(is/recommended graphics for Borderlands 4)-> Recommendation → Strong presence and recommendation in high-profile gaming titles.
+*   **Positive Market Sentiment & Investor Outlook:**
+    *   markets -(shift/toward)-> AMD → General market trend favoring AMD.
+    *   AMD -(shift/to leader in benchmarks, efficiency, value)-> leader → Recognized leadership in key performance metrics.
+    *   AMD -(gain/ground in high-end)-> market → Capturing share in profitable high-end market segments.
+    *   AMD -(increase/revenue share to 27.8% in Q2 2025)-> share; AMD -(projects/22% sales)-> growth → Strong projected revenue and sales growth.
+    *   AMD -(earn)-> trust; AMD -(become/more reliable choice for buyers)-> choice → Building a reputation for trustworthiness and reliability.
+    *   AMD -(is/tech, long term buy)-> stock; HSBC -(reiterates/Buy on AMD)-> rating → Positive analyst sentiment and long-term buy recommendations.
+    *   AMD -(trades/close to all-time highs)-> stock → High investor confidence reflected in stock valuation.
+    *   AMD -(gains/continued over Philadelphia Semiconductor Index)-> Index → Outperforming the broader semiconductor market index.
+    *   HSBC -(believes/underestimates AMD's AI GPU)-> WallStreet → Belief that AMD's AI GPU potential is underestimated by the market, suggesting future upside.
+    *   AMD -(becomes/most under-owned U.S. semiconductor)-> stock → Could be an opportunity for future institutional investment as it is currently under-owned.
+    *   AMD -(strengthens/in semiconductor market)-> position; AMD -(emerges/strong challenger to NVIDIA in GPU market)-> challenger → Overall strengthening market position and competitive stance.
+
+### Outlook:
+
+AMD presents a compelling narrative of innovation and growth, particularly in the high-stakes AI and data center markets, bolstered by strategic partnerships and a robust product roadmap including the MI355, MI400, and future MI450 accelerators, and the MegaPod initiative. Its Ryzen CPUs continue to gain significant market share against Intel, offering superior performance, efficiency, and value, securing key design wins across client and handheld devices. The upcoming RDNA4 architecture promises substantial improvements across graphics workloads, aiming to close gaps in areas like video encoding and ray tracing.
+
+However, AMD faces notable headwinds. Regulatory pressures in China impose a 15% revenue cut, while persistent security vulnerabilities (VMSCAPE, Spectre-based) across its Zen CPU lineup require continuous mitigation. Intense competition from NVIDIA remains a significant challenge, with AMD's MI355X lagging Blackwell Ultra and acknowledgment of NVIDIA's market dominance. Analyst revenue projections for AI GPUs have been lowered by HSBC, and a substantial reduction in institutional investor weighting indicates short-term market apprehension, despite an overall positive "Buy" rating. The prospect of Intel's NovaLake also signals future competitive challenges. AMD's ability to execute its ambitious AI and GPU roadmaps while effectively addressing security concerns and navigating a highly competitive landscape will be crucial for sustained growth and realizing its full potential.
+
+
+### intel_7day.md
+Here's a summary of risks and opportunities for Intel over the last 7 days:
+
+### Risks for Intel:
+
+*   **Significant Financial Performance Issues:**
+    *   Intel -(records/$18.8 billion loss (2024))-> loss → Intel reported a substantial $18.8 billion loss for 2024, indicating significant financial challenges.
+*   **Workforce Reductions and Talent Drain:**
+    *   Intel -(reduces/over fifth smaller)-> workforce → A major reduction in Intel's workforce (over a fifth smaller) points to severe cost-cutting and potential loss of valuable expertise.
+    *   Intel -(performs)-> layoffs → General layoffs underscore ongoing efforts to trim expenses, which can impact employee morale and productivity.
+    *   Intel -(loses/Linux engineering)-> talent → The loss of Linux engineering talent could hinder development and support crucial for open-source and enterprise platforms.
+    *   Intel -(loses/second chief Xeon)-> architect → Losing a second chief Xeon architect is a significant blow to a critical product line, potentially affecting future server processor competitiveness.
+*   **High Executive Turnover:**
+    *   Intel -(sees/Ronak Singhal)-> departure / Intel -(sees/Sailesh Kottapalli)-> departure / Intel -(sees/Justin Hotard)-> departure / Intel -(sees/Sandra Riviera)-> departure / Intel -(announces/Holthaus, CEO Intel Products)-> departure → Multiple executive departures, including those of key leaders and the CEO of Intel Products, signal ongoing leadership instability and transition.
+*   **Legacy Investment Losses:**
+    *   Intel -(agrees/to sell 51% of Altera (valuing at $8.75 billion))-> Altera & Intel -(pays/$17 billion for Altera (2015))-> amount → Selling a majority stake in Altera based on a valuation significantly below its 2015 acquisition price of $17 billion represents a considerable loss on investment.
+*   **Product Security Concerns:**
+    *   Intel -(faces/CPU security)-> VMSCAPE → Intel is dealing with a CPU security vulnerability (VMSCAPE), which can damage its reputation and require extensive mitigation.
+    *   Hypervisor -(removes/Intel support)-> SGX → The removal of Intel SGX support by a Hypervisor project suggests a decline in the relevance or adoption of certain Intel security technologies.
+*   **Data Center Group Turmoil:**
+    *   Intel -(experiences/Data Center Group)-> turmoil → Turmoil within the critical Data Center Group indicates internal operational or strategic challenges in a key revenue-generating segment.
+*   **Brand and Product Naming Confusion:**
+    *   Intel -(has/confusing naming)-> scheme → A confusing product naming scheme can complicate marketing efforts and make it harder for customers to understand product offerings.
+*   **Ethical and Geopolitical Risks:**
+    *   Intel -(provides/for Chinese policing systems)-> chips / Intel -(sells/to Chinese police)-> technology / Intel -(partners/Chinese surveillance, for AI camera systems)-> companies / Intel -(partners/Chinese fingerprinting)-> company → Intel's involvement in providing chips and technology to Chinese policing and surveillance systems exposes it to significant ethical, human rights, and geopolitical scrutiny, risking potential sanctions or public backlash.
+*   **Reliance on Legacy Markets:**
+    *   Intel -(equips/older Mac)-> Mac → Intel's continued presence in "older Mac" devices highlights its diminishing role in Apple's transition to custom silicon, indicating reliance on declining market segments.
+
+### Opportunities for Intel:
+
+*   **Strong Focus and Investment in AI:**
+    *   Intel -(provides/physical (for AI))-> hardware → Intel is strategically providing physical hardware for the high-growth artificial intelligence market.
+    *   Intel -(integrates/NPU in Core Ultra V models)-> NPU / Intel -(offers/NPU (48 TOPS))-> NPU → The integration of Neural Processing Units (NPUs) with significant AI performance (48 TOPS) into new Core Ultra processors positions Intel strongly in the emerging AI PC segment.
+    *   Intel -(integrates/DirectML, ONNX runtime into)-> platform → Integrating key AI software runtimes enhances Intel's platform appeal for AI developers and applications.
+    *   Intel -(shifts/accelerators to AI subdivision)-> development → Strategically re-aligning accelerator development under a dedicated AI subdivision demonstrates a focused commitment to AI innovation.
+    *   Intel -(appoints/Chief Technology and AI Officer)-> Katti / Intel -(expands/AI)-> capabilities → The appointment of a Chief Technology and AI Officer signals Intel's intent to lead in AI technology and expand its capabilities in this critical area.
+*   **New Product Launches and Robust Roadmap:**
+    *   Intel -(produces/Core Ultra Series 2)-> processor / Intel -(creates/Core Ultra 200H)-> processors / Intel -(makes/Core Ultra (with NPU))-> SoC → Launching new Core Ultra Series 2 and 200H processors, including advanced SoCs with integrated NPUs, strengthens Intel's competitive product portfolio.
+    *   Intel -(integrates/Arc Graphics)-> Graphics / Intel -(develops/Arc A580)-> GPU / Intel -(develops/Arc B580)-> GPU → Enhancements to Arc Graphics and the development of new Arc GPUs (A580, B580) improve Intel's offerings in both integrated and discrete graphics.
+    *   Intel -(creates/Granite)-> Rapids → The development of Granite Rapids (Xeon processors) signifies continued investment in the lucrative data center market.
+    *   Intel -(plans/Arrow Lake refresh)-> launch / Intel -(refreshes/Arrow Lake next year)-> processors / Intel -(develops/Nova Lake by 2026)-> designs → A clear and aggressive product roadmap, including Arrow Lake refreshes and Nova Lake designs by 2026/2027, demonstrates a commitment to future innovation and maintaining competitiveness.
+*   **Strategic Restructuring and Cost Discipline:**
+    *   Intel -(lowers/2025 operating expense target to $16.8 billion)-> target / Intel -(keeps/2026 operating expense target at $16 billion)-> target → Setting aggressive operating expense targets for 2025 and 2026 reflects a strong focus on cost discipline and improving financial efficiency.
+    *   Intel -(streamlines/operations (under CEO Tan))-> operation / Intel -(adopts/tighter cost discipline (under CEO Tan))-> discipline / Intel -(revamps/under Lip-Bu Tan)-> company / Intel -(embarks/under Tan's leadership)-> restructuring → Comprehensive restructuring and cost discipline under CEO Tan aim to enhance operational efficiency and strategic focus for future growth.
+*   **Government Support and Industry Collaboration:**
+    *   Intel -(receives/10% equity stake (from US Government))-> stake → Receiving a 10% equity stake from the U.S. Government indicates significant federal support, likely bolstering its domestic manufacturing initiatives.
+    *   Intel -(completes/Altera sale (September 12))-> transaction → The completion of the Altera sale allows Intel to divest a non-core asset, freeing up capital and strategic focus for its core semiconductor business and foundry ambitions.
+    *   Intel -(co-founds/Cloud Hypervisor project (2018))-> project → Co-founding the Cloud Hypervisor project demonstrates Intel's commitment to cloud infrastructure and software ecosystems.
+    *   Intel -(embraces/RISC-V)-> architecture → Embracing the RISC-V architecture offers strategic diversification, potentially opening new markets and enhancing technological flexibility.
+    *   Synopsys -(partners)-> Intel → Partnership with Synopsys, a leading EDA vendor, is crucial for collaboration on chip design and advanced manufacturing processes.
+*   **Strengthening Leadership and Organizational Structure:**
+    *   Intel -(appoints/Kevork Kechichian as head of DCG)-> Kevork / Kechichian -(joins/from Arm)-> Intel → Appointing Kevork Kechichian (from Arm) as head of the Data Center Group brings new leadership and external expertise to a vital segment.
+    *   Intel -(names/EVP and GM Data Center Group)-> Kechichian / Intel -(confirms/SVP and GM Client Computing Group)-> Johnson / Intel -(creates/Central Engineering, led by Iyengar)-> Group / Intel -(expands/Chandrasekaran, includes Foundry Services)-> role / Intel -(implements/to board)-> changes → A series of strategic leadership appointments, creation of new engineering groups (including for custom silicon), expansion of roles in Foundry Services, and changes to the board indicate a concerted effort to strengthen governance and strategic direction.
+*   **Enhanced Software Support and Ecosystem:**
+    *   Intel -(creates/P-State)-> drivers → The development of P-State drivers indicates improved power management and performance optimization for Intel processors.
+    *   Intel -(fixes/hibernation regression, Linux 6.16)-> regression → Proactive bug fixing and support for the Linux kernel enhance product stability and reliability, particularly for enterprise and server customers.
+
+### Outlook:
+
+Intel is currently navigating a period of significant transition marked by both substantial challenges and strategic opportunities. While facing considerable financial losses, high executive turnover, and the ongoing fallout from past strategic missteps (like the Altera acquisition), the company is aggressively restructuring and implementing tighter cost controls under its leadership. Simultaneously, Intel is making bold moves to capitalize on the booming AI market, with dedicated leadership, integrated NPUs in new processors, and a clear product roadmap extending to Nova Lake. Government support, key industry partnerships, and a focus on strengthening its foundry services further underpin its long-term strategy. However, ethical and geopolitical risks associated with its business in China present a significant overhang. Intel's success will hinge on its ability to effectively execute its ambitious AI and foundry strategies while stabilizing its leadership, talent base, and financial performance amid intense competition and evolving market dynamics.
+
+
+### nvidia_7day.md
+As an analyst specializing in the semiconductor industry, here's a summary of risks and opportunities for Nvidia over the last 7 days based on the provided knowledge triplets:
+
+### Risks for Nvidia:
+*   `Nvidia -(violates/anti-monopoly laws)-> China` → Accusations of violating anti-monopoly laws in China could lead to penalties and market restrictions.
+*   `Nvidia -(faces/antitrust probe in December 2024)-> SAMR` → An impending antitrust probe by China's SAMR poses significant regulatory risk and potential market disruption.
+*   `Nvidia -(is/at the heart of)-> tensions` → Being central to US-China geopolitical tensions creates inherent business instability and uncertainty.
+*   `US -(requires/export license for H20 chip in April)-> Nvidia` → Ongoing US export restrictions for key chips like H20 limit market access and sales, particularly in China.
+*   `Nvidia -(faces/H20 chip ban in April)-> China` → Direct bans on high-performance chips in China severely curtail revenue potential in a critical market.
+*   `Nvidia -(expects/$5.5 billion hit)-> earnings` → The company anticipates a substantial financial impact, likely due to trade restrictions and market challenges.
+*   `Nvidia -(revises/down $8 billion in May)-> revenue` → A significant past downward revision in revenue highlights the vulnerability to market shifts and restrictions.
+*   `Nvidia -(sells/downgraded versions due to US restrictions)-> chips` → The necessity to offer less profitable, downgraded chip versions impacts margins and competitive positioning.
+*   `Nvidia -(gives/15% cut of China revenue)-> government` → A 15% revenue share with the Chinese government directly reduces profitability from sales in the region.
+*   `Nvidia -(delays/H20)-> shipments` → Delays in H20 chip shipments can affect customer fulfillment and market perception.
+*   `Nvidia -(concedes/disappointing from China)-> performance` → Acknowledging underperformance in the Chinese market indicates persistent challenges in this region.
+*   `Intel -(competes)-> Nvidia` → Faces robust competition from established players like Intel, particularly in evolving market segments.
+*   `Nvidia -(loses/consumer video card)-> share` → Losing market share in the consumer video card segment suggests competitive pressures or shifting consumer preferences.
+*   `Nvidia -(is/the face of)-> hype` → Elevated market valuation may be partly driven by speculative "hype," carrying risks of volatility and potential correction.
+*   `Nvidia -(removes/from online marketplace)-> RTX 5090` / `Nvidia -(removes/from online marketplace)-> RTX 5080` → The removal of upcoming high-end consumer GPUs (RTX 5090, RTX 5080) from online marketplaces could signal product delays, strategic changes, or supply issues impacting consumer anticipation.
+*   `Nvidia -(relies/for production)-> TSMC` / `Nvidia -(relies/for memory chips)-> Samsung` → High reliance on specific manufacturers (TSMC, Samsung) for critical components creates supply chain concentration risk.
+*   `David -(sued/for Cosmos AI)-> Nvidia` → Facing a lawsuit related to Cosmos AI could lead to legal costs and potential financial liabilities.
+*   `Nvidia -(denies/kill switch and backdoor claims)-> claim` → Needing to publicly deny claims of "kill switches" or backdoors indicates reputational scrutiny regarding product integrity.
+*   `Nvidia -(partners/with surveillance firms)-> firms` / `Nvidia -(collaborates/with police researchers)-> researchers` / `Nvidia -(supplies/for surveillance research)-> chips` → Previous partnerships with surveillance firms and collaboration on surveillance research, despite recent cessations, pose ongoing reputational risks.
+
+### Opportunities for Nvidia:
+*   `Nvidia -(is/most valuable)-> company` / `Nvidia -(holds/94% market)-> share` / `Nvidia -(is/hardware)-> leader` → Maintains its position as the world's most valuable company, a hardware leader with dominant (94%) market share in key AI segments.
+*   `Nvidia -(hits/$4 trillion)-> valuation` / `Nvidia -(outperforms/on valuation)-> Apple` / `Nvidia -(trades/close to all-time)-> highs` / `Nvidia -(jumps/6.5% shareholder)-> price` / `Nvidia -(climbs/1200% in three years)-> price` / `Nvidia -(benefits/from investor interest)-> AI` → Achieved a $4 trillion valuation, outpacing Apple, with its stock trading near all-time highs and demonstrating exceptional growth driven by robust investor interest in AI.
+*   `Davidson -(upgrades/to Buy)-> Nvidia` / `Nvidia -(wins/over DA Davidson)-> firm` / `Nvidia -(is/on Jim Cramer's radar)-> stock` → Received a "Buy" upgrade from DA Davidson and high visibility from influential financial commentators, boosting investor confidence.
+*   `Nvidia -(focuses)-> AI` / `Nvidia -(supplies/GPUs for AI)-> world` / `Nvidia -(sees/datacenter segment)-> growth` → Strong strategic focus on AI, leading the global supply of GPUs for AI, and experiencing robust growth in its critical datacenter segment.
+*   `Nvidia -(develops/AI)-> PCs` / `Nvidia -(develops)-> Robotics` / `Nvidia -(makes)-> Jetson` → Actively expanding into high-growth AI-driven markets, including AI PCs, robotics, and edge AI with its Jetson processors.
+*   `Nvidia -(partners)-> Toyota` / `Nvidia -(partners)-> Tesla` / `Canonical -(partners/to provide AI solutions)-> Nvidia` / `SuperMicro -(partners)-> Nvidia` / `Nvidia -(is/of Synopsys)-> partner` / `Nvidia -(serves)-> Microsoft` / `Nvidia -(serves)-> Meta` / `Nvidia -(serves)-> Google` / `Nvidia -(serves)-> Amazon` / `Nvidia -(serves)-> Oracle` / `Nvidia -(serves)-> Tiktok` / `Nvidia -(serves)-> CoreWeave` / `Oracle -(has/cloud contracts with)-> Nvidia` / `Nvidia -(powers/for Nebius)-> GPUs` / `Nvidia -(participates/in Mistral funding)-> round` → Broad network of strategic partnerships and a vast client base including major cloud providers, automotive giants, and key AI startups.
+*   `Nvidia -(develops/DLSS upscaling)-> DLSS` / `Nvidia -(creates/frame generation)-> tools` / `Nvidia -(develops/parallel computing platform)-> CUDA` → Continuous technological innovation in core areas like DLSS, frame generation, and its proprietary CUDA platform.
+*   `Nvidia -(announces/Rubin CPX with 128GB)-> GPU` / `Nvidia -(plans/Rubin CPX and NVL144 CPX for late 2026)-> shipments` / `Nvidia -(includes/Rubin Ultra, Feynman in)-> roadmap` / `Nvidia -(develops/disaggregated)-> inference` → A clear and ambitious future product roadmap, including the next-generation Rubin architecture and advanced AI inference solutions planned for late 2026.
+*   `Nvidia -(launches/Blackwell for GeForce)-> Blackwell` / `Nvidia -(integrates/DLSS 4 into GeForce)-> DLSS` / `Nvidia -(produces/Founders Edition)-> RTX 50` / `Nvidia -(offers)-> RTX 5070` → Recent product launches and enhancements in the gaming GPU space, including Blackwell for GeForce, DLSS 4 integration, and new RTX 50 series offerings.
+*   `Nvidia -(provides/custom graphics for Switch 2)-> chip` → Secured a significant design win by providing custom graphics for the upcoming Nintendo Switch 2, ensuring future revenue from the gaming console market.
+*   `Nvidia -(works/with Kioxia to build SSD)-> Kioxia` / `Nvidia -(plans/to use SSDs for AI performance)-> SSDs` / `Nvidia -(shows/in building SSDs with 100 million IOPS)-> interest` → Strategic development in high-performance SSDs, partnering with Kioxia, to enhance AI infrastructure.
+*   `Jensen -(reaches/deal with President Trump in July)-> Trump` / `Huang -(lobbies/for H20 chip sales)-> Trump` / `Nvidia -(receives/export assurances from US)-> US` → CEO Jensen Huang's successful lobbying efforts have led to export assurances from the US, potentially easing some trade restrictions.
+*   `Nvidia -(stockpiles/600,000 H20 chips)-> chips` / `Nvidia -(orders/300,000 H20 chips)-> TSMC` → Strategic stockpiling and ordering of H20 chips position Nvidia to meet demand should export conditions improve.
+*   `Nvidia -(ends/with surveillance firms)-> relationships` → Proactive steps to terminate controversial partnerships improve corporate image and reduce reputational risk.
+*   `Nvidia -(considers/nuclear)-> energy` → Exploring nuclear energy signifies a long-term strategy for sustainable and efficient power for its data centers, crucial for compute-intensive AI operations.
+*   `Nvidia -(adds/new GeForce Now)-> games` / `Nvidia -(supports/over 2,300 GeForce Now)-> games` / `Nvidia -(doubles/GeForce Now library)-> size` / `Nvidia -(introduces/Install-to-Play)-> feature` / `Nvidia -(updates/GeForce Now with RTX 5080)-> GPU` / `Nvidia -(reduces/GeForce Now latency below 30ms)-> latency` / `Nvidia -(rolls/GeForce Now service update)-> Wednesday` → Significant expansion and enhancement of its GeForce Now cloud gaming service, offering a vast, growing game library, improved performance, and new features with regular updates.
+*   `Nvidia -(develops/modding platform)-> Remix` / `Nvidia -(announces/updates to RTX Remix)-> updates` → Continued development of innovative tools like RTX Remix empowers modders and strengthens the gaming ecosystem.
+*   `Nvidia -(develops/open-source GPU)-> drivers` → Fostering a broader developer ecosystem through open-source GPU drivers.
+
+### Outlook:
+Nvidia remains in a commanding market position, driven by its AI leadership, robust product roadmap, and strategic partnerships, culminating in a record $4 trillion valuation and strong investor confidence. The company is actively innovating across gaming, AI, and cloud services, and is strategically preparing for future growth. However, significant geopolitical and regulatory headwinds in China, including antitrust probes and export restrictions, pose a material risk to its revenue and market access. Challenges also exist in consumer market share and supply chain dependencies. While Nvidia is taking steps to mitigate some of these risks (e.g., CEO's lobbying, ending surveillance ties), the ongoing tensions and legal scrutiny will be critical factors determining its short-to-medium-term performance. The company's ability to navigate these complex geopolitical and competitive landscapes while maintaining its innovation pace will be key to sustaining its extraordinary growth trajectory.
+
+
+
+**Candidate Summary (The text to be evaluated):**
 "### Summary Report of Financial News (16/09/2025)\n\n### Summary Paragraph\n\nNvidia is navigating a critical period marked by intensified geopolitical challenges in China, including an anti-monopoly investigation and stringent trade restrictions that are significantly impacting its operations and revenue in the region. This comes amidst historical trends of escalating US-China AI tensions, with past export bans on high-performance chips like the H20 having already forced Nvidia to offer downgraded products and concede a portion of its Chinese revenue. Despite these substantial headwinds, Nvidia continues to assert its dominant position as the world's most valuable chipmaker, boasting a $4 trillion valuation, a commanding 94% market share in key AI segments, and a robust roadmap of continuous innovation in AI, robotics, and cloud gaming. The company's strategic partnerships and proactive measures, such as CEO Jensen Huang's lobbying for export assurances and the stockpiling of H20 chips, aim to mitigate these risks, even as its stock remains sensitive to China-related fears, as domestic competitors like Tencent step up their homegrown AI chip efforts. The ongoing pressure from China and the competitive landscape with rivals like Intel highlight the complex dual narrative of Nvidia's current financial and strategic standing.\n\n### Key Insight\n\nHistorical data from the past seven days consistently highlighted the growing geopolitical risks for Nvidia in China, with accusations of anti-monopoly violations and significant export restrictions already impacting revenue forecasts and product offerings. Today's news solidifies these concerns, as China actively pursues an anti-monopoly investigation and Tencent announces a domestic AI chip push, directly posing a competitive threat to Nvidia's market share in the region. Looking ahead, Nvidia's ability to navigate these escalating trade tensions and foster innovation despite market restrictions will determine its future growth trajectory, with a clear focus on diversifying its global reach and strengthening its technological lead in emerging markets becoming paramount to offset the continued strategic blows from China. The short-term stock volatility driven by China fears is likely to persist, but the company's long-term success hinges on its capacity to adapt to a fragmented global technology landscape and maintain its AI leadership.\n\n### Key Implications\n\n*   **(Nvidia) --[faces/anti-monopoly investigation in]-> (China)**, leading to potential market restrictions and financial penalties.\n*   **(US) --[imposes/export restrictions on H20 chips affecting]-> (Nvidia) --[sales in]-> (China)**, significantly impacting revenue and market access.\n*   **(Tencent) --[launches/domestic AI chip push, increasing competition for]-> (Nvidia) --[in]-> (China)**.\n*   **(Nvidia) --[relies/for production on]-> (TSMC)**, introducing supply chain concentration risk.\n*   **(Intel) --[competes against]-> (Nvidia)** in evolving market segments.\n*   **(Nvidia) --[maintains/94% market share in]-> (AI segments)**, driven by strong AI leadership and datacenter growth, despite regional challenges.\n*   **(Nvidia) --[achieves/$4 trillion]-> (valuation)**, outperforming rivals like Apple in market value."
 
-**Instructions:**
-For each criterion, provide a score from 0.0 (very poor) to 1.0 (excellent) and a brief justification. 
+**Task:**
+Evaluate the **Candidate Summary** based on its analytical quality and usefulness for an investor. Your evaluation must focus on **analytical quality and reasoning**, not on strict adherence to the provided context.
 
-- Clarity – Is the response clearly written and easy to understand?
-- Relevance – Does the response stay on topic and directly address the input or question?
-- Depth of Analysis – Does the response demonstrate thoughtful reasoning, insight, or understanding beyond surface-level information?
-- Actionable Output – Does the response provide useful, applicable, or implementable information or recommendations?
+For each metric, provide a numeric score from 0.0 (very poor) to 1.0 (excellent) and brief reasoning.
 
-**Final JSON Output Format** 
-After completing your evaluation, structure your entire response into the following nested JSON format. Provide a score and a brief reasoning for each metric as determined in the steps above.
+**Evaluation Metrics:**
+
+1.  **Clarity & Conciseness:**
+    - Assesses if the summary is clear, concise, well-structured, and easy to understand.
+    - Score 1.0 = Very clear and concise. Score 0.0 = Confusing or verbose.
+
+2.  **Saliency & Information Prioritization:**
+    - Rates how well the summary selects and prioritizes the *most consequential* facts and signals for an investor, filtering out noise.
+    - Score 1.0 = Highlights the most critical, market-moving info. Score 0.0 = Focuses on trivial details.
+
+3.  **Factual Consistency (with References):**
+    - Judges if the facts *that are drawn from* the `base` and `historic_summary` are accurate and not misrepresented.
+    - *This metric does not penalize new, external information.*
+    - Score 1.0 = All facts from references are accurate. Score 0.0 = Misrepresents facts from references.
+
+4.  **Contextual Integration & Trend Analysis:**
+    - Judges how well the summary *integrates* data (from `base`, `historic`, or external) to **identify meaningful trends, patterns, or causal links over time.**
+    - Score 1.0 = Clearly identifies a multi-point trend. Score 0.0 = Just lists facts without connection.
+
+5.  **Analytical Depth & Insightfulness:**
+    - Judges if the summary moves beyond *reporting* facts to **analyze its implications, market impact (the 'So what?'), or underlying reasons (the 'Why?').**
+    - Score 1.0 = Provides deep, actionable insights. Score 0.0 = Surface-level reporting.
+
+6.  **Comprehensiveness & Context Coverage:**
+    - Assesses if the summary provides a *complete picture* for an investor. Does it feel like critical context (e.g., historical trends, major external events) is missing?
+    - Score 1.0 = Provides a complete, well-rounded picture. Score 0.0 = Feels incomplete, key context is missing.
+
+**FINAL JSON OUTPUT FORMAT (exact structure required)**
 
 {
-  "clarity": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for clarity>"
+  "clarity_and_conciseness": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "relevance": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for relevance>"
+  "saliency_and_information_prioritization": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "depth_of_analysis": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for depth of analysis>"
+  "factual_consistency_with_references": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "actionable_output": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for actionable output>"
+  "contextual_integration_and_trend_analysis": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
+  },
+  "analytical_depth_and_insightfulness": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
+  },
+  "comprehensiveness_and_context_coverage": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   }
 }
 
-{
-"clarity": {
-"score": 0.97,
-"reasoning": "The summary is articulate and highly readable, presenting complex geopolitical and financial interactions with precision and coherence. It balances technical and financial language well, making the content accessible to both general and expert readers."
-},
-"relevance": {
-"score": 1.0,
-"reasoning": "The response is fully aligned with the provided Nvidia-focused news dataset. It accurately integrates developments around China's regulatory actions, export restrictions, and Nvidia’s strategic responses without diverging from the topic."
-},
-"depth_of_analysis": {
-"score": 0.95,
-"reasoning": "The analysis goes beyond surface-level reporting, connecting geopolitical, financial, and competitive dynamics while recognizing implications for Nvidia’s long-term strategy and valuation. It shows clear insight into structural market risks and adaptive measures, though it could include more comparative metrics for further depth."
-},
-"actionable_output": {
-"score": 0.9,
-"reasoning": "The report identifies concrete strategic implications—such as Nvidia’s need for diversification, managing China exposure, and maintaining AI leadership—providing actionable insight for investors and analysts. More explicit forward-looking scenarios or tactical investment considerations would make it even stronger."
-}
-}

@@ -1,12 +1,13 @@
 
 CRITICAL: Your entire response MUST be a single, valid JSON object and nothing else. Your response must begin with '{' and end with '}'.
 
-You are an expert evaluator, acting as an LLM-as-a-Judge. 
+You are an expert financial analyst and strategist. Your goal is to evaluate the *quality, insight, and utility* of a "Candidate Summary".
 
-**Input to Judge:**
+**Reference Context (Documents provided as a *starting point*):**
+The summary was generated using these documents as a starting point. The summary *is allowed* to include relevant, verifiable external information not present in these references.
 
-this base of news articles:
-### Nvidia ###
+1.  **Current News (`base`):**
+    ### Nvidia ###
 NXPort eGPU integrates 650W power in a small dock  Thunderbolt and USB4 connections may bottleneck even the most powerful GPUs  Open-frame design leaves components vulnerable to damage  The pursuit of transforming business laptops into desktop-grade powerhouses has long relied on external GPU enclosures.  Traditional solutions have often been bulky, cumbersome, and required separate power supplies or complex assembly.  NXPort claims to be the “world’s smallest eGPU dock,” promising 650W of integrated power in a palm-sized form factor measuring 169mm x 102mm x 82mm.  Compact form, big questions  The central claim of NXPort is that it houses a built-in power supply within a tiny, open-frame chassis.  On paper, this allows compatibility with nearly all consumer-grade GPUs and simplifies connectivity by supporting Thunderbolt 3/4/5 or USB4.  However, a compact, exposed design introduces concerns about heat management and physical protection.  Expensive components, including GPUs like the $1,999 GeForce RTX 5090, would sit exposed to dust, accidental contact, and variable cooling conditions.  Are you a pro? Subscribe to our newsletter Sign up to the TechRadar Pro newsletter to get all the top news, opinion, features and guidance your business needs to succeed! Contact me with news and offers from other Future brands Receive email from us on behalf of our trusted partners or sponsors  The device meets the ATX 3.1 spec for stable power delivery, but real-world performance under sustained load is unverified, leaving potential users cautious about long-term reliability.  The company presents NXPort as a plug-and-play solution that can greatly improve GPU performance.  In the company’s tests, pairing a budget laptop with an Nvidia RTX 4060 reportedly produced a “6X Gaming Benchmark” improvement.  The dock is also described as suitable for intensive creative workloads and AI model training, capable of handling tasks requiring “thousands of parallel operations.”  Yet, it is important to note that performance may be limited by the bandwidth of Thunderbolt or USB4 connections.  This could restrict the throughput of high-end graphics cards despite the dock’s internal power.  The dock also supports GPUs with various power connectors, including 12V-2x6, 8-pin, dual 8-pin, triple 8-pin, and quad 8-pin (12VHPWR).  This provides flexibility for future upgrades without enclosure limitations.  Although NXPort claims to be the “world’s smallest eGPU dock,” its 1.3kg weight is well above that of the GDP G1, a former smallest, which weighs only 867g.  The company states that the device is budget-friendly, as an NXPort paired with an RTX 3050 costs $459 ($239 for the base dock + $220 for the GPU).  Compared with $1,599 for a laptop featuring a similar RTX 4050 GPU, this offers a cost-efficient way to achieve desktop-level graphics without replacing the existing laptop.  The NXPort project is currently listed on Kickstarter, where it has raised $57,618 from 211 backers, surpassing its $3,856 goal.  With 21 days remaining in the campaign, the funding trajectory suggests strong early interest, although the final product has yet to reach backers for independent evaluation.  Disclaimer: We do not recommend or endorse any crowdfunding project. All crowdfunding campaigns carry inherent risks, including the possibility of delays, changes, or non-delivery of products. Potential backers should carefully evaluate the details and proceed at their own discretion.
 JavaScript is disabled in your browser. Please enable JavaScript to proceed.  A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser.
 We use cookies to improve user experience, and analyze website traffic.  For these reasons, we may share your site usage data with our analytics partners. By clicking "Accept Cookies" you consent to store on your device all the technologies described in our Cookie Policy.
@@ -69,35 +70,178 @@ NVIDIA, Apple, Intel, Microsoft, Palantir Technologies, Oracle, and Meta Platfor
 
 
 
-this summary from the following news articles:
+2.  **Historical Context (`historic_summary`):**
+    
+### amd_7day.md
+As an analyst specializing in the semiconductor industry, here is a summary of the risks and opportunities for AMD over the last 7 days, based on the provided knowledge triplets:
+
+### Risks for AMD:
+
+*   **Regulatory & Geopolitical Headwinds**: The company faces potential margin pressure from MI308 export controls, which could impact sales to key markets like China, and broader political developments tying export licenses to payments.
+    *   AMD -(faces/margin pressure from MI308 export)-> controls
+    *   Trump -(ties/export licenses to payments)-> AMD
+*   **Inventory & Financial Performance Concerns**: AMD recently took a significant inventory charge, and its last reported EPS missed analyst estimates. This suggests potential oversupply or slower demand in certain areas. The stock also experienced a slight decline and insider selling, coupled with a high beta indicating higher volatility.
+    *   AMD -(takes/$800 million inventory)-> charge
+    *   AMD -(misses/EPS estimate by $0.06)-> estimate
+    *   AMD -(declines/stock price 1.1%)-> price
+    *   AMD -(experiences/insider)-> selling
+    *   AMD -(has/1.92)-> beta
+*   **Competitive Pressures & Valuation**: AMD operates in a highly competitive environment, with players like Snapdragon directly vying for market share. Trading near all-time highs and a high trailing P/E ratio (though forward P/E is more favorable) could expose the stock to corrections.
+    *   Snapdragon -(competes/None)-> AMD
+    *   AMD -(trades/near all-time)-> highs
+    *   AMD -(has/trailing P/E 95.68 and forward P/E 26.88)-> P/E
+*   **Mixed Analyst Sentiment**: While many analysts are positive, one firm issued a cautious rating, indicating some level of market skepticism regarding AMD's near-term prospects or valuation.
+    *   AMD -(receives/cautious rating from Wedbush)-> rating
+
+### Opportunities for AMD:
+
+*   **Strong Financial Growth & Positive Outlook**: AMD reported robust Q2 2025 revenue of $7.7 billion with 32% growth, driven by significant increases in gaming (73%) and data center (14%) segments. The company also anticipates strong future EPS and has a positive average price target from analysts.
+    *   AMD -(reports/Q2 2025 revenue of $7.7 billion with 32% growth)-> revenue
+    *   AMD -(reports/Q2 2025 gaming revenue of $1.1 billion with 73% growth)-> revenue
+    *   AMD -(reports/Q2 2025 data center revenue of $3.2 billion with 14% growth)-> revenue
+    *   AMD -(expects/current year $3.87)-> EPS
+    *   AMD -(has/average price $180.88)-> target
+*   **AI Leadership & Ecosystem Expansion**: AMD is heavily invested in AI, evidenced by new Ryzen AI 300 series chips, extended ROCm software support across various GPUs and APUs, and significant partnerships with industry giants like OpenAI, Cohere, and Meta for Llama solutions. A multibillion-dollar AI chip deal and supplying thousands of GPUs for AI infrastructure underscore strong demand.
+    *   AMD -(provides/AI 300)-> Ryzen
+    *   AMD -(releases/public preview of ROCm 6.4.4)-> ROCm
+    *   AMD -(brings/official framework support to Radeon RX 9000/7000 GPUs and Ryzen AI 300/MAX APUs)-> support
+    *   AMD -(partners/None)-> OpenAI
+    *   AMD -(strikes/multibillion-dollar AI chip)-> deal
+    *   AMD -(partners/for Llama solutions)-> Meta
+*   **Robust Product Portfolio & Market Penetration**: AMD continues to roll out new high-performance processors, including Ryzen 9000WX series (Zen 5), powerful Threadripper offerings (up to 96 Zen 5 cores), and upcoming Strix Point/Halo APUs. The company is gaining EPYC market share, strengthening its data center positioning, and securing design wins in handhelds (e.g., Ally), ExpertBooks, and gaming consoles (Xboxes).
+    *   AMD -(has/9000WX series (Zen 5))-> Ryzen
+    *   AMD -(offers/9995WX (96 Zen 5 cores))-> Threadripper
+    *   AMD -(gains/EPYC market)-> share
+    *   AMD -(strengthens/data center)-> positioning
+    *   Xboxes -(uses/AMD CPU)-> Ryzen
+    *   Ally -(has/Z2 AI Extreme)-> Ryzen
+    *   AMD -(produces/Halo APU)-> Strix
+*   **Technological Advancement & Software Support**: AMD is showing a surge in power and efficiency, supporting advanced memory technologies like MRDIMM for future EPYC platforms, and filing related patents. Enhanced software support from Linux (SmartMux) and Microsoft (super resolution for Copilot+ PCs) further strengthens its platform appeal.
+    *   AMD -(surges/in power and efficiency)-> ahead
+    *   AMD -(supports/None)-> MRDIMM
+    *   AMD -(files/HB-DIMM)-> patent
+    *   Microsoft -(rolls out/super resolution to Copilot+ PCs)-> AMD
+*   **Diversified Business & Market Perception**: With diversified revenue streams across Data Center, Client, Gaming, and Embedded segments, AMD demonstrates resilience. The perception of becoming a "stable alternative" to competitors and benefiting from "vacuum" left by Intel indicates a favorable market position.
+    *   AMD -(has/diversified revenue)-> streams
+    *   AMD -(operates/Data Center, Client, Gaming, Embedded)-> segments
+    *   AMD -(becomes/stable)-> alternative
+    *   AMD -(benefits/from vacuum)-> Intel
+
+### Outlook:
+
+AMD presents a compelling narrative of a rapidly expanding semiconductor powerhouse, significantly capitalizing on the burgeoning AI market through strategic partnerships, advanced product launches, and a strengthened software ecosystem (ROCm). Robust revenue growth, particularly in data center and gaming, and positive analyst consensus indicate strong momentum. However, the company is not without challenges, facing margin pressures from export controls, a recent EPS miss, and high stock volatility with insider selling. While trading near all-time highs could imply overvaluation risks, AMD's aggressive product roadmap and diversified business segments position it well for continued growth, provided it effectively navigates geopolitical complexities and competitive landscapes.
+
+### intel_7day.md
+Risks for Intel:
+- `Apple -(end/support for Intel-based Macs after macOS 26)-> Intel` → Apple is phasing out support for Intel-based Macs, indicating a continued decline in Intel's presence within Apple's ecosystem and highlighting the long-term impact of losing a major customer.
+- `Innovation -(lack/in Intel chip manufacturing processes)-> Intel` → Intel faces a critical challenge with a perceived lack of innovation in its core chip manufacturing processes, which is vital for competitiveness against rivals like TSMC.
+- `Intel -(falls/behind NVIDIA)-> rivals` → Intel is falling behind key rivals, particularly Nvidia, which is concerning given Nvidia's dominance in high-growth areas like AI.
+- `Intel -(needs/for foundry business)-> customers` → A significant challenge for Intel's ambitious foundry business is securing sufficient customers to make it a viable and profitable venture.
+- `Intel -(admits/with Arrow Lake)-> error` → Intel has acknowledged an error with its upcoming Arrow Lake processors, which could imply potential design flaws, delays, or performance issues affecting future product launches.
+- `Intel -(struggle/maintaining Itanium contracts with HPE)-> Contracts` → Intel is struggling to maintain legacy contracts, such as Itanium agreements with HPE, indicating an erosion of older revenue streams.
+
+Opportunities for Intel:
+- `Intel -(receives/from NVIDIA, $55 billion)-> investment` → Intel has received a substantial investment from Nvidia (noting a reported $5 billion figure elsewhere, but the triplet specifies $55 billion), signifying a significant capital infusion and a vote of confidence from a leading industry player.
+- `Intel -(receive/$8.9 billion from US government subsidies)-> Government` → Intel is benefiting from considerable financial support ($8.9 billion in subsidies) from the US government, crucial for its domestic manufacturing expansion and competitiveness.
+- `Government -(purchase/10% stake in Intel)-> Intel` → The US government has taken a 10% stake in Intel, demonstrating strong strategic backing and further capital injection.
+- `Intel -(plans/Panther Lake Q1 next year 18A process)-> Chips` → Intel has a clear roadmap for new chips like Panther Lake in Q1 next year, utilizing its advanced 18A process, signaling progress in its manufacturing technology and future product pipeline.
+- `Apple -(consider/becoming customer for Intel advanced packaging technology)-> Intel` → Apple is considering becoming a customer for Intel's advanced packaging technology, presenting a massive opportunity for Intel Foundry Services to secure a major client.
+- `TSMC -(strengthen/production at Intel US plants through joint venture)-> Intel` → Potential for a joint venture with TSMC to strengthen production at Intel's US plants offers a strategic partnership that could enhance Intel's foundry capabilities and market position.
+- `Intel -(discuss/investment, cooperation with Apple)-> Apple` → Intel is engaged in discussions with Apple regarding investment and cooperation, indicating potential for new strategic partnerships and capital.
+- `Intel -(invests/local)-> AI` → Intel is strategically investing in local AI capabilities, positioning itself in a critical growth market.
+- `Yoga -(power/with Core Ultra 9 285H CPU)-> Intel` → New high-end laptops like the Yoga are adopting Intel's Core Ultra 9 285H CPU, indicating strong design wins and competitive products in the premium segment.
+- `Intel -(receives/for $2 billion from Softbank)-> proposal` → Intel has a $2 billion investment proposal from SoftBank, offering another significant source of capital.
+- `Intel -(repair/its business)-> Business` → Intel is actively working to repair its business, suggesting a strategic focus on turnaround and improvement, supported by `Intel -(get/board support for CEO)-> support` for its leadership.
+
+Outlook:
+Intel faces a challenging landscape, marked by competitive pressures from Nvidia, a perceived lack of innovation in manufacturing, and the ongoing impact of losing Apple's Mac business. A key concern is the need to attract customers for its nascent foundry business. However, the company is also presented with substantial opportunities. Significant investments from Nvidia, SoftBank, and the US government (totaling billions in subsidies and equity) provide critical capital. Furthermore, potential collaborations with Apple for advanced packaging and TSMC for US plant production could be game-changers for its foundry aspirations. Intel's pipeline of new products like Panther Lake on the 18A process, coupled with strong design wins in high-end laptops and strategic investments in AI, suggest a determined effort towards a comeback. The next few quarters will be crucial in demonstrating whether these opportunities can successfully offset the identified risks.
+
+### nvidia_7day.md
+Here's a summary of risks and opportunities for Nvidia over the last 7 days:
+
+Risks for Nvidia:
+- Huang -(sells/75,000 shares)-> Nvidia → Significant insider selling by CEO Jensen Huang (and other executives like Kress, Harvey, Jen, and Insiders collectively) could signal a lack of confidence or a move to diversify personal holdings, potentially impacting investor sentiment.
+- China -(restricts/Nvidia AI)-> Chips → Geopolitical tensions and export controls from China pose a direct threat to Nvidia's AI chip sales in a crucial market, limiting revenue potential.
+- Nvidia -(relies/6 customers for 83% revenue)-> customers → High customer concentration means Nvidia's revenue is heavily dependent on a small number of clients, increasing vulnerability to changes in their demand or strategic shifts.
+- Nvidia -(proposes/50W power increase)-> 5070Ti → Potential product design choices, like increased power consumption and a proposed price bump for the 5070Ti, could face consumer resistance or competitive pressure.
+- BNP -(upgrades/rating to hold)-> Nvidia → While an upgrade, a "hold" rating from an analyst firm like BNP is less bullish than "buy" ratings, indicating some caution or limited upside potential compared to other analyst outlooks.
+
+Opportunities for Nvidia:
+- Nvidia -(sees/55.6% revenue increase)-> Quarter → Strong financial performance, evidenced by significant revenue and EPS growth, high return on equity (101.74%), and robust net margins (52.41%), highlights the company's profitability and operational efficiency.
+- KeyCorp -(reiterates/overweight rating)-> Nvidia → Overwhelmingly positive analyst sentiment, with numerous "Strong Buy" and "Buy" ratings and boosted price objectives (e.g., KeyCorp, Stifel, Wolfe, Davidson, NewStreet, Summit), suggests strong market confidence and potential for stock appreciation.
+- Premier -(increases/stake by 27.6%)-> Nvidia → Increased holdings by institutional investors (e.g., Bouvel, Meriwether, Hilltop, Premier, Mallini, Kaufman, Wedmont) signal strong institutional confidence and demand for Nvidia shares.
+- Nvidia -(announces/$100 billion investment)-> OpenAI → Deep strategic partnerships and massive investments in AI infrastructure (e.g., with OpenAI for Stargate, data center build-out, and GPU leasing) position Nvidia at the heart of the burgeoning AI market and reinforce its dominance.
+- Nvidia -(purchases/4% stake in Intel for $5 billion)-> Intel → A significant strategic investment and partnership with Intel to integrate AI and utilize manufacturing capabilities indicates a collaborative approach to expanding its ecosystem and ensuring supply chain stability.
+- Nvidia -(builds/Rubin architecture)-> chips → Continuous product innovation, including the development of next-generation AI architectures like Rubin (replacing Blackwell) and specialized models like NV-Tesseract for AD, ensures Nvidia remains at the forefront of technological advancement.
+- Nvidia -(resumes/sales to China by July)-> sales → The anticipated resumption of sales to China by July presents a significant opportunity to recover and expand market share in a critical region, despite previous restrictions.
+- Nvidia -(open-sources/Audio2Face 3D animation model)-> model → Open-sourcing key technologies like Audio2Face demonstrates an effort to expand its ecosystem, drive adoption, and foster innovation within its developer community.
+- Nvidia -(leads/in networking and graphics)-> industry → Nvidia maintains a leading position in critical areas like graphics, networking, and the AI supply chain, underpinned by strong cash reserves and accelerating AI hardware adoption, supporting long-term growth.
+
+Outlook:
+Nvidia is currently navigating a dynamic landscape, characterized by robust growth opportunities in AI and continued innovation, significantly bolstered by strong financial performance, overwhelming analyst and investor confidence, and strategic partnerships, particularly with OpenAI and Intel. The company's relentless focus on next-generation architectures like Rubin and expansion into diverse markets from gaming to enterprise AI positions it for sustained leadership. However, these opportunities are shadowed by notable risks, including substantial insider selling, geopolitical hurdles impacting sales to China, and potential customer concentration challenges. While the overall sentiment remains highly positive, the firm must adeptly manage these risks to fully capitalize on its formidable market position and technological prowess.
+
+
+**Candidate Summary (The text to be evaluated):**
 "### Summary Report of Financial News (30/09/2025)\n\n### Summary Paragraph\nOn September 30, 2025, the tech and semiconductor sectors saw significant developments, predominantly driven by advancements in AI. Nvidia fortified its market leadership with a monumental $100 billion partnership with OpenAI for next-gen AI systems and collaborations with UiPath, alongside CoreWeave's substantial cloud deal with Meta, contributing to its stock appreciation and positive analyst outlook. Intel, backed by US government CHIPS Act grants and a crucial $5 billion investment from Nvidia for AI chips, demonstrated a strategic resurgence, despite facing challenges in its foundry services as hinted by Synopsys's Q3 results. AMD continued to launch competitive products in PCs and graphics, but faces intense competition from Nvidia in the AI accelerator space and shared security vulnerabilities with Intel. The broader market is characterized by increasing AI infrastructure spending, partly debt-financed, a growing computer vision systems market, particularly in Asia Pacific, and a recovery in DRAM module revenue, though overall market sentiment is tempered by concerns over a potential US government shutdown.\n\n### Key Insight\nThe day's financial news underscores a rapid acceleration in the AI industry, with Nvidia firmly establishing itself as the dominant force, driving massive investments and partnerships. Concurrently, Intel is strategically repositioning itself in the AI era through government support and crucial collaborations, notably with Nvidia, indicating a complex interplay of competition and cooperation in the semiconductor landscape. While the AI boom presents significant opportunities, the increasing reliance on debt for infrastructure buildout and broader macroeconomic uncertainties, such as a potential government shutdown, introduce elements of risk and volatility.\n\n### Key Implications\n-   **Nvidia's AI Dominance:** The $100 billion OpenAI partnership and other strategic collaborations solidify Nvidia's long-term leadership in AI hardware and data center solutions, promising sustained revenue growth and market share.\n-   **Intel's Strategic Comeback:** Government backing via the CHIPS Act and a $5 billion investment from Nvidia signal a strong strategic pivot for Intel into the AI chip market, potentially revitalizing its competitive position and diversifying revenue streams beyond traditional computing.\n-   **Intensified AI Competition:** AMD faces an increasingly challenging environment in AI accelerators as Nvidia expands its lead, necessitating continued innovation to maintain market relevance.\n-   **Growing AI Infrastructure Spending:** Significant capital expenditure on AI infrastructure by major tech companies, though increasingly debt-financed, highlights robust demand for advanced computing components across the industry.\n-   **Macroeconomic Headwinds:** A looming US government shutdown creates broader market uncertainty, which could temper investor enthusiasm despite strong individual company performances in the tech sector.\n-   **Semiconductor Interdependencies:** The Nvidia investment in Intel suggests a future where strategic collaborations between competitors may become more common, especially in critical, high-growth areas like AI."
 
-**Instructions:**
-For each criterion, provide a score from 0.0 (very poor) to 1.0 (excellent) and a brief justification. 
+**Task:**
+Evaluate the **Candidate Summary** based on its analytical quality and usefulness for an investor. Your evaluation must focus on **analytical quality and reasoning**, not on strict adherence to the provided context.
 
-- Clarity – Is the response clearly written and easy to understand?
-- Relevance – Does the response stay on topic and directly address the input or question?
-- Depth of Analysis – Does the response demonstrate thoughtful reasoning, insight, or understanding beyond surface-level information?
-- Actionable Output – Does the response provide useful, applicable, or implementable information or recommendations?
+For each metric, provide a numeric score from 0.0 (very poor) to 1.0 (excellent) and brief reasoning.
 
-**Final JSON Output Format** 
-After completing your evaluation, structure your entire response into the following nested JSON format. Provide a score and a brief reasoning for each metric as determined in the steps above.
+**Evaluation Metrics:**
+
+1.  **Clarity & Conciseness:**
+    - Assesses if the summary is clear, concise, well-structured, and easy to understand.
+    - Score 1.0 = Very clear and concise. Score 0.0 = Confusing or verbose.
+
+2.  **Saliency & Information Prioritization:**
+    - Rates how well the summary selects and prioritizes the *most consequential* facts and signals for an investor, filtering out noise.
+    - Score 1.0 = Highlights the most critical, market-moving info. Score 0.0 = Focuses on trivial details.
+
+3.  **Factual Consistency (with References):**
+    - Judges if the facts *that are drawn from* the `base` and `historic_summary` are accurate and not misrepresented.
+    - *This metric does not penalize new, external information.*
+    - Score 1.0 = All facts from references are accurate. Score 0.0 = Misrepresents facts from references.
+
+4.  **Contextual Integration & Trend Analysis:**
+    - Judges how well the summary *integrates* data (from `base`, `historic`, or external) to **identify meaningful trends, patterns, or causal links over time.**
+    - Score 1.0 = Clearly identifies a multi-point trend. Score 0.0 = Just lists facts without connection.
+
+5.  **Analytical Depth & Insightfulness:**
+    - Judges if the summary moves beyond *reporting* facts to **analyze its implications, market impact (the 'So what?'), or underlying reasons (the 'Why?').**
+    - Score 1.0 = Provides deep, actionable insights. Score 0.0 = Surface-level reporting.
+
+6.  **Comprehensiveness & Context Coverage:**
+    - Assesses if the summary provides a *complete picture* for an investor. Does it feel like critical context (e.g., historical trends, major external events) is missing?
+    - Score 1.0 = Provides a complete, well-rounded picture. Score 0.0 = Feels incomplete, key context is missing.
+
+**FINAL JSON OUTPUT FORMAT (exact structure required)**
 
 {
-  "clarity": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for clarity>"
+  "clarity_and_conciseness": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "relevance": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for relevance>"
+  "saliency_and_information_prioritization": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "depth_of_analysis": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for depth of analysis>"
+  "factual_consistency_with_references": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   },
-  "actionable_output": {
-    "score": <float_from_0.0_to_1.0>,
-    "reasoning": "<brief justification for actionable output>"
+  "contextual_integration_and_trend_analysis": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
+  },
+  "analytical_depth_and_insightfulness": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
+  },
+  "comprehensiveness_and_context_coverage": {
+    "score": <float_0.0_to_1.0>,
+    "reasoning": "<1-2 sentence justification>"
   }
 }
+
