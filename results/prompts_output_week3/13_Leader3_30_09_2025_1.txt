@@ -205,16 +205,18 @@ For each metric, provide a numeric score from 0.0 (very poor) to 1.0 (excellent)
     - Score 1.0 = All facts from references are accurate. Score 0.0 = Misrepresents facts from references.
 
 4.  **Contextual Integration & Trend Analysis:**
-    - Judges how well the summary *integrates* data (from `base`, `historic`, or external) to **identify meaningful trends, patterns, or causal links over time.**
-    - Score 1.0 = Clearly identifies a multi-point trend. Score 0.0 = Just lists facts without connection.
+    - Judges how well the summary synthesizes information from both the base (current) and historic_summary (past) contexts, along with any external data, to identify meaningful trends or causal links.
+    - Score 1.0 = Clearly identifies a multi-point trend linking past and present. Score 0.0 = Just lists facts or ignores historical context.
 
 5.  **Analytical Depth & Insightfulness:**
-    - Judges if the summary moves beyond *reporting* facts to **analyze its implications, market impact (the 'So what?'), or underlying reasons (the 'Why?').**
-    - Score 1.0 = Provides deep, actionable insights. Score 0.0 = Surface-level reporting.
+    - Judges if the summary moves beyond merely *reporting* facts (from `base` or `historic`) to **analyze the 'So what?' (implications, market impact) and potentially the 'Why?' (underlying drivers) in a non-obvious way.** Does it offer a unique perspective or forward-looking thought?
+    - *Generic statements or simple restatements of news indicate low depth.*
+    - Score 1.0 = Provides deep, specific, actionable insights. Score 0.0 = Surface-level reporting or generic, obvious implications.
 
 6.  **Comprehensiveness & Context Coverage:**
-    - Assesses if the summary provides a *complete picture* for an investor. Does it feel like critical context (e.g., historical trends, major external events) is missing?
-    - Score 1.0 = Provides a complete, well-rounded picture. Score 0.0 = Feels incomplete, key context is missing.
+    - Assesses if the summary provides a *sufficiently complete picture* for an investor by covering **both key current events (`base`) AND relevant historical perspectives (`historic_summary`)**. Does it feel like crucial past context necessary to understand the present situation is missing?
+    - *Focuses on whether the *combination* of information feels complete.*
+    - Score 1.0 = Provides a well-rounded picture integrating current and historical views. Score 0.0 = Feels critically incomplete due to missing important context.
 
 **FINAL JSON OUTPUT FORMAT (exact structure required)**
 
