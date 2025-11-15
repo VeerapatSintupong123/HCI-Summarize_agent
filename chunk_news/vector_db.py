@@ -171,4 +171,3 @@ if __name__ == "__main__":
         print("✅ Retriever test successful. Found results.")
         # print("Top result content snippet:")
         print(results[0].page_content[:200] + "...")
-
